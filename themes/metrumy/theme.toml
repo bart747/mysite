@@ -1,11 +1,11 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
-name = "Metrum"
+name = "Metrumy"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/bart747/metrum/blob/master/LICENSE.md"
 description = "Simple, Clear, boilerplate theme for Hugo"
-homepage = "http://siteforthistheme.com/"
+homepage = "bart747.github.io"
 tags = ["minimal", "minimalist", "neutral", "simple", "boilerplate", "clear", "starter"]
 features = ["boilerplate", "easy to extend"]
 min_version = 0.17
@@ -16,6 +16,6 @@ min_version = 0.17
 
 # If porting an existing theme
 [original]
-  name = ""
+  name = "metrum"
   homepage = ""
-  repo = ""
+  repo = "https://github.com/bart747/metrum"
