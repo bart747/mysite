@@ -1,0 +1,18 @@
+<div class="post-list">
+  {{ range (.Paginator 10).Pages }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary }}</p>
+    <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+  {{ end }}
+</div>
+
+<div class="subnav">
+  {{ if .Paginator.HasPrev }}     
+    <a class="next" href="{{ .Paginator.Prev.URL }}">previous page</a>
+    &nbsp;
+  {{ end }}
+
+  {{ if .Paginator.HasNext }}     
+    <a class="next" href="{{ .Paginator.Next.URL }}">next page</a>
+  {{ end }}
+</div>

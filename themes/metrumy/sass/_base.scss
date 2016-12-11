@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  font-size: $large-font-size;
+  line-height: $base-line-height;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $large-font-size;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: $screen-sml) {
+    font-size: $medium-font-size;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+nav {
+  margin: 0 0 3em;
+  padding: 0.5em 0.5em 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.subnav {
+  margin: 0 auto 3em;
+}
+
+section {
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1em 0;
+}
+
+.wrapper-small {
+  margin: 0 auto;
+  max-width: 724px;
+  padding: 0 1em 0;
+}
+
+object,
+img {
+  width: 100%;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &:active, &:hover {
+    color: $red;
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dotted;
+  padding: 1em 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  margin: 3em 0;
+}

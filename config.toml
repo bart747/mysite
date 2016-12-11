@@ -1,0 +1,22 @@
+baseurl = "https://bart747.github.io"
+title = "UI design and development"
+languageCode = "en-us"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+theme = "metrumy"
+pluralizelisttitles = "false"
+pygmentsuseclasses = true
+
+[permalinks]
+  blog = "/:title/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "UI design and development"
+  author = "Bartosz Wieczorek"
