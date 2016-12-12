@@ -16,9 +16,6 @@ h1, .h1-like {
   font-weight: bold;
   line-height: 1.125;
   margin: 1em 0;
-  @media screen and (max-width: $screen-sml) {
-    margin: 1.5em 0 0.57em;
-  }
 }
 
 h2, .h2-like {
@@ -93,4 +90,10 @@ li code {
 
 .secondary {
   color: $grey;
+}
+
+.article-title {
+  @media (max-width: $screen-sml) {
+    margin: 0.5em 0 1em;
+  }
 }

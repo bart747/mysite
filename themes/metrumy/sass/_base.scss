@@ -32,6 +32,10 @@ video {
 nav {
   margin: 0 0 3em;
   padding: 0.5em 0.5em 0;
+
+  @media (max-width: $screen-sml) {
+    margin: 0 0 2em;
+  }
 }
 
 nav ul {
