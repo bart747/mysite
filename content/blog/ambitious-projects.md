@@ -13,3 +13,4 @@ It's about handling negative emtions, picking the right thing to work on, creati
 <div class="video">
 <iframe width="" height="" src="https://www.youtube.com/embed/d0m0jIzJfiQ" frameborder="0" allowfullscreen></iframe>
 </div>
+
