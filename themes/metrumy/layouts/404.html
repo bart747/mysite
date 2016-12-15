@@ -1,9 +1,20 @@
 {{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
 
-<section>
+<section class="wrapper-small">
   <div>
-   <h1>{{ .Title }}</h1>
-   <p>The page you were looking for doesn't exist</p>
+    <h2>The page you were looking for isn't here</h2>
+
+    <p>Maybe it doesn't exist anymore or has been moved.</p>
+    <p>Or maybe the address was typed incorrectly.</p>
+    
+    <div class="post-list">
+      <h3><a href="{{ .Site.BaseURL }}">HOME</a></h3>
+      {{ range (.Paginator 3).Pages }}
+        <h3 class="list-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      {{ end }}
+    </div>
+
   </div>
 </section>
 
