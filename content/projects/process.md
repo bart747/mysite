@@ -1,8 +1,8 @@
 +++
 title = "Working on Ambitious Projects: Jonathan Blow on Game Design"
 date =  "2016-12-12"
-categories = [ "nosummary" ]
 +++
+
 
 It's not a typical <i>this is how I do it</i> speach. It's definitely not one of those <i>top ten ways&#8230;</i> pieces.
 
@@ -13,3 +13,4 @@ It's about handling negative emtions, picking the right thing to work on, creati
 <div class="video">
 <iframe width="" height="" src="https://www.youtube.com/embed/d0m0jIzJfiQ" frameborder="0" allowfullscreen></iframe>
 </div>
+<!--more-->
