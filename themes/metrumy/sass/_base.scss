@@ -20,6 +20,16 @@ body {
   }
 }
 
+a {
+  color: $orange-deep;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &:active, &:hover {
+    color: $orange-light;
+  }
+}
+
 audio,
 canvas,
 iframe,
@@ -30,12 +40,8 @@ video {
 }
 
 nav {
-  margin: 0 0 3em;
-  padding: 0.5em 0.5em 0;
-
-  @media (max-width: $screen-sml) {
-    margin: 0 0 2em;
-  }
+  margin: 0;
+  padding: 0.5em 0.5em;
 }
 
 nav ul {
@@ -62,29 +68,31 @@ section {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 1em 0;
+  max-width: 1280px;
+  padding: 0 $medium-font-size 0;
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 $medium-font-size 0;
 }
 
 .wrapper-small {
   margin: 0 auto;
-  max-width: 724px;
-  padding: 0 1em 0;
+  max-width: 35em;
+  padding: 0 $medium-font-size 0;
+}
+
+@mixin wrapper-small {
+  margin: 0 auto;
+  max-width: 35em;
+  padding: 0 $medium-font-size 0;
 }
 
 object,
 img {
   width: 100%;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-  transition: color 0.2s ease-in;
-
-  &:active, &:hover {
-    color: $red;
-  }
 }
 
 hr {
@@ -101,4 +109,39 @@ hr {
 
 footer {
   margin: 3em 0;
+}
+
+button,
+.btn {
+  font-size: 1em;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background: $blue;
+  border: solid $blue;
+  border-width: 3px;
+  border-radius: 4px;
+  outline: none; 
+  padding: 0.4em 1em;
+  text-align: center;
+  margin: 0.25em 0.125em;
+  max-width: 12em;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:active { 
+    background: lighten($blue-dark, 10%);
+  }
+  &:active {
+    background: $blue-dark;
+    
+  }
+  &:focus {
+    outline: none;
+    background: $blue-dark;
+  }
+}
+
+.blue {
+  color: $blue;
 }

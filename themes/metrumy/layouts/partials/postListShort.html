@@ -1,5 +1,5 @@
-<div class="post-list">
-  {{ range (.Paginator 5).Pages }}
-    <h3 class="list-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+<div class="post-list post-list--short">
+  {{ range (.Paginator 3).Pages }}
+    <h3 class=""><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ end }}
 </div>

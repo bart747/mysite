@@ -10,6 +10,8 @@ It's the moment when you, as a buyer, think again about spendings
 and transaction safety.
 The fact that you're about to say bye to some of your money triggers that.
 
+<!--more-->
+
 From a designer's point of view, it's a good place and moment to do a little
 summary (again).
 To remind a user about things like return policy, transaction safety

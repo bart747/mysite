@@ -8,6 +8,8 @@ Contrasts are one of key elements when it comes to usability. Lets take coins as
 
 When it comes to look: at first glance you see differences in size, color (types of metals) and visual patterns.
 
+<!--more-->
+
 Feel in hand: some seem heavier, some lighter, some have different surfaces.
 
 Some of these things will help you in one situation, some in another. It's good that they exist.

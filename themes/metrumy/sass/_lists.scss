@@ -3,6 +3,15 @@ ul {
   margin: 0 0 1em;
 }
 
+ul li,
+ol li {
+  margin-left: 1em;
+}
+
+.post-list {
+  margin: 0 0 3em;
+}
+
 .list-contacts li {
   display: inline-block;
   list-style: none;
@@ -26,5 +35,9 @@ ul {
   }
 }
 
-
+.post-list--short h3 {
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+}
 
