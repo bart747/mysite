@@ -1,37 +1,19 @@
-.logo {
-  position: absolute;
-  top: 0;
-  line-height: 1;
-  background: $black;
-  color: #fff;
-  height: 70px;
-  width: 70px;
-  padding: 0.5em 0.25em;
-  font-size: 16px;
-}
-
-.block {
-  margin: 2em 0;
-}
-
 .block-head {
   margin: 2em 0;
 }
 
 .big-title {
   text-align: center;
-  background: $night;
-  color: $blue;
-  margin: 0 auto 3em;
+  color: $black;
+  margin: 2em auto;
   padding: 2em 1em;
 }
 
 .big-title h1 {
   font-size: 3em;
   line-height: 1;
-  color: $background-color;
   letter-spacing: -0.025em;
-  margin: 0;
+  margin: 0 0 0.1em;
   @media (max-width: $screen-sml) {
     font-size: 2.5em;
   }
@@ -39,81 +21,13 @@
 
 .big-title h2 {
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.1;
-  color: $background-color;
   letter-spacing: -0.01em;
-  margin: 1em 0 0;
+  margin: 0;
 }
 
 .head-content {
   @include wrapper-small;
   margin: 0 auto 2.9em;
-}
-
-.big-quote {
-  @include wrapper;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.25;
-  text-align: center;
-  color: $black;
-  margin: 0 auto 1.5em; 
-  transform: rotate(0.003turn);
-}
-
-.big-quote:nth-child(2) {  
-  transform: rotate(-0.003turn);
-}
-
-.big-quote--name {
-  font-size: 0.75em; 
-  font-weight: normal;
-  line-height: 1.5em;
-  color: $text-color;
-}
-
-.big-quote--name:before {
-  content: "— "; 
-  color: $text-color;
-}
-
-.big-typo {
-  @include wrapper-small;
-}
-
-.big-typo--title {
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 1.25;
-  color: $black;
-  margin: 0;
-}
-
-.big-typo--select {
-  background: $background-yellow;
-  padding: 0.125em 0.25em 0;
-  border-radius: 5px;
-}
-
-.word-highlight {
-  color: $blue;
-}
-
-.block-email--title {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.block-email--email  {
-  margin: 0;
-}
-
-.block-email--email a {
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-.color-purple {
-  color: $purple;
 }

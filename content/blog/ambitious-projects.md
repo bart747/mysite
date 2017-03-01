@@ -10,7 +10,9 @@ It's got strong emphasis on mental and philosophical side of creating complicate
 It's about handling negative emtions, picking the right thing to work on, creative process. 
 
 <small>67 minutes</small>
+<div class="wrapper--nopad"> 
 <div class="video">
 <iframe width="" height="" src="https://www.youtube.com/embed/d0m0jIzJfiQ" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 

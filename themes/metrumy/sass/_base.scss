@@ -23,7 +23,7 @@ body {
 a {
   color: $orange-deep;
   text-decoration: none;
-  transition: color 0.2s ease-in;
+  transition: color 0.1s ease-in;
 
   &:active, &:hover {
     color: $orange-light;
@@ -62,6 +62,18 @@ nav li:last-child {
   margin: 0 auto 3em;
 }
 
+.subnav--line {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+}
+
+.subnav--tag {
+  display: inline-block;
+  min-width: 4em;
+}
+
 section {
   margin: 0;
 }
@@ -88,6 +100,20 @@ section {
   margin: 0 auto;
   max-width: 35em;
   padding: 0 $medium-font-size 0;
+}
+
+.wrapper--nopad {
+  margin: 0 -1em;
+}
+
+.block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.block--extra {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 object,
@@ -144,4 +170,20 @@ button,
 
 .blue {
   color: $blue;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  color: #fff;
+  height: 10px;
+  width: 10px;
+  font-size: 16px;
+}
+
+#logo-circle:hover {
+  fill: $orange-deep;
+  transition: fill 0.2s ease-in;
 }

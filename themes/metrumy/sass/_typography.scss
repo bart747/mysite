@@ -14,18 +14,28 @@ h4, {
 h1, .h1-like {
   font-size: 2em;
   font-weight: bold;
-  line-height: 1.125;
+  line-height: 1;
   margin: 1em 0;
+  letter-spacing: -0.01em;
 }
 
 h2, .h2-like {
-  font-size: 1.25em;
+  font-weight: bold;
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 1.2;
-  margin: 1.6em 0 0.8em
+  line-height: 1.25;
+  color: $black;
+  margin: 1.33em 0 0.66em;
 }
 
 h3, .h3-like {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 1.6em 0 0.8em
+}
+
+h4, .h4-like {
   font-size: 1em;
   font-weight: 600;
   line-height: 1.5;

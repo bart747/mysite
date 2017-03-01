@@ -1,0 +1,63 @@
+.big-quote {
+  @include wrapper;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: $black;
+  margin: 0 auto 1.5em; 
+  transform: rotate(0.003turn);
+}
+
+.big-quote:nth-child(2) {  
+  transform: rotate(-0.003turn);
+}
+
+.big-quote--name {
+  font-size: 0.75em; 
+  font-weight: normal;
+  line-height: 1.5em;
+  color: $text-color;
+}
+
+.big-quote--name:before {
+  content: "— "; 
+  color: $text-color;
+}
+
+.big-typo {
+  @include wrapper-small;
+}
+
+.home-highlight {
+  background: $background-yellow;
+  padding: 0.125em 0.25em 0.05em;
+  border-radius: 5px;
+}
+
+.home-content h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.25;
+  color: $black;
+  margin: 1.33em 0 0.66em;
+}
+
+.word-highlight {
+  color: $blue;
+}
+
+.block-email--title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.block-email--email  {
+  margin: 0;
+}
+
+.block-email--email a {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+

@@ -5,8 +5,10 @@ categories: nosummary
 date: 2016-09-20
 ---
 
-<div class="video">
-  <iframe src="https://www.youtube.com/embed/5tusreUDXUM" frameborder="0" allowfullscreen></iframe>
+<div class="wrapper--nopad"> 
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/5tusreUDXUM" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 
 I enjoy looking at craftsmen at work.

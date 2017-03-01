@@ -12,14 +12,16 @@
 </section>
 
 <section class="subnav wrapper-small">
-  <div>
+  <div class="subnav--line">
     {{ if .Prev }}
-      prev: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
-      <br>
+      <div class="subnav--tag">prev: </div>
+      <div><a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a></div>
     {{ end }}
-    
+  </div>
+  <div class="subnav--line">
     {{ if .Next }}
-      next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+      <div class="subnav--tag">next: </div>
+      <div><a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a></div>
     {{ end }}
   </div>
 </section>
