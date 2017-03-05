@@ -20,7 +20,7 @@ The obvious ones are font families, media queries, colors and sizes.
 
 Here's quick example:
 
-{% highlight scss %}
+{{< highlight scss >}}
 
 // fonts
 $family:           "Source Sans Pro", sans-serif;
@@ -42,11 +42,11 @@ $sm:               568px;
 $md:               768px;
 $lg:               1024px;
 
-{% endhighlight %}
+{{< /highlight >}}
 
 But hey, not all colors are equal. And when it comes to sizes, we can get much more.
 
-{% highlight scss %}
+{{< highlight scss >}}
 
 // FONTS
 
@@ -86,7 +86,7 @@ $sm:               568px;
 $md:               768px;
 $lg:               1024px;
 
-{% endhighlight %}
+{{< /highlight >}}
 
 ### What's rhythm unit ($u)?
 
@@ -104,7 +104,7 @@ fit it into a line-hight that equals one $u.
 
 If you use more than one font settings stack:
 
-{% highlight scss %}
+{{< highlight scss >}}
 
 @mixin font-base {
   color: $text-color;
@@ -121,11 +121,11 @@ If you use more than one font settings stack:
   // 4 lines of code will give 3x default leading
 }
 
-{% endhighlight %}
+{{< /highlight >}}
 
 Assets directory path helpers:
 
-{% highlight Scss %}
+{{< highlight scss >}}
 
 $assets-dir: 'assets';
 
@@ -143,7 +143,7 @@ $assets-dir: 'assets';
 //   background-image: image('clouds.svg');
 // }
 
-{% endhighlight %}
+{{< /highlight >}}
 
 ## Files
 
