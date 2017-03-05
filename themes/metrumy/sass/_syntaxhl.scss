@@ -1,6 +1,6 @@
   .hll{ background-color: $background-yellow }
   .c  { color: $grey; font-style: italic } /* Comment */
-  .err{ color: $text-color } /* Error */
+  .err{ color: $red-dark } /* Error */
   .k  { color: $blue-dark } /* Keyword */
   .o  { color: $text-color} /* Operator */
   .cm { color: $grey; font-style: italic } /* Comment.Multiline */
@@ -60,3 +60,6 @@
   .vg { color: $text-color } /* Name.Variable.Global */
   .vi { color: $text-color } /* Name.Variable.Instance */
   .il { color: $text-color } /* Literal.Number.Integer.Long */
+  .p { color: $grey }
+  .language-html .s { color: $blue-dark }
+  .language-scss .err { color: $blue-dark }
