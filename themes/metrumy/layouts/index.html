@@ -23,8 +23,8 @@
 
     <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
   {{ end }}
-  <br>
-  <a class="next" href="{{ .Site.BaseURL }}blog"><b>All Posts</b></a>
+ 
+  <h2><a class="next" href="{{ .Site.BaseURL }}blog">All Posts</a></h2>
 </div>
 
 
@@ -35,6 +35,20 @@
 
 {{ partial "publs.html" . }}
 
+<section  class=" ">
+  <h3 class="list-title">Top 3 Posts</h3>
+  <ul class="post-list post-list--short">
+  <li>
+  <a href="https://bart747.github.io/ui-coins/">Learning UI Design from Coins (on Contrast)</a>
+  </li>
+  <li>
+  <a href="https://bart747.github.io/research-decision/">Research vs Making Decisions</a>
+  </li>
+  <li>
+  <a href="https://bart747.github.io/henry-ford-for-makers/">Henry Ford for Makers: Quotes on Design</a>
+  </li>
+  </ul>
+</section>
 {{ partial "contact.html" . }}
 
 </div>
