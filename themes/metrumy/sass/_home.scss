@@ -1,32 +1,29 @@
-.big-quote {
-  @include wrapper;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.25;
-  text-align: center;
-  color: $black;
-  margin: 0 auto 1.5em; 
-  transform: rotate(0.003turn);
+.home-main {
+  display: block;
+  max-width: 64em; 
+  margin: 0 auto;
+  @media screen and (min-width: 64em) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
-.big-quote:nth-child(2) {  
-  transform: rotate(-0.003turn);
+.home-left,
+.home-right {
+  max-width: 35em; 
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-.big-quote--name {
-  font-size: 0.75em; 
-  font-weight: normal;
-  line-height: 1.5em;
-  color: $text-color;
+.home-left {
+  flex-grow: 2;
+  @media screen and (min-width: 64em) {
+    margin-right: 2em;
+  }
 }
 
-.big-quote--name:before {
-  content: "— "; 
-  color: $text-color;
-}
-
-.big-typo {
-  @include wrapper-small;
+.home-right {
+  flex-grow: 2;
 }
 
 .home-highlight {
@@ -47,8 +44,7 @@
   color: $blue;
 }
 
-h2.block-email--title {
-  font-size: 1.5em;
+.block-email--title {
   margin: 0;
 }
 

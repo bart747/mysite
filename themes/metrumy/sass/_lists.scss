@@ -11,11 +11,18 @@ ol li {
 
 .list-title {
   font-weight: bold;
-  margin: 1em 0 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .post-list {
   margin: 0 0 3em;
+}
+
+.post-list li {
+  font-weight: normal;
+  line-height: 1.25;
+  list-style: none;
+  margin: 0 0 0.5em;
 }
 
 .list--contacts {
@@ -43,6 +50,12 @@ ol li {
   }
 }
 
+.blog--list {
+  max-width: 35em;
+  margin: auto; 
+  padding: 0 1em;
+}
+
 .post-list h2 {
   font-size: 1.25em;
   font-weight: 600;
@@ -57,10 +70,13 @@ ol li {
   margin: 2em 0 1em;
 }
 
-.post-list--post-title {
-  border-left: 0.25em solid $grey; 
-  padding-left: 0.25em;
-  margin-left: -0.5em !important;
+h2.post-list--post-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $black;
+  margin: 1.33em 0 0.66em;
 }
 
 .post-list--short h3 {

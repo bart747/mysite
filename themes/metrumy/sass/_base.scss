@@ -59,7 +59,9 @@ nav li:last-child {
 }
 
 .subnav {
+  max-width: 35em;
   margin: 0 auto 3em;
+  padding: 0 1em; 
 }
 
 .subnav--line {
@@ -78,30 +80,6 @@ section {
   margin: 0;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 $medium-font-size 0;
-}
-
-@mixin wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 $medium-font-size 0;
-}
-
-.wrapper-small {
-  margin: 0 auto;
-  max-width: 35em;
-  padding: 0 $medium-font-size 0;
-}
-
-@mixin wrapper-small {
-  margin: 0 auto;
-  max-width: 35em;
-  padding: 0 $medium-font-size 0;
-}
-
 .wrapper--nopad {
   margin: 0 -1em;
 }
@@ -112,8 +90,8 @@ section {
 }
 
 .block--extra {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin: 0 0 3em;
+  padding: 0 1em;
 }
 
 object,
@@ -134,7 +112,9 @@ hr {
 }
 
 footer {
-  margin: 3em 0;
+  margin: 3em auto;
+  max-width: 35em;
+  padding: 0 1em;
 }
 
 button,

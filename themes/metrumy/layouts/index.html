@@ -4,17 +4,40 @@
 
 {{ partial "masthead.html" . }}
 
-{{ partial "homeContent.html" . }}
+<div class="home-main">
+<div class="home-left">
 
-{{ partial "onBlog.html" . }}
+<h2>Recently on <a  href="{{ .Site.BaseURL }}blog">Blog</a></h2>
+<div class="post-list">
+  {{ range (.Paginator 3).Pages }}
+    <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ if in .Params.categories "nosummary" }}
+      {{ .Content }}
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
 
-<section  class="wrapper-small block--extra">
-  <h2 class="list-title">Other Publication</h2>
-  <div class="post-list post-list--short">
-  <h3>
-  <a href="https://bart747.github.io/process">On Creative Process</a>
-  </h3>
-  </div>
-</section>
+    {{ if .Truncated }}
+    <a href="{{ .RelPermalink }}">Continue&#8230;</a>
+    {{ end }}
+
+    <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+  {{ end }}
+  <br>
+  <a class="next" href="{{ .Site.BaseURL }}blog"><b>All Posts</b></a>
+</div>
+
+
+
+
+</div>
+<div class="home-right">
+
+{{ partial "publs.html" . }}
+
+{{ partial "contact.html" . }}
+
+</div>
+</div>
 
 {{ partial "footer.html" . }}
