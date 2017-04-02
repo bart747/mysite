@@ -83,14 +83,13 @@ li code {
 }
 
 .article {
+  @include wrapper-mid;
   margin: 0 auto 3em;
-  max-width: 35em;
   padding: 0 1em;
 }
 
 .date {
   font-size: $small-font-size;
-  text-align: right;
 }
 
 .secondary {
@@ -101,6 +100,10 @@ li code {
   @media (max-width: $screen-sml) {
     margin: 0.5em 0 1em;
   }
+}
+
+.section-title {
+  margin-top: 0;
 }
 
 .small-txt {

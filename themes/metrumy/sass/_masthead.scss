@@ -1,16 +1,16 @@
 
 .masthead {
-  max-width: 35em;
-  margin: 0 auto;
+  @include wrapper-mid;
+  margin: 3em auto;
   padding: 0 1em;
   text-align: center;
 }
 
 .masthead---title {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1;
   letter-spacing: -0.025em;
-  margin: 1em 0 1em;
+  margin: 0.8em 0;
   //text-align: center;
   @media (max-width: $screen-sml) {
     font-size: 2.5em;

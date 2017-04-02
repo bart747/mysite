@@ -1,6 +1,8 @@
 <div class="post-list">
   {{ range (.Paginator 10).Pages }}
+    <div class="post-list--date-top secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
     <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+
     {{ if in .Params.categories "nosummary" }}
       {{ .Content }}
     {{ else }}
@@ -10,8 +12,6 @@
     {{ if .Truncated }}
     <a href="{{ .RelPermalink }}">Continue&#8230;</a>
     {{ end }}
-
-    <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
   {{ end }}
 </div>
 
