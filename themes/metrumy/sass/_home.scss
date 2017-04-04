@@ -24,6 +24,14 @@
   flex-grow: 1;
 }
 
+.home-section-title,
+h1.home-section-title,
+h2.home-section-title {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
 .home-highlight {
   background: $background-yellow;
   padding: 0.125em 0.25em 0.05em;

@@ -1,5 +1,7 @@
 <div class="post-list">
-  {{ range (.Paginator 10).Pages }}
+  <h2 class="post-list--title home-section-title">Recently on <a  href="{{ .Site.BaseURL }}blog">Blog</a>:</h2>
+
+  {{ range (.Paginator 3).Pages }}
     <div class="post-list--post">
       <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
       <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -15,15 +17,5 @@
       {{ end }}
     </div>
   {{ end }}
-</div>
-
-<div class="subnav">
-  {{ if .Paginator.HasPrev }}     
-    <a class="next" href="{{ .Paginator.Prev.URL }}">previous page</a>
-    &nbsp;
-  {{ end }}
-
-  {{ if .Paginator.HasNext }}     
-    <a class="next" href="{{ .Paginator.Next.URL }}">next page</a>
-  {{ end }}
+  <h3><a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a></h3>
 </div>

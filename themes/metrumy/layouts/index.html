@@ -5,52 +5,37 @@
 {{ partial "masthead.html" . }}
 
 <div class="home-main">
-<div class="home-left">
+  <div class="home-left">
+  {{ partial "postListHome.html" . }}
+  </div>
 
-<h2 class="section-title">Recently on <a  href="{{ .Site.BaseURL }}blog">Blog</a>:</h2>
-<div class="post-list">
-  {{ range (.Paginator 3).Pages }}
-    <div class="post-list--date-top secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
-    <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="home-right">
+    {{ partial "publs.html" . }}
 
-    {{ if in .Params.categories "nosummary" }}
-      {{ .Content }}
-    {{ else }}
-      {{ .Summary }}
-    {{ end }}
+    <section  class="block-top-posts">
+      <ul class="post-list post-list--short">
+        <h3 class="post-list--title">Top 3 Posts</h3>
+        <li>
+        <a href="https://bart747.github.io/ui-coins/">Learning UI Design from Coins (on Contrast)</a>
+        </li>
+        <li>
+        <a href="https://bart747.github.io/research-decision/">Research vs Making Decisions</a>
+        </li>
+        <li>
+        <a href="https://bart747.github.io/henry-ford-for-makers/">Henry Ford for Makers: Quotes on Design</a>
+        </li>
+      </ul>
+    </section>
 
-    {{ if .Truncated }}
-    <a href="{{ .RelPermalink }}">Continue&#8230;</a>
-    {{ end }}
-
-  {{ end }}
- 
-  <h2><a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a></h2>
-</div>
-
-
-</div>
-<div class="home-right">
-
-{{ partial "publs.html" . }}
-
-<section  class=" ">
-  <ul class="post-list post-list--short">
-    <h3 class="list-title">Top 3 Posts</h3>
-    <li>
-    <a href="https://bart747.github.io/ui-coins/">Learning UI Design from Coins (on Contrast)</a>
-    </li>
-    <li>
-    <a href="https://bart747.github.io/research-decision/">Research vs Making Decisions</a>
-    </li>
-    <li>
-    <a href="https://bart747.github.io/henry-ford-for-makers/">Henry Ford for Makers: Quotes on Design</a>
-    </li>
-  </ul>
-</section>
-{{ partial "contact.html" . }}
-
-</div>
+    <section class="block-email">
+      <h3 class="block-email--title">Hi, I'm Bartosz and I make interfaces.</h3>
+      <span class="block-email--email">contact me via:
+        <script type="text/javascript">
+            var bfxrpxl = ['.','l','z','.','z','l','h','>','e','s','l','a',':','"','t','i','i','@','b','o','c','h','m','m','a','t','o','a',' ','s','o','m','"','r','e','.','o','f','r','<','i','a','i','@','.','r','o','t','o','l','a','c','l','s','<','"',' ','b','=','e','o','m','h','/','l','>','"','g','m','a','l','m','c','a','s','a','=','l','l','g','a','e'];var xzfilix = [21,73,28,74,67,58,55,81,48,66,57,62,15,53,25,11,33,29,61,37,36,3,38,49,1,13,59,10,40,45,76,77,39,4,17,35,14,6,24,0,51,50,72,68,60,63,20,64,26,18,80,75,42,44,78,8,2,22,7,56,65,9,16,79,34,54,47,69,31,43,52,70,41,32,27,71,46,12,19,30,23,5];var cogtjda= new Array();for(var i=0;i<xzfilix.length;i++){cogtjda[xzfilix[i]] = bfxrpxl[i]; }for(var i=0;i<cogtjda.length;i++){document.write(cogtjda[i]);} 
+        </script>
+      </span>
+    </section>
+  </div>
 </div>
 
 {{ partial "footer.html" . }}

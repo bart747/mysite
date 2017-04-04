@@ -14,21 +14,6 @@ ol li {
   margin-bottom: 0.25em;
 }
 
-.post-list {
-  margin: 0 0 3em;
-}
-
-.post-list li {
-  font-weight: normal;
-  line-height: 1.25;
-  list-style: none;
-  margin: 0 0 0.5em;
-  &:last-of-type {
-    margin: 0;
-  }
-
-}
-
 .list--contacts {
   display: flex;
   justify-content: space-between; 
@@ -63,21 +48,41 @@ ol li {
   padding: 0;
 }
 
+.post-list {
+  margin: 0 0 3em;
+}
+
+.post-list li {
+  font-weight: normal;
+  line-height: 1.25;
+  list-style: none;
+  margin: 0 0 0.5em;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
 .post-list h2 {
   font-size: 1.25em;
   font-weight: bold;
   line-height: 1.25;
-  margin: 1.6em 0 0.8em
+  margin: 0.8em 0 0.8em
 }
 
 .post-list h3 {
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
-  margin: 2em 0 1em;
+  margin: 1em 0 1em;
 }
 
-h2.post-list--post-title {
+.post-list--post {  
+  margin: 2em auto 2em;
+}
+
+.post-list--post-title,
+h2.post-list--post-title,
+h3.post-list--post-title {
   font-weight: bold;
   font-size: 1.5em;
   font-weight: 600;
@@ -86,12 +91,8 @@ h2.post-list--post-title {
   margin: 0 0 0.66em;
 }
 
-.post-list--date-top {
-   font-size: 0.75em;
-   margin: 4em 0 0;
-}
-
-.post-list--short h3 {
+.post-list--short .post-list--title {
+  font-size: 1em;
   line-height: 1.25;
   margin: 0 0 0.5em;
 }
