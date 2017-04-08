@@ -176,12 +176,14 @@ button,
   left: 0;
   line-height: 1;
   color: #fff;
-  height: 10px;
-  width: 10px;
+  height: 50px;
+  width: 50px;
   font-size: 16px;
+  z-index: 9999;
 }
 
-#logo-circle:hover {
-  fill: $orange-deep;
+a.logo:hover #path1,
+a.logo:hover #path2 {
+  fill: $orange-deep !important;
   transition: fill 0.2s ease-in;
-}
+} 
