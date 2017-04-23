@@ -1,21 +1,9 @@
 <div class="post-list">
   <h2 class="post-list--title home-section-title">Recently on <a  href="{{ .Site.BaseURL }}/blog">Blog</a>:</h2>
 
-  {{ range (.Paginator 3).Pages }}
-    <div class="post-list--post">
-      <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
-      <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-
-      {{ if in .Params.categories "nosummary" }}
-        {{ .Content }}
-      {{ else }}
-        {{ .Summary }}
-      {{ end }}
-
-      {{ if .Truncated }}
-      <a href="{{ .RelPermalink }}">Continue&#8230;</a>
-      {{ end }}
-    </div>
+  {{ range first 5 .Data.Pages }}  
+      <h3 class=""><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   {{ end }}
-  <h3><a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a></h3>
+
+  <a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a>
 </div>
