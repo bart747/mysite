@@ -23,11 +23,21 @@ body {
 a {
   color: $orange-deep;
   text-decoration: none;
-  transition: color 0.1s ease-in;
+  transition: color, border 0.1s ease-in;
 
   &:active, &:hover {
-    color: $orange-light;
+    border-bottom: 2px solid $blue-light;
   }
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $text-color;
+    background: $background-yellow;
+}
+
+::selection {
+    color: $text-color;
+    background: $background-yellow;
 }
 
 section {
@@ -59,7 +69,7 @@ video {
 
 nav {
   margin: 0;
-  padding: 0.5em 0.5em 0  ;
+  padding: 0.5em 0.5em 0;
 }
 
 nav ul {
@@ -174,16 +184,22 @@ button,
   position: fixed;
   top: 0;
   left: 0;
-  line-height: 1;
   color: #fff;
   height: 50px;
   width: 50px;
   font-size: 16px;
+  line-height: 1;
+  margin: 0 2px 2px 0;
   z-index: 9999;
 }
 
-a.logo:hover #path1,
-a.logo:hover #path2 {
+a.logo:active, a.logo:hover {
+  border: none;
+}
+
+a.logo:hover #svg-logo--path {
   fill: $orange-deep !important;
   transition: fill 0.2s ease-in;
 } 
+
+

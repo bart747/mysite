@@ -7,14 +7,14 @@ date: 2015-12-27
 My Jekyll site was way too slow recently.
 It took around 1 minute per regeneration and much more for starting a server. 
 
-<!--more-->
-
 I made some improvement by excluding a few files from the conversion.
 
 _config.yml:
 {{< highlight ruby >}}
 exclude: [file.js, somefolder, otherfolder, ...]
 {{< /highlight >}}
+
+<!--more-->
 
 It wasn't a big improvement so I kept digging.
 I re-installed gems.

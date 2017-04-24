@@ -139,12 +139,12 @@ It&amp;rsquo;s about handling negative emtions, picking the right thing to work 
       <description>&lt;p&gt;Should I add a &amp;lsquo;success&amp;rsquo; class to an input element or some other part of my form?
 How to show an error indicator during live validation? How to manage a few different ways of validation?&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;Here&amp;rsquo;s a code example that makes these problems simpler.
 It makes adding CSS classes cleaner.
 It allows you to make flexible JavaScript loops that can go through many different inputs easily and check them.
 It support&amp;rsquo;s many different ways of indicating errors.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m showing code snippets first, than explaining them.&lt;/p&gt;
 
@@ -254,13 +254,13 @@ When a structure is right, a procedure that uses it can be more straight forward
 Do you remember that situation when you scrolled down
 quickly to get to the middle part and the picture wasn&amp;rsquo;t there yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;When using a plugin, you can use a threshold/offset option to fire the thing earlier.
 But people can scroll fast.
 If someone visits a site for, lets say,
 the third time and knows that the part she wants is somewhere close to the bottom,
 she will scroll down really, really fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;In that kind of situations it might be better to forget about typical Lazy Load.&lt;/p&gt;
 
@@ -351,8 +351,6 @@ You can learn from it by seeing the process, tricks of the trade, work on detail
       <guid>https://bart747.github.io/planck/</guid>
       <description>&lt;p&gt;Here are few famous quotes related to creative work, by Max Planck:&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;A new scientific truth does not triumph by convincing
 its opponents and making them see the light,
@@ -360,7 +358,8 @@ but rather because its opponents eventually die,
 and a new generation grows up that is familiar with it.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Anybody who has been seriously engaged in scientific work
@@ -404,9 +403,9 @@ his whole world for the moment.&lt;/p&gt;
 
 &lt;p&gt;When it comes to look: at first glance you see differences in size, color (types of metals) and visual patterns.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;Feel in hand: some seem heavier, some lighter, some have different surfaces.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Some of these things will help you in one situation, some in another. It&amp;rsquo;s good that they exist.&lt;/p&gt;
 
@@ -510,14 +509,14 @@ better? When patterns are familiar, you know what&amp;rsquo;s going on.&lt;/p&gt
       <description>&lt;p&gt;My Jekyll site was way too slow recently.
 It took around 1 minute per regeneration and much more for starting a server.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;I made some improvement by excluding a few files from the conversion.&lt;/p&gt;
 
 &lt;p&gt;_config.yml:
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;exclude&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;js&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;somefolder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;otherfolder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;...]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;It wasn&amp;rsquo;t a big improvement so I kept digging.
 I re-installed gems.

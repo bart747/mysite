@@ -7,13 +7,14 @@ category: quote-bundle
 
 Here are few famous quotes related to creative work, by Max Planck:
 
-<!--more-->
+
 
 > A new scientific truth does not triumph by convincing
 its opponents and making them see the light,
 but rather because its opponents eventually die,
 and a new generation grows up that is familiar with it. 
 
+<!--more-->
 \
 
 > Anybody who has been seriously engaged in scientific work

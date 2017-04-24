@@ -8,7 +8,7 @@ category: quote-bundle
 These are short excerpts from Henry Ford's “My Life and Work”. I picked 
 the ones that will be helpful especially to makers&mdash;designers, developers, etc.
 
-<!--more-->
+
 
 ## Simplicity
 
@@ -19,6 +19,7 @@ more complex than it needs to be.
 Our clothing, our food, our household furnishings—all could be
 much simpler than they now are and at the same time be better looking.
 
+<!--more-->
 \
 
 ## Work/Money

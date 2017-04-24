@@ -1,8 +1,8 @@
 <div class="post-list">
-  <h2 class="post-list--title home-section-title">Recently on <a  href="{{ .Site.BaseURL }}/blog">Blog</a>:</h2>
+  <div class="list-title">Recently on <a  href="{{ .Site.BaseURL }}/blog">Blog</a>:</div>
 
   {{ range first 5 .Data.Pages }}  
-      <h3 class=""><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <h2 class="post-list--home-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   {{ end }}
 
   <a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a>
