@@ -18,3 +18,5 @@ categories = [ "nosummary" ]
 
 I noticed many similar problems in software design. 
 
+It's the first part of six-part BBC TV series *How Buildings Learn*.
+Written and presented by Stewart Brand.
