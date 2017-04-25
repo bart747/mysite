@@ -6,8 +6,32 @@
     <description>Recent content on UI design and development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bart747.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On Fragility of Plans and Adaptability: How Buildings Learn</title>
+      <link>https://bart747.github.io/adaptability-planning/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bart747.github.io/adaptability-planning/</guid>
+      <description>&lt;p&gt;&lt;small&gt;30 min&lt;/small&gt;&lt;/p&gt;
+
+&lt;div class=&#34;wrapper--nopad&#34;&gt; 
+&lt;div class=&#34;video&#34;&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/AvEqfg2sIH0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;time is the main architect&lt;/li&gt;
+&lt;li&gt;design with adaptability in mind&lt;/li&gt;
+&lt;li&gt;people will have to or want to change their buildings in the future&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I noticed many similar problems in software design.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>5 Notes on How to Design a Resilient UI</title>
@@ -108,22 +132,6 @@ I think about fifty buyers asked for bonds—perhaps it was less than that.&lt;/
 Ford Motor Company as did this suit.
 It appeared that we were the under dog and we had the public&amp;rsquo;s sympathy.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>On Adaptability and Fragility of Plans: How Buildings Learn </title>
-      <link>https://bart747.github.io/adaptability-planning/</link>
-      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://bart747.github.io/adaptability-planning/</guid>
-      <description>&lt;p&gt;&lt;small&gt;30 min&lt;/small&gt;&lt;/p&gt;
-
-&lt;div class=&#34;wrapper--nopad&#34;&gt; 
-&lt;div class=&#34;video&#34;&gt;
-&lt;iframe src=&#34;https://www.youtube.com/embed/AvEqfg2sIH0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
     </item>
     
     <item>

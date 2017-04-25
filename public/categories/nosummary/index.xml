@@ -9,9 +9,9 @@
     <atom:link href="https://bart747.github.io/categories/nosummary/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>On Adaptability and Fragility of Plans: How Buildings Learn </title>
+      <title>On Fragility of Plans and Adaptability: How Buildings Learn</title>
       <link>https://bart747.github.io/adaptability-planning/</link>
-      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bart747.github.io/adaptability-planning/</guid>
       <description>&lt;p&gt;&lt;small&gt;30 min&lt;/small&gt;&lt;/p&gt;
@@ -21,6 +21,14 @@
 &lt;iframe src=&#34;https://www.youtube.com/embed/AvEqfg2sIH0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;time is the main architect&lt;/li&gt;
+&lt;li&gt;design with adaptability in mind&lt;/li&gt;
+&lt;li&gt;people will have to or want to change their buildings in the future&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I noticed many similar problems in software design.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,5 +1,5 @@
 +++
-title = "On Adaptability and Fragility of Plans: How Buildings Learn "
+title = "On Fragility of Plans and Adaptability: How Buildings Learn"
 date =  "2017-04-25"
 categories = [ "nosummary" ]
 +++
