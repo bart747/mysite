@@ -11,7 +11,7 @@ ol li {
 
 .list-title {
   font-weight: bold;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 .list--contacts {
@@ -52,11 +52,11 @@ ol li {
   margin: 0 0 3em;
 }
 
-.post-list li {
+.post-list > li {
   font-weight: normal;
   line-height: 1.25;
-  list-style: none;
   margin: 0 0 0.5em;
+  list-style: none;
   &:last-of-type {
     margin: 0;
   }
@@ -93,7 +93,6 @@ h3.post-list--post-title {
 
 h2.post-list--home-title {
   margin: 1.25em 0;
-
 }
 
 .post-list--short .post-list--title {
@@ -101,4 +100,5 @@ h2.post-list--home-title {
   line-height: 1.25;
   margin: 0 0 0.5em;
 }
+
 

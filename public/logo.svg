@@ -7,10 +7,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="400"
    height="400"
-   id="svg2">
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo.svg">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -25,8 +29,34 @@
   </metadata>
   <defs
      id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1050"
+     id="namedview6"
+     showgrid="true"
+     inkscape:zoom="0.59"
+     inkscape:cx="376.59952"
+     inkscape:cy="88.455726"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987" />
+  </sodipodi:namedview>
   <path
-     d="m 110,230.00001 90,119.99998 90,-119.99998 0,-180 -10,0 0,175 -55,75 -35,0 -20,-75 0,-175 -60,0 z"
-     id="logo-path"
-     style="fill:#000000;fill-opacity:1;stroke:none" />
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     d="m 110,230.00001 90,119.99998 90,-119.99998 0,-180 -10,0 0,175 -55,75 -35,0 -20,-75 0,-83.27376 0,-32.65874 0,-59.0675 -60,0 z"
+     id="path3159"
+     sodipodi:nodetypes="cccccccccccccc" />
 </svg>
