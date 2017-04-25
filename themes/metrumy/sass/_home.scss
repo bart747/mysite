@@ -10,7 +10,6 @@
 .home-left,
 .home-right {
   @include wrapper-mid;
-  padding: 0 1em;
 }
 
 .home-left {
@@ -42,6 +41,10 @@ h2.home-section-title {
   color: $blue;
 }
 
+.block-email {
+  padding: 0 1em;
+}
+
 .block-email--title {
   font-size: 1em;
   margin: 0;
@@ -53,5 +56,5 @@ h2.home-section-title {
 
 .block-email--email a {
   font-weight: bold;
-  }
+}
 

@@ -1,0 +1,23 @@
+<section class="article wrapper-small">
+
+  <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+  <h1 class="article-title">{{ .Title }}</h1>
+  
+  {{ .Content }}
+
+</section>
+
+<section class="subnav">
+  <div class="subnav--line">
+    {{ if .Prev }}
+      <div class="subnav--tag">prev: </div>
+      <div><a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a></div>
+    {{ end }}
+  </div>
+  <div class="subnav--line">
+    {{ if .Next }}
+      <div class="subnav--tag">next: </div>
+      <div><a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a></div>
+    {{ end }}
+  </div>
+</section>
