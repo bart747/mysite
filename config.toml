@@ -18,6 +18,8 @@ pygmentsuseclasses = true
   category = "categories"
   tag = "tags"
 
+ignoreFiles = [ "//node_modules$" ]
+
 [params]
   description = "UI design and development"
   author = "Bartosz Wieczorek"
