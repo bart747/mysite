@@ -18,7 +18,7 @@ pygmentsuseclasses = true
   category = "categories"
   tag = "tags"
 
-ignoreFiles = [ "//node_modules$" ]
+ignoreFiles = [ "\\node_modules$", "\\sass$" ]
 
 [params]
   description = "UI design and development"
