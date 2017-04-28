@@ -21,23 +21,19 @@ body {
 }
 
 a {
-  color: $orange-deep;
+  color: $text-color;
   text-decoration: none;
-  transition: color, border 0.1s ease-in;
+  border-bottom: 1px solid #999;
+  transition: border 0.1s ease-in;
 
   &:active, &:hover {
-    border-bottom: 2px solid $blue-light;
+    border-bottom: 2px solid $brand-purple;
   }
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: $text-color;
-    background: $background-yellow;
-}
-
 ::selection {
-    color: $text-color;
-    background: $background-yellow;
+  color: $text-color;
+  background: $background-yellow;
 }
 
 section {
@@ -193,12 +189,18 @@ button,
   z-index: 9999;
 }
 
-a.logo:active, a.logo:hover {
-  border: none;
+#svg-logo--path {
+  fill: $brand-purple !important;
 }
 
+a.logo,
+a.logo:active,
+a.logo:hover {
+  border: none;
+}  
+
 a.logo:hover #svg-logo--path {
-  fill: $orange-deep !important;
+  fill: $blue-light !important;
   transition: fill 0.2s ease-in;
 } 
 

@@ -1,8 +1,7 @@
 
 .masthead {
   @include wrapper-mid;
-  margin: 3em auto;
-  padding: 0 1em;
+  margin: 5em auto;
   text-align: center;
 }
 
@@ -11,7 +10,6 @@
   line-height: 1;
   letter-spacing: -0.025em;
   margin: 0;
-  //text-align: center;
   @media (max-width: $screen-sml) {
     font-size: 2em;
   }
