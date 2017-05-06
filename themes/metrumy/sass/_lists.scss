@@ -7,6 +7,13 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
+  margin-bottom: 0.25em;
+}
+
+li ol,
+li ul {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .list-title {
@@ -98,6 +105,7 @@ h3.post-list--post-title {
 }
 
 h2.post-list--home-title {
+  font-weight: normal;
   margin: 1.25em 0;
 }
 
