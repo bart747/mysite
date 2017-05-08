@@ -1,11 +1,12 @@
 <section class="block">
-<div class="post-list list--home">
-  <div class="list-title">Recently on <a  href="{{ .Site.BaseURL }}/blog">Blog</a>:</div>
+
+<div class="list-title">Recently on <a  href="{{ .Site.BaseURL }}/blog">Blog</a>:</div>
+<ul class="post-list list--home">
 
   {{ range first 5 (where .Site.Pages "Section" "blog") }}  
-      <h2 class="post-list--home-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <li class="post-list--home-title"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
 
-  <a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a>
-</div>
+</ul>
+<a class="next" href="{{ .Site.BaseURL }}/blog">All Posts</a>
 </section>

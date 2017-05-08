@@ -58,3 +58,62 @@ h2.home-section-title {
   font-weight: bold;
 }
 
+.block-headline {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.block-headline--title {
+  font-size: 2em;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0;
+}
+
+.block-headline--subtitle {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.25em 0;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+  @include wrapper-big;
+}
+
+.profile-grid--block {
+  flex: 1 1 1;
+  margin: 0;
+  padding: 1em;
+  width: 50%;
+  max-width: 640px;
+  min-width: 320px;
+  @media (max-width: 860px) {
+    width: 100%;
+  }
+}
+
+.block-marketing--title {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0;
+}
+
+.block-marketing--subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.block-marketing--body {
+  font-weight: normal;
+  margin-top: 0;
+}
+

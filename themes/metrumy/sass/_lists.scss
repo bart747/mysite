@@ -53,7 +53,7 @@ li ul {
 }
 
 .post-list {
-  margin: 0 0 3em;
+  margin: 0 0 1em;
 }
 
 .post-list > li {
@@ -104,7 +104,13 @@ h3.post-list--post-title {
   margin: 0 0 0.66em;
 }
 
-h2.post-list--home-title {
+.list--home {
+  margin-bottom: 2em;
+}
+
+
+.post-list--home-title,
+li.post-list--home-title {
   font-weight: normal;
   margin: 1.25em 0;
 }
