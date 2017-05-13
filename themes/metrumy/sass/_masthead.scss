@@ -2,6 +2,9 @@
 .masthead {
   @include wrapper-big;
   margin: 5em auto;
+  @media (max-width: $screen-mid) {
+    margin: 3em auto;
+  }
 }
 
 .masthead--title {

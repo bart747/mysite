@@ -1,8 +1,8 @@
 .yesno {
   background-color: $sand;
   font-size: 1em;
-  margin: 0 auto 3em;
   padding: 0 1em;
+  margin: 0 0 3em;
   @include wrapper-big;
 }
 
@@ -29,7 +29,6 @@
 .yesno--table {
   max-width: 768px;
   border-collapse: collapse; 
-  margin: 0 auto 1em;
 }
 
 .yesno--table tr {
@@ -48,12 +47,20 @@
   margin-top: 0.5em;
 }
 
-.yesno--table.yesno-screen-big  td:first-of-type {
+.yesno-screen-sml {
+  margin: 0 0 1em;
+} 
+
+.yesno-screen-big {
+  margin: 0 auto 1em;
+}  
+
+.yesno--table.yesno-screen-big td:first-of-type {
   padding: 1em 1em 1em 0;
   width: 50%;
 }
 
-.yesno--table.yesno-screen-big  td:last-of-type {
+.yesno--table.yesno-screen-big td:last-of-type {
   padding: 1em 0 1em 1em;
   width: 50%;
 }
@@ -80,8 +87,4 @@
   font-weight: bold;
   text-align: left;
   margin: 1em 0;
-}
-
-.yesno-screen-big .yesno--title-yes {
-  margin-left: 1em;
 }
