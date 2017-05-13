@@ -52,10 +52,6 @@ li ul {
   @include wrapper-mid;
 }
 
-.post-list {
-  margin: 0;
-}
-
 .post-list > li {
   font-weight: normal;
   line-height: 1.25;
@@ -122,11 +118,11 @@ h3.post-list--post-title {
 .post-list--home-title,
 li.post-list--home-title {
   font-weight: normal;
-  margin: 1.33em 0;
+  margin: 1.25em 0;
 }
 
 .post-list--short {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .post-list--short .post-list--title {

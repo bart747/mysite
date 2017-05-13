@@ -1,7 +1,6 @@
 .yesno {
   background-color: $sand;
   font-size: 1em;
-  padding: 0 1em;
   margin: 0 0 3em;
   @include wrapper-big;
 }
@@ -48,24 +47,31 @@
 }
 
 .yesno-screen-sml {
-  margin: 0 0 1em;
+  margin: 0;
+} 
+
+.yesno-screen-sml:first-of-type {
+  margin-bottom: 1em;
 } 
 
 .yesno-screen-big {
-  margin: 0 auto 1em;
+  margin: 0 auto 0;
 }  
 
-.yesno--table.yesno-screen-big td:first-of-type {
+.yesno-screen-big td:first-of-type,
+.yesno-screen-big th:first-of-type {
   padding: 1em 1em 1em 0;
   width: 50%;
 }
 
-.yesno--table.yesno-screen-big td:last-of-type {
+.yesno-screen-big td:last-of-type,
+.yesno-screen-big th:last-of-type {
   padding: 1em 0 1em 1em;
   width: 50%;
 }
 
-.yesno--table.yesno-screen-sml  td {
+.yesno-screen-sml td,
+.yesno-screen-sml th {
   padding: 1em 0 1em 0;
   width: 100%;
 }
@@ -86,5 +92,4 @@
 .yesno--title-no {
   font-weight: bold;
   text-align: left;
-  margin: 1em 0;
 }

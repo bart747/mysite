@@ -106,13 +106,7 @@ nav li {
 }
 
 .block {
-  margin-bottom: 1em;
   padding: 1em;
-}
-
-.block--extra {
-  margin: 0 0 3em;
-  padding: 0 1em;
 }
 
 object,
@@ -134,7 +128,7 @@ hr {
 
 footer {
   @include wrapper-mid;
-  margin: 3em auto;
+  margin: 2em auto 2em;
   padding: 0 1em;
 }
 

@@ -1,5 +1,6 @@
 .home-main {
   display: block;
+  margin-bottom: 3em;
   @include wrapper-big;
   @include grid-50-50;
 }
