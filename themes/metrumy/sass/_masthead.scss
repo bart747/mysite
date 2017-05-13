@@ -1,8 +1,7 @@
 
 .masthead {
-  @include wrapper-mid;
+  @include wrapper-big;
   margin: 5em auto;
-  text-align: center;
 }
 
 .masthead--title {
@@ -10,6 +9,7 @@
   line-height: 1;
   letter-spacing: -0.025em;
   margin: 0;
+  max-width: 12em;
   @media (max-width: $screen-sml) {
     font-size: 2em;
   }
@@ -23,7 +23,6 @@
   margin: 0.25em 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  //text-align: center;
   @media (max-width: $screen-sml) {
     font-size: 1em;
   }

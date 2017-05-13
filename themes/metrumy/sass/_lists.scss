@@ -102,6 +102,13 @@ h3.post-list--post-title {
   line-height: 1.25;
   color: $black;
   margin: 0 0 0.66em;
+
+  & a {
+    border-bottom: 2px solid $background-color;
+    &:hover, :focus {
+      border-bottom: 2px solid $brand-purple;
+    }
+  }
 }
 
 .list--home {
@@ -112,7 +119,7 @@ h3.post-list--post-title {
 .post-list--home-title,
 li.post-list--home-title {
   font-weight: normal;
-  margin: 1.25em 0;
+  margin: 1.33em 0;
 }
 
 .post-list--short .post-list--title {

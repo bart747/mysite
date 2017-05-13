@@ -40,6 +40,13 @@ section {
   margin: 0;
 }
 
+@mixin grid-50-50 {
+  @media (min-width: $screen-mid) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @mixin wrapper-mid {
   max-width: 640px; 
   margin-left: auto;
@@ -99,8 +106,8 @@ nav li {
 }
 
 .block {
-  margin-bottom: 3em;
-  padding: 0 1em;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
 .block--extra {
@@ -175,12 +182,11 @@ button,
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: $background-color;
   border-radius: 0 0 50% 0;
-  box-shadow: 0 1px 4px $grey-light;
   color: #fff;
   height: 50px;
   width: 50px;
@@ -205,7 +211,7 @@ a.logo:hover {
 }  
 
 a.logo:hover #svg-logo--path {
-  fill: $blue-light !important;
+  fill: $brand-purple !important;
   transition: fill 0.2s ease-in;
 } 
 
