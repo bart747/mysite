@@ -1,8 +1,7 @@
 .yesno {
-  background-color: $sand;
-  font-size: 1em;
-  margin: 0 0 3em;
+  background-color: $sand; 
   @include wrapper-big;
+  margin: 0 auto 3em;
 }
 
 @media (max-width: $screen-mid) {
@@ -26,7 +25,7 @@
 }
 
 .yesno--table {
-  max-width: 768px;
+  width: 100%;
   border-collapse: collapse; 
 }
 
@@ -50,12 +49,8 @@
   margin: 0;
 } 
 
-.yesno-screen-sml:first-of-type {
-  margin-bottom: 1em;
-} 
-
 .yesno-screen-big {
-  margin: 0 auto 0;
+  
 }  
 
 .yesno-screen-big td:first-of-type,
