@@ -4,15 +4,14 @@ date =  "2016-12-12"
 categories = [ "nosummary" ]
 +++
 
-It's not a typical <i>this is how I do it</i> speach. It's definitely not one of those <i>top ten ways&#8230;</i> pieces.
-
-It's got strong emphasis on mental and philosophical side of creating complicated things.
-It's about handling negative emtions, picking the right thing to work on, creative process. 
-
 <small>67 minutes</small>
 <div class="wrapper--nopad"> 
 <div class="video">
 <iframe src="https://www.youtube.com/embed/d0m0jIzJfiQ" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+
+With emphasis on mental and philosophical side of creating complicated things.
+It's about handling negative emotions, picking the right thing to work on, creative process. 
+
 
