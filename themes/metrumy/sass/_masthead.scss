@@ -1,11 +1,16 @@
 
 .masthead {
-  @include wrapper-big;
-  margin: 3em auto;
+  background-color: $aquamarine;
+  margin: 2em auto;
+  padding: 2em 0;
 }
 
+.masthead--content {
+  @include wrapper-big;
+  padding: 0 1em;
+}
 .masthead--title {
-  font-size: 2.5em;
+  font-size: 3em;
   line-height: 1;
   letter-spacing: -0.025em;
   margin: 0;
@@ -39,4 +44,3 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-

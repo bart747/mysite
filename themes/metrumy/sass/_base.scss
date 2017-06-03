@@ -15,6 +15,7 @@ body {
   font-size: $large-font-size;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   @media screen and (max-width: $screen-sml) {
     font-size: $medium-font-size;
   }
@@ -23,7 +24,7 @@ body {
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid $brand-purple;
   transition: border 0.1s ease-in;
 
   &:active, &:hover {
@@ -180,7 +181,7 @@ button,
   position: absolute;
   top: 0;
   left: 0;
-  background-color: $background-color;
+  background-color: transparent;
   border-radius: 0 0 50% 0;
   color: #fff;
   height: 50px;
