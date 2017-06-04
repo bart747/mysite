@@ -90,13 +90,17 @@ li code {
 }
 
 .article {
-  @include wrapper-mid;
   margin: 3em auto;
+}
+
+.article--narrow {
+  @include wrapper-mid;
   padding: 0 1em;
 }
 
 .date {
   font-size: 0.75em;
+  margin-top: 1.33em;
 }
 
 .secondary {
@@ -104,9 +108,7 @@ li code {
 }
 
 .article-title {
-  @media (max-width: $screen-sml) {
-    margin: 0.5em 0 1em;
-  }
+  margin: 1em 0 1em;
 }
 
 .small-txt {
