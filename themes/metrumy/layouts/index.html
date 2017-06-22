@@ -1,25 +1,6 @@
 {{ partial "head.html" . }}
+{{ partial "mastheadMini.html" . }}
 
-{{ partial "navbar.html" . }}
-
-{{ partial "masthead.html" . }}
-
-<!-- {{ partial "homeContent" . }} -->
-
-<div class="home-main">
-  <div class="home-left">
-  {{ partial "postListHome.html" . }}
-  </div>
-
-  <div class="home-right">
-    {{ partial "publs.html" . }}
-    {{ partial "top3.html" . }}
-    
-  </div>
-</div>
-
-{{ partial "yesno.html" . }}
-
-{{ partial "email.html" . }}
+{{ partial "postList.html" . }}
 
 {{ partial "footer.html" . }}

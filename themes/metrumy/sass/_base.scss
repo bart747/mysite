@@ -89,7 +89,7 @@ video {
 }
 
 nav {
-  margin: 0;
+  margin-bottom: 1em;
   padding: 0.5em 0.5em 0.25em;
 }
 
@@ -107,6 +107,11 @@ nav li {
   @include wrapper-mid;
   margin: 0 auto 3em;
   padding: 0 1em; 
+}
+
+.prev,
+.next {
+  margin: 0 1em;
 }
 
 .subnav--line {
@@ -193,9 +198,7 @@ button,
 }
 
 .nav--logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   background-color: transparent;
   border-radius: 0 0 50% 0;
   color: #fff;
@@ -203,14 +206,15 @@ button,
   width: 45px;
   font-size: 16px;
   line-height: 1;
-  margin: 0 2px 2px 0;
+  margin: 0 auto;
+  text-align: center;
   z-index: 9999;
 }
 
 #svg-logo--path,
 #svg-logo--path2,
 #svg-logo--path3 {
-  fill: #000 !important;
+  fill: $grey !important;
 }
 
 

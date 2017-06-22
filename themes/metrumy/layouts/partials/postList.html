@@ -1,5 +1,8 @@
+
+
 <section class="post-list">
-  {{ range (.Paginator 10).Pages }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
+  {{ range $paginator.Pages }}
     <div class="article post-list--post">
       <div class="article--narrow">
         <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -36,13 +39,12 @@
   {{ end }}
 </section>
 
-<section class="block subnav">
+<section class="block subnav center">
   {{ if .Paginator.HasPrev }}     
-    <a class="next" href="{{ .Paginator.Prev.URL }}">previous page</a>
-    &nbsp;
+    <a class="prev" href="{{ .Paginator.Prev.URL }}">newer posts</a>
   {{ end }}
 
   {{ if .Paginator.HasNext }}     
-    <a class="next" href="{{ .Paginator.Next.URL }}">next page</a>
+    <a class="next" href="{{ .Paginator.Next.URL }}">older posts</a>
   {{ end }}
 </section>

@@ -4,6 +4,15 @@
   padding: 2em 0;
 }
 
+.masthead-mini {
+  margin: 0 auto 1em;
+  padding: 1em;
+  text-align: center;
+  @media (max-width: $screen-sml) {
+    text-align: left;
+  }
+}
+
 .masthead--content {
   @include wrapper-big;
   padding: 0 1em;
@@ -17,6 +26,13 @@
   @media (max-width: $screen-sml) {
     font-size: 2em;
   }
+}
+
+.masthead-mini--title {
+  color: $grey;
+  font-size: 1em;
+  font-weight: normal;
+  color: $grey;
 }
 
 .masthead--subtitle {
