@@ -148,7 +148,7 @@ $assets-dir: 'assets';
 
 Lets assume that you spotted some problem with an article layout.
 If your <code>.scss</code> files are big and complex, you'll need to do some little research before editing.
-If you have a lot of well organised small ones...
+If you have a lot of well organized small ones you know where to go:
 
 - main (imports)
 - variables
@@ -162,8 +162,6 @@ If you have a lot of well organised small ones...
 - avatar
 - footer
 - logo
-
-...you know where to go.
 
 
 ## Helpers
@@ -191,11 +189,11 @@ Having max three extra colors beside your default text color is most of the time
 
 A grid system with only 4 classes: <code>.row, .half, .third, .quarter</code>, is often enough.
 
-Having 3&ndash;4 font sizes is enough.
+Having 3–5 font sizes is enough.
 
 Building a gallery based on halves and quarters, or rule of thirds gives enough flexibility.
 
-Your article page doesn't need a three column version.
+Your article page doesn't need a three–column version.
 
 One media-object layout with extra modifier classes is better than a few completely different ones.
 Mod classes are something like this: <code>.photo-big,
@@ -216,13 +214,13 @@ That way I don't have to worry about typographic rhythm and spend a lot of time 
 I also don't pair fonts. I pick one that is flexible and predictable.
 Visual identity stuff is done mostly with colors, weights and placement.
 
-Look at UIs of Twitter, Google search results and GitHub profiles. How many font sizes and families do you see at a glance.
+Look at UIs of Twitter, Google search results and GitHub profiles. How many font sizes and families do you see at a glance?
 
 ## Stay Small
 One of the biggest factors of maintainability is codebase size itself.
 More code, more problems.
 It's good to think about how particular element is useful.
-Does it pay for itself.
+Does it pay for itself?
 
 ## You Don't Know the Future
 Maybe something complex will need to be modified.
