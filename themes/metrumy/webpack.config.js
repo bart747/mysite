@@ -38,6 +38,9 @@ module.exports = {
 
       // fail the build on JSHInt errors
       failOnHint: false,
+      
+      // suppresses warnings about the use of expressions
+      expr: true
     },
     postcss: function () {
       return [

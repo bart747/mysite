@@ -1,7 +1,7 @@
 
 
 <section class="post-list">
-  {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 3 }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 7 }}
   {{ range $paginator.Pages }}
     <div class="article post-list--post">
       <div class="article--narrow">

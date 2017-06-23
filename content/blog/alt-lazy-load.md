@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "On Lazy Load Overuse and What You can Do Instead"
 date: 2016-10-19
 category: 

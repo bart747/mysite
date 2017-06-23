@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Vim Typography: Better Readability and Look"
 date: 2015-12-21
 ---

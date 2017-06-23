@@ -13,6 +13,7 @@ pygmentsuseclasses = true
 [permalinks]
   blog = "/:filename/"
   projects = "/:filename/"
+  pages = "/:filename/"
 
 [taxonomies]
   category = "categories"

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Learning UI Design from Coins (on Contrast)"
 date: 2016-08-19
 ---
