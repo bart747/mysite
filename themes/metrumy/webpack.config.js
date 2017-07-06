@@ -1,54 +1,40 @@
-const webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path');
+const uglify = require('uglifyjs-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
-    entry: "./static/js/main.js",
-    output: {
-        path: "./static/js/dist",
-        filename: "bundle.js"
-    },
-    module: {
-      preLoaders: [
-        {
-          test: /\.js$/, // include .js files
-          exclude: [/node_modules/, /plugins/],// exclude any and all files in the node_modules folder
-          loader: "jshint-loader",
-        }
-      ],
-      postLoaders: [
-        {
-          test: /\.js$/, // include .js files
-          exclude: /node_modules/, // exclude any and all files in the node_modules folder
-
-          loader: 'babel', // 'babel-loader' is also a legal name to reference
-          query: {
-            presets: ['es2015']
-          }
-        },
-        {
-          test: /\.scss$/,
-          loader: ExtractTextPlugin.extract('style-loader', ['css-loader?minimize', 'postcss-loader', 'sass-loader'])
-        }
-      ]
-    },
-    jshint: {
-      esversion: 6,
-      // Display JSHint messages as webpack errors
-      emitErrors: true,
-
-      // fail the build on JSHInt errors
-      failOnHint: false,
-      
-      // suppresses warnings about the use of expressions
-      expr: true
-    },
-    postcss: function () {
-      return [
-        require('autoprefixer')({ browsers: ['last 2 versions'] })
-      ];
-    },
-    plugins: [
-      new ExtractTextPlugin("../../css/bundle.css"),
-      new webpack.optimize.UglifyJsPlugin({ minimize: true })
+  entry: './static/js/main.js',
+  output: {
+      path: path.resolve(__dirname, './static/dist'),
+      filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        enforce: 'pre', // preload
+        exclude: /node_modules/, 
+        loader: 'jshint-loader',
+        options: { esversion: 6 }
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/, 
+        use: ExtractTextPlugin.extract({
+          use: [
+            { loader: 'css-loader', options: { }},
+            { loader: 'postcss-loader', options: { }},
+            { loader: 'sass-loader', options: { }}
+          ],
+          fallback: 'style-loader'
+        })
+      }
     ]
-}
+  },
+  plugins: [
+    new uglify(),
+    new ExtractTextPlugin('bundle.css'),
+  ]
+
+};
