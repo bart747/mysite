@@ -6,5 +6,4 @@ if ('serviceWorker' in navigator) {
            .then(function() { console.log('Service Worker Registered'); });
 }
 
-const logg = console.log("rock'n'roll!");
-logg();
+console.log("rock'n'roll!");
