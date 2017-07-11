@@ -1,0 +1,12 @@
+img {
+	width: 100%;
+	height: auto;
+  min-height: 14px;
+	background: linear-gradient(45deg, $purple, $orange);
+  &::after {
+    color: #fff;
+    content: 'image';
+    font-size: 14px;
+    padding: 0.25em 0.5em;
+  }
+}

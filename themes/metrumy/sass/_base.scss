@@ -171,27 +171,23 @@ button,
   color: #fff;
   cursor: pointer;
   background: $blue;
-  border: solid $blue;
-  border-width: 3px;
+  box-shadow: 0 2px 3px $grey;
+  border: none;
   border-radius: 4px;
   outline: none; 
-  padding: 0.4em 1em;
+  padding: 0.75em 1em;
   text-align: center;
-  margin: 0.25em 0.125em;
+  margin: 0;
   max-width: 12em;
   transition: all 0.2s ease;
 
   &:hover,
   &:active { 
-    background: lighten($blue-dark, 10%);
+    background: $blue-dark;
   }
   &:active {
-    background: $blue-dark;
-    
-  }
-  &:focus {
-    outline: none;
-    background: $blue-dark;
+    background: darken($blue-dark, 10%);
+    box-shadow: none;
   }
 }
 
