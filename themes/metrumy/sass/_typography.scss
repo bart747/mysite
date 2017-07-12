@@ -15,7 +15,7 @@ h1 a,
 h2 a,
 h3 a,
 h4 a {
-  color: $orange;
+  color: $black;
 }
 
 h1, .h1-like {
@@ -64,8 +64,7 @@ pre {
   margin: 1em 0;
 }
 
-pre,
-code {
+@mixin monoblock {
   font-size: $medium-font-size;
   font-family: $monospace;
   @media screen and (max-width: $screen-mid) {
@@ -74,6 +73,15 @@ code {
   @media screen and (max-width: $screen-sml) {
     font-size: 12px;
   }
+}
+
+pre,
+code {
+  @include monoblock;
+}
+
+.highlight {
+  margin-bottom: 1em;
 }
 
 footer small {

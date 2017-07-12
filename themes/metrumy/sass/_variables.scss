@@ -16,6 +16,7 @@ $red:                 #ee1144;
 $red-dark:            #aa2222;
 $green:               #22aa00;
 $green-dark:          #004010;
+$green-light:         #33ee66;
 $blue:                #2233dd;
 $blue-dark:             darken($blue, 10%);
 $blue-light:          #11aaff;
@@ -24,7 +25,7 @@ $aquamarine:          #77ddff;
 $purple:              #5500aa;
 $grey:                #777;
 $grey-light:            lighten($grey, 40%);
-$grey-dark:             darken($grey, 20%);
+$grey-dark:             darken($grey, 10%);
 
 $yellow:              #ffee66;
 $background-yellow:   #ffee99;
