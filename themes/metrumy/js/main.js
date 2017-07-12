@@ -1,4 +1,4 @@
-require('../../sass/main.scss');
+require('../sass/main.scss');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker

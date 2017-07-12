@@ -3,7 +3,7 @@ const uglify = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './static/js/main.js',
+  entry: './js/main.js',
   output: {
     path: path.resolve(__dirname, './static/dist'),
     filename: 'bundle.js'
