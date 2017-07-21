@@ -5,7 +5,7 @@
 }
 
 .masthead-mini {
-  background-color: $black;
+  background-color: $orange-deep;
   margin: 0 auto 3em;
   padding: 0.66em 1em 0.66em;
   text-align: center;
@@ -45,7 +45,7 @@
   border: none;
   text-decoration: none;
   &:hover, :focus {
-    color: $brand-purple;
+    color: $black;
   }
   transition: color 0.2s ease-in;
 }

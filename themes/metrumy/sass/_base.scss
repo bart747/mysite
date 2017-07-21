@@ -24,11 +24,11 @@ body {
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 1px solid $brand-purple;
+  border-bottom: 1px solid $purple;
   transition: border 0.1s ease-in;
 
   &:active, &:hover {
-    border-bottom: 2px solid $brand-purple;
+    border-bottom: 2px solid $purple;
   }
 }
 
@@ -67,13 +67,13 @@ section {
 }
 
 .wrapper--media-background {
-  background-color: $black;
+  background-color: $night;
   width: 100%;
   margin: 0;
 }
 
 .wrapper--media-background-top {
-  background-color: $black;
+  background-color: $night;
   width: 100%;
   margin: 0;
   margin-top: -2.75em;
