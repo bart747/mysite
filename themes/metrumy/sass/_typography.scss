@@ -1,4 +1,5 @@
 p {
+  @include size(8);
   text-align: left;
   margin: 0 auto 1em;
 }
@@ -19,27 +20,26 @@ h4 a {
 }
 
 h1, .h1-like {
-  font-size: 2em;
-  font-weight: bold;
+  @include size(10);
+  @include space(margin, 10, 0, 10, 0);
+  font-weight: 600;
   line-height: 1;
-  margin: 1em 0;
   letter-spacing: -0.01em;
 }
 
 h2, .h2-like {
-  font-weight: bold;
-  font-size: 1.5em;
+  @include size(9);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
-  margin: 1.33em 0 0.66em;
+  @include marg(10, 0, 9, 0);
 }
 
 h3, .h3-like {
-  font-size: 1.25em;
+  @include size(8);
   font-weight: 600;
   line-height: 1.25;
-  margin: 1.6em 0 0.8em
+  @include marg(9, 0, 8, 0);
 }
 
 h4, .h4-like {
@@ -111,7 +111,7 @@ li code {
 }
 
 .date {
-  font-size: 0.75em;
+  @include size(7);
   margin-top: 1.33em;
 }
 
@@ -120,7 +120,7 @@ li code {
 }
 
 .article-title {
-  margin: 1em 0 1em;
+  
 }
 
 .small-txt {

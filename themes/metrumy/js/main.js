@@ -1,4 +1,5 @@
 require('../sass/main.scss');
+require('./contact.js');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker

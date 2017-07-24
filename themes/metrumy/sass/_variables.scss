@@ -6,8 +6,6 @@ $small-font-size:       14px;
 $base-line-height:      1.5;
 
 // colors
-$brand-purple:        #7700ff;
-
 $text-color:          #383838;
 $background-color:    #f5f3f1;
 $black:               #222;
@@ -23,6 +21,7 @@ $blue-light:          #11aaff;
 $blue-skye:           #ddeeee;
 $aquamarine:          #77ddff;
 $purple:              #5500aa;
+$purple-light:        #7700ff;
 $grey:                #777;
 $grey-light:            lighten($grey, 40%);
 $grey-dark:             darken($grey, 10%);
@@ -31,7 +30,7 @@ $yellow:              #ffee66;
 $background-yellow:   #ffee99;
 $orange:              #ff6622;
 $orange-light:        #ff9922;
-$orange-deep:         #dd3322;
+$orange-deep:         #dd4433;
 $night:               #222233;
 $sand:                #eee6dd;
 
@@ -39,3 +38,67 @@ $sand:                #eee6dd;
 $screen-big:            1024px;
 $screen-mid:            768px;
 $screen-sml:            568px;
+
+// fibonacci
+
+@function fib($n) {
+  @if $n < 2 { 
+    @return $n;  
+  } @else {
+    @return fib($n - 1) + fib($n - 2);
+  }
+}
+
+/*
+@function fib($n) {
+  $a: 0; 
+  $b: 1;
+  @for $i from 1 through $n {
+    $temp: $a;
+    $a:    $b;
+    $b:    $temp + $b;
+  }
+  @return $a;
+}
+*/
+
+@function fibl($n) {
+  @return #{round(fib($n) / 1.1) + 'px'}; 
+}
+
+@function fibs($n) {
+  @return #{round(fib($n) / 1.3) + 'px'}; 
+}
+
+@mixin size($n) {
+  font-size: fibl($n);
+  @media (max-width: $screen-mid) {
+    font-size: fibs($n);
+  }
+}
+
+@mixin marg($t, $l, $b, $r) {
+  margin-top:    fibl($t);
+  margin-left:   fibl($l);
+  margin-bottom: fibl($b);
+  margin-right:  fibl($r);
+  @media (max-width: $screen-mid) {
+    margin-top:    fibs($t);
+    margin-left:   fibs($l);
+    margin-bottom: fibs($b);
+    margin-right:  fibs($r);
+  }
+}
+
+@mixin space($type, $t, $l, $b, $r) {
+  #{$type}-top:    fibl($t);
+  #{$type}-left:   fibl($l);
+  #{$type}-bottom: fibl($b);
+  #{$type}-right:  fibl($r);
+  @media (max-width: $screen-mid) {
+    #{$type}-top:    fibs($t);
+    #{$type}-left:   fibs($l);
+    #{$type}-bottom: fibs($b);
+    #{$type}-right:  fibs($r);
+  }
+}

@@ -32,7 +32,7 @@
 
 .masthead-mini--title {
   color: $background-color;
-  font-size: 0.75em;
+  @include size(7);
   font-weight: normal;
   line-height: 1;
   letter-spacing: 0.075em;

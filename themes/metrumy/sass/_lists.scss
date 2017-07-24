@@ -72,7 +72,7 @@ li ul {
 }
 
 .post-list h2 {
-  font-size: 1.25em;
+  @include size(8);
   font-weight: bold;
   line-height: 1.25;
   margin-top: 0.8em;
@@ -80,7 +80,7 @@ li ul {
 }
 
 .post-list h3 {
-  font-size: 1em;
+  @include size(7);
   font-weight: bold;
   line-height: 1.5;
   margin-top: 1em;
@@ -98,7 +98,7 @@ li ul {
 h2.post-list--post-title,
 h3.post-list--post-title {
   font-weight: bold;
-  font-size: 1.5em;
+  @include size(9);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
@@ -107,7 +107,7 @@ h3.post-list--post-title {
   & a {
     border-bottom: 2px solid $background-color;
     &:hover, :focus {
-      border-bottom: 2px solid $brand-purple;
+      border-bottom: 2px solid $purple-light;
     }
   }
 }
