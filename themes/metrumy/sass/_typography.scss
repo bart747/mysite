@@ -1,6 +1,8 @@
 p {
-  @include size(8);
+  color: $text-color;
+  font-size: 1em;
   text-align: left;
+  text-indent: 1em;
   margin: 0 auto 1em;
 }
 
@@ -9,7 +11,7 @@ h2,
 h3,
 h4, {
   color: $black;
-  margin: 0 0 1em;
+  margin: 1em 0;
 }
 
 h1 a,
@@ -20,33 +22,61 @@ h4 a {
 }
 
 h1, .h1-like {
-  @include size(10);
-  @include space(margin, 10, 0, 10, 0);
+  font-size: scale1(13);
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.01em;
+  margin-top: scale1(13);
+  margin-bottom: scale1(12);
+
+  @media (max-width: $screen-sml) {
+    font-size: scale2(13);
+    margin-top: scale2(13);
+    margin-bottom: scale2(12);
+  }
 }
 
 h2, .h2-like {
-  @include size(9);
+  font-size: scale1(11);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
-  @include marg(10, 0, 9, 0);
+  margin-top: scale1(12);
+  margin-bottom: scale1(11);
+  
+  @media (max-width: $screen-sml) {
+    font-size: scale2(11);
+    margin-top: scale2(12);
+    margin-bottom: scale2(11);
+  }
 }
 
 h3, .h3-like {
-  @include size(8);
+  font-size: scale1(10);
   font-weight: 600;
   line-height: 1.25;
-  @include marg(9, 0, 8, 0);
+  margin-top: scale1(11);
+  margin-bottom: scale1(10);
+  
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+    margin-top: scale2(11);
+    margin-bottom: scale2(10);
+  }
 }
 
 h4, .h4-like {
-  font-size: 1em;
+  font-size: scale1(10);;
   font-weight: 600;
   line-height: 1.5;
-  margin: 2em 0 1em;
+    margin-top: scale1(11);
+    margin-bottom: scale1(10);
+  
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+    margin-top: scale2(11);
+    margin-bottom: scale2(10);
+  }
 }
 
 strong {
@@ -65,13 +95,11 @@ pre {
 }
 
 @mixin monoblock {
-  font-size: $medium-font-size;
+  font-size: 0.9em;
   font-family: $monospace;
-  @media screen and (max-width: $screen-mid) {
-    font-size: $small-font-size;
-  }
+  
   @media screen and (max-width: $screen-sml) {
-    font-size: 12px;
+    font-size: 0.8em;
   }
 }
 
@@ -82,10 +110,6 @@ code {
 
 .highlight {
   margin-bottom: 1em;
-}
-
-footer small {
-  font-size: 15px;
 }
 
 p code,
@@ -111,18 +135,27 @@ li code {
 }
 
 .date {
-  @include size(7);
-  margin-top: 1.33em;
+  font-size: scale1(9);
+  margin: scale1(10) 0;
+  @media (max-width: $screen-sml) {
+    font-size: scale2(9);
+    margin: scale2(10) 0;
+  }
 }
 
 .secondary {
-  color: $grey;
+  color: $grey-dark;
 }
 
 .article-title {
   
 }
 
+small,
 .small-txt {
-  font-size: $medium-font-size;
+  font-size: scale1(9);
+
+  @media screen and (max-width: $screen-sml) {
+    font-size: scale2(9);
+  }
 }

@@ -1,0 +1,58 @@
+
+// fibonacci
+@function fib($n) {
+  $a: 0; 
+  $b: 1;
+  $temp: 0;
+  @while $n > 0 {
+    $temp: $a;
+    $a:    $b;
+    $b:    $temp + $b;
+    $n:    $n - 1;
+  }
+  @return $a;
+}
+/*
+@function fib($n) {
+  @if $n < 2 { 
+    @return $n;  
+  } @else {
+    @return fib($n - 1) + fib($n - 2);
+  }
+}
+*/
+
+/*
+@function fib($n) {
+  $a: 0; 
+  $b: 1;
+  @for $i from 1 through $n {
+    $temp: $a;
+    $a:    $b;
+    $b:    $temp + $b;
+  }
+  @return $a;
+}
+*/
+
+@function sizer($n) {
+  $v: 1;
+  $temp: 0;
+  @while $n > 0 {
+    $v:    $v * 1.33;
+    $n:    $n - 1;
+  }
+  @return $v;
+}
+
+@function scale1($n) {
+  @return round(sizer($n) * 1.1) + px; 
+}
+
+@function scale2($n) {
+  @return round(sizer($n) * 1) + px; 
+}
+
+@function fem($n) {
+  @return round(fib($n) / fib(7)) + em; 
+}

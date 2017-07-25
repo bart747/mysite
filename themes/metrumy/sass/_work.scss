@@ -1,21 +1,21 @@
 .work--text {
+  font-size: fl(7);
+  //@include space(margin, 0, auto, 10, auto);
   @include wrapper-mid;
-  font-size: fibl(7);
-  margin-bottom: fibl(9);
   padding: 0 1em;
 }
 
 .work--title {
-  font-size: fibl(9);
+  font-size: fl(7);
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1em;
+  // @include space(margin, 10, 0, 10, 0);
 }
 
 .work--contact {
+  font-size: fl(7);
+  //@include space(margin, 0, 0, 10, 0); 
   @include wrapper-mid;
-  margin-bottom: 2em;  
-    padding: 0 0.66em;
+  padding: 0 0.66em;
   border-left: 0.33em solid $blue-light;
 }
 
@@ -24,11 +24,11 @@
 }
 
 .work--contact--title {
-  font-size: fibl(8);
+  font-size: fl(9);
   margin: 0;
 }
 
 .work--contact--addr a {
-  font-size: fibl(8);
+  font-size: fl(7);
   color: $orange-deep;
 }

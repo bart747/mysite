@@ -1,6 +1,12 @@
 html {
   box-sizing: border-box;
-  font-size: $large-font-size;
+  font-family: $base-font-family;
+  font-size: scale1(10);
+  
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+  }
+
   line-height: $base-line-height;
 }
 
@@ -11,24 +17,19 @@ html {
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: $base-font-family;
-  font-size: $large-font-size;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  @media screen and (max-width: $screen-sml) {
-    font-size: $medium-font-size;
-  }
 }
 
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 1px solid $purple-light;
+  border-bottom: 1px solid $blue-light;
   transition: border 0.1s ease-in;
 
   &:active, &:hover {
-    border-bottom: 2px solid $purple-light;
+    border-bottom: 2px solid $blue-light;
   }
 }
 
@@ -76,10 +77,10 @@ section {
   background-color: $night;
   width: 100%;
   margin: 0;
-  margin-top: -2.75em;
+  margin-top: -(scale1(13));
   padding: 2em 0 0;
   @media (max-width: $screen-big) {
-    margin-top: -2em;
+    margin-top: -scale2(13);
     padding: 0;
   }
 }
@@ -109,6 +110,7 @@ nav li {
 }
 
 .subnav {
+  font-size: 1em;
   @include wrapper-mid;
   margin: 0 auto 3em;
   padding: 0 1em; 
@@ -159,9 +161,14 @@ hr {
 }
 
 footer {
+  color: $grey-dark;
+  font-size: 1em;
   @include wrapper-mid;
-  margin: 2em auto 2em;
+  margin: scale1(13) auto;
   padding: 0 1em;
+  @media (max-width: $screen-sml) {
+    margin: scale2(13) auto;
+  }
 }
 
 button,

@@ -1,8 +1,5 @@
 $base-font-family:      "Fira Sans", sans-serif;
 $monospace:             monospace;
-$large-font-size:       19px;
-$medium-font-size:      16px;
-$small-font-size:       14px;
 $base-line-height:      1.5;
 
 // colors
@@ -14,7 +11,7 @@ $red:                 #ee1144;
 $red-dark:            #aa2222;
 $green:               #22aa00;
 $green-dark:          #004010;
-$green-light:         #33ee66;
+$green-light:         #33dd55;
 $blue:                #2233dd;
 $blue-dark:             darken($blue, 10%);
 $blue-light:          #11aaff;
@@ -38,67 +35,3 @@ $sand:                #eee6dd;
 $screen-big:            1024px;
 $screen-mid:            768px;
 $screen-sml:            568px;
-
-// fibonacci
-
-@function fib($n) {
-  @if $n < 2 { 
-    @return $n;  
-  } @else {
-    @return fib($n - 1) + fib($n - 2);
-  }
-}
-
-/*
-@function fib($n) {
-  $a: 0; 
-  $b: 1;
-  @for $i from 1 through $n {
-    $temp: $a;
-    $a:    $b;
-    $b:    $temp + $b;
-  }
-  @return $a;
-}
-*/
-
-@function fibl($n) {
-  @return #{round(fib($n) / 1.1) + 'px'}; 
-}
-
-@function fibs($n) {
-  @return #{round(fib($n) / 1.3) + 'px'}; 
-}
-
-@mixin size($n) {
-  font-size: fibl($n);
-  @media (max-width: $screen-mid) {
-    font-size: fibs($n);
-  }
-}
-
-@mixin marg($t, $l, $b, $r) {
-  margin-top:    fibl($t);
-  margin-left:   fibl($l);
-  margin-bottom: fibl($b);
-  margin-right:  fibl($r);
-  @media (max-width: $screen-mid) {
-    margin-top:    fibs($t);
-    margin-left:   fibs($l);
-    margin-bottom: fibs($b);
-    margin-right:  fibs($r);
-  }
-}
-
-@mixin space($type, $t, $l, $b, $r) {
-  #{$type}-top:    fibl($t);
-  #{$type}-left:   fibl($l);
-  #{$type}-bottom: fibl($b);
-  #{$type}-right:  fibl($r);
-  @media (max-width: $screen-mid) {
-    #{$type}-top:    fibs($t);
-    #{$type}-left:   fibs($l);
-    #{$type}-bottom: fibs($b);
-    #{$type}-right:  fibs($r);
-  }
-}

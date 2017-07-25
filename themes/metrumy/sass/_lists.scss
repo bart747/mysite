@@ -7,13 +7,21 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
-  margin-bottom: 0.25em;
+  margin-bottom: scale1(7);
+  @media (max-width: $screen-sml) {
+
+    margin-bottom: scale2(7);
+  }
 }
 
 li ol,
 li ul {
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+  margin-top: scale1(7);
+  margin-bottom: scale1(7);
+  @media (max-width: $screen-sml) {
+    margin-top: scale2(7);
+    margin-bottom: scale2(7);
+  }
 }
 
 .list-title {
@@ -63,32 +71,47 @@ li ul {
 
 .post-list h1 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: scale1(12);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
   margin-top: 0.66em;
   margin-bottom: 0.66em;
+  @media (max-width: $screen-sml) {
+    font-size: scale2(12);
+  }
 }
 
 .post-list h2 {
-  @include size(8);
+  font-size: scale1(10);
   font-weight: bold;
   line-height: 1.25;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin-top: scale1(10);
+  margin-bottom: scale1(10);
+
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+    margin-top: scale2(10);
+    margin-bottom: scale2(10);
+  }
 }
 
 .post-list h3 {
-  @include size(7);
-  font-weight: bold;
+  font-size: scale2(10);
+  font-weight: normal;
   line-height: 1.5;
   margin-top: 1em;
   margin-bottom: 1em;
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+  }
 }
 
 .post-list--post {  
-  margin: 0 auto 3em;
+  margin: 0 auto scale1(13);
+  @media (max-width: $screen-sml) {
+    margin-bottom: scale2(13);
+  }
   &:last-of-type {
     margin-bottom: 1em;
   }
@@ -98,39 +121,29 @@ li ul {
 h2.post-list--post-title,
 h3.post-list--post-title {
   font-weight: bold;
-  @include size(9);
+  font-size: scale1(12);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
-  margin-bottom: 0.66em;
+  margin-top: scale1(10);
+  margin-bottom: scale1(10);
 
   & a {
     border-bottom: 2px solid $background-color;
     &:hover, :focus {
-      border-bottom: 2px solid $purple-light;
+      border-bottom: 2px solid $blue-light;
     }
+  }
+
+  @media (max-width: $screen-sml) {
+    font-size: scale2(10);
+    margin-top: scale2(10);
+    margin-bottom: scale2(10);
   }
 }
 
 .list--home {
   margin-bottom: 2em;
-}
-
-.post-list--home-title,
-li.post-list--home-title {
-  font-weight: normal;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.post-list--short {
-  margin-bottom: 1em;
-}
-
-.post-list--short .post-list--title {
-  font-size: 1em;
-  line-height: 1.25;
-  margin-bottom: 0.5em;
 }
 
 
