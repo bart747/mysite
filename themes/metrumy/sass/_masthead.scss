@@ -7,7 +7,7 @@
 .masthead-mini {
   background-color: $orange-deep;
   font-size: scale1(9);
-  margin: 0 auto scale1(13);
+  margin: 0 auto;
   padding: scale1(8);
   text-align: center;
   @media (max-width: $screen-sml) {

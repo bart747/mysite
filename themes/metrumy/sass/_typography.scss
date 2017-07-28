@@ -1,9 +1,21 @@
 p {
   color: $text-color;
-  font-size: 1em;
+  font-size: 1rem;
   text-align: left;
-  text-indent: 1em;
-  margin: 0 auto 1em;
+  text-indent: 1rem;
+  margin: 0 auto 1rem;
+}
+
+.p--big {
+  font-size: scale1(11);
+  margin-top: scale1(12);
+  margin-bottom: scale1(12);
+  
+  @media (max-width: $screen-sml) {
+    font-size: scale2(11);
+    margin-top: scale2(11);
+    margin-bottom: scale2(11);
+  }  
 }
 
 h1,

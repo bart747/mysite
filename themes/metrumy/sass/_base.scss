@@ -77,10 +77,10 @@ section {
   background-color: $night;
   width: 100%;
   margin: 0;
-  margin-top: -(scale1(13));
+  margin-top: -(scale1(12));
   padding: 2em 0 0;
   @media (max-width: $screen-big) {
-    margin-top: -scale2(13);
+    margin-top: -scale2(12);
     padding: 0;
   }
 }

@@ -7,10 +7,9 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
-  margin-bottom: scale1(7);
+  margin-bottom: scale1(8);
   @media (max-width: $screen-sml) {
-
-    margin-bottom: scale2(7);
+    margin-bottom: scale2(8);
   }
 }
 
@@ -56,8 +55,11 @@ li ul {
   }
 }
 
-.blog--list {
-  //@include wrapper-mid;
+.post-list {
+  margin: scale1(14) 0 scale1(10);
+  @media (max-width: $screen-sml) {
+     margin: scale2(14) 0 scale2(10);
+  }
 }
 
 .post-list > li {
@@ -121,7 +123,7 @@ li ul {
 h2.post-list--post-title,
 h3.post-list--post-title {
   font-weight: bold;
-  font-size: scale1(12);
+  font-size: scale1(11);
   font-weight: 600;
   line-height: 1.25;
   color: $black;
@@ -136,7 +138,7 @@ h3.post-list--post-title {
   }
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
+    font-size: scale2(11);
     margin-top: scale2(10);
     margin-bottom: scale2(10);
   }

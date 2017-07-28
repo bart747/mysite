@@ -12,6 +12,7 @@
   }
   @return $a;
 }
+
 /*
 @function fib($n) {
   @if $n < 2 { 
@@ -37,7 +38,6 @@
 
 @function sizer($n) {
   $v: 1;
-  $temp: 0;
   @while $n > 0 {
     $v:    $v * 1.33;
     $n:    $n - 1;
@@ -51,8 +51,4 @@
 
 @function scale2($n) {
   @return round(sizer($n) * 1) + px; 
-}
-
-@function fem($n) {
-  @return round(fib($n) / fib(7)) + em; 
 }
