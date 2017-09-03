@@ -13,7 +13,14 @@
         {{ end }}
       {{ end }}
   <div class="article--narrow">
-    <h1 class="article-title">{{ .Title }}</h1>
+
+    {{ if in .Params.categories "video" }}
+      <h1 class="article-title article-title--video">{{ .Title }}</h1>
+
+      {{ else }}
+      <h1 class="article-title">{{ .Title }}</h1>
+    {{ end }}    
+    
     
     {{ .Content }}
     
