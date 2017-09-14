@@ -5,7 +5,7 @@
 }
 
 .masthead-mini {
-  background-color: $orange-deep;
+  background-color: transparent;
   font-size: scale1(9);
   margin: 0 auto;
   padding: scale1(8);
@@ -48,11 +48,11 @@
 }
 
 .masthead-mini--title a {
-  color: $background-color;
+  color: $black;
   border: none;
   text-decoration: none;
   &:hover, :focus {
-    color: $black;
+    color: $blue-light;
   }
   transition: color 0.2s ease-in;
 }

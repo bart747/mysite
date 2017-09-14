@@ -62,13 +62,18 @@ section {
 }
 
 .wrapper--media {
-  margin: 0 -1em;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media (max-width: $screen-big) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .wrapper--media-background {
-  background-color: #000;
+  background-color: #212121;
   width: 100%;
   margin: 0;
 }
@@ -79,9 +84,6 @@ section {
   margin: 0;
   margin-top: -2em;
   padding: 0;
-  @media (max-width: $screen-big) {
-
-  }
 }
 
 audio,
