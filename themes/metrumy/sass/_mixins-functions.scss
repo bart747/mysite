@@ -52,3 +52,41 @@
 @function scale2($n) {
   @return round(sizer($n) * 1) + px; 
 }
+
+@mixin grid-50-50 {
+  @media (min-width: $screen-mid) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: scale1(14);
+  }
+}
+
+@mixin wrapper-mid {
+  max-width: 640px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin wrapper-big {
+  max-width: 1200px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin monoblock {
+  font-size: 0.9em;
+  font-family: $monospace;
+  
+  @media screen and (max-width: $screen-sml) {
+    font-size: 0.8em;
+  }
+}
+
+@mixin standard-margin {
+  margin-top: scale1(14);
+  margin-bottom: scale1(14);
+  @media (max-width: $screen-sml) {
+    margin-top: scale2(14);
+    margin-bottom: scale2(14);
+  }
+}
