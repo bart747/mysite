@@ -3,38 +3,35 @@
 }
 
 .work--masthead--content {
-  
-  max-width: $screen-mid;
-  margin: 0;
-  margin-bottom: scale1(15);
+  max-width: 820px;
+  margin: scale1(16) 0;
   padding: 0 1rem;
 
   @media (max-width: $screen-sml) {
     padding: 0 1rem;
+    margin: scale1(14) 0;
   }
 }
 
 .work--title {
   font-size: scale1(14);
   line-height: 1;
-  margin-top: scale1(14);
-  margin-bottom: scale1(14);
+  margin-bottom: scale1(8);
   
   @media (max-width: $screen-sml) {
     font-size: scale2(13);
-    margin-top: scale2(13);
-    margin-bottom: scale2(13);
+    margin-bottom: scale2(6);
   }
 }
 
 .work--paragraph-big {
+  color: #555;
   font-size: scale1(11);
-  margin-top: 0;
+  line-height: 1.4;
   margin-bottom: scale1(11);
   
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
-    margin-top: 0;
     margin-bottom: scale2(11);
   }
 }
@@ -100,7 +97,7 @@
 }
 
 .work--contact--title {
-  font-size: scale1(11);
+  font-size: scale1(12);
   font-weight: bold;
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
