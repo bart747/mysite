@@ -1,5 +1,5 @@
 ---
-title: "On Lazy Load Overuse and What You can Do Instead"
+title: "On Lazy Load Overuse and What You Can Do Instead"
 date: 2016-10-19
 category: 
 ---
