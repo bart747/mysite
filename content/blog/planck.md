@@ -5,7 +5,7 @@ date: 2016-09-09
 category: quote-bundle
 ---
 
-Here are few famous quotes related to creative work, by Max Planck:
+Here are few famous quotes related to [creative work](https://bart747.github.io/process/), by Max Planck:
 
 
 
