@@ -1,0 +1,30 @@
+.topbar {
+  background-color: transparent;
+  font-size: scale1(9);
+  margin: 0 auto;
+  padding: scale1(8);
+  text-align: left;
+  @media (max-width: $screen-sml) {
+    font-size: scale2(9);
+    margin-bottom: scale2(13);
+    padding: scale2(8);
+    text-align: left;
+  }
+}
+
+.topbar--unit {
+  color: $background-color;
+  font-size: scale1(9);
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  @media (max-width: $screen-sml) {
+    font-size: scale2(9);
+  }  
+}
+
+.topbar--link {
+
+}
