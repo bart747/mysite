@@ -5,9 +5,10 @@ date =  "2017-04-05"
 
 The most interesting things happen once your software is in real use.
 That's when you can really see what's working and what to change.
+
 It brings us to the problem of changing already working thing. In the wild.
 You don't want to improve one thing and by the same action brake something else.
-That's why you need to design your things for agility – easy of change – upfront.
+That's why you need to design your things with ease of modification in mind.
 Don't think you can predict the future. 
 
 <!--more-->
@@ -27,7 +28,7 @@ Than you can adjust to the real world without tedious redesigns. For instance:
 ## Embrace Foundations
 
 If I need to pick between working on something essential or adding bells and whistles, I pick essentials.
-It's just hard to be really good at all of them, so why even focus on *nice to haves*? What usually piss people off is fundamentals refusing to work as they should. Not lack of *bahama yellow* in a color palette.
+It's just hard to be really good at all of them, so why even focus on *nice to haves*? What usually piss people off is fundamentals refusing to work as they should – not lack of *bahama yellow* in a color palette.
 
 Working extra on things like clarity (intuitiveness, readability) and speed
 will give you more than any neophiliac thing.
