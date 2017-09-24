@@ -9,12 +9,12 @@ It took around 1 minute per regeneration and much more for starting a server.
 
 I made some improvement by excluding a few files from the conversion.
 
+<!--more-->
+
 _config.yml:
 {{< highlight ruby >}}
 exclude: [file.js, somefolder, otherfolder, ...]
 {{< /highlight >}}
-
-<!--more-->
 
 It wasn't a big improvement so I kept digging.
 I re-installed gems.

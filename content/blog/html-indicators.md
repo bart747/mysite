@@ -7,12 +7,12 @@ date: 2016-10-24
 Should I add a 'success' class to an input element or some other part of my form?
 How to show an error indicator during live validation? How to manage a few different ways of validation?
 
+<!--more-->
+
 Here's a code example that makes these problems simpler.
 It makes adding CSS classes cleaner.
 It allows you to make flexible JavaScript loops that can go through many different inputs easily and check them.
 It support's many different ways of indicating errors. 
-
-<!--more-->
 
 I'm showing code snippets first, than explaining them.
 
