@@ -47,14 +47,15 @@ To achieve that, you often need to sacrifice some non-crucial features.
     
 There's an overwhelming variety of internet browsing devices on the market.
 We need to think about what will make the product work smoothly on a sub-average hardware and half-decent wi-fi.
-People will often use your stuff at train stations, airports and in restaurants. And they will use more than just your app/website. How many browser tabs you have open right now? 
- 
+People will often use your stuff at train stations, airports or in restaurants. And they will use more than one app/website at the same time. How many browser tabs do you have open right now? 
+
+(There's a good article in this matter: [Optimizing for Fan Noise](http://prog21.dadgum.com/61.html))
 
 ## Words Win
     
 People say “a picture is like a thousand words”.
 But a picture will not make a proposition as clear and precise as a well designed sentence or phrase.
-That's why I like typography – good typography is a tool to achieve clarity.
+That's why I like typography – it's a tool to achieve clarity.
 
 Don't overthink that weird icon. If it's not obvious, text will be better.
 
