@@ -6,7 +6,7 @@ category:
 
 Lazy Load is a great idea, so it's overused frequently.
 Do you remember that situation when you scrolled down
-quickly to get to the middle part and the picture wasn't there yet.
+quickly to get to the middle part and the picture wasn't there yet?
 
 <!--more-->
 

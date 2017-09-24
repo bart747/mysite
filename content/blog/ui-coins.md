@@ -7,17 +7,15 @@ Contrast is an essential concept when it comes to UI usability. It solves more p
 
 Lets take coins as an example.
 When it comes to look: at first glance you see differences in size, color (types of metals) and visual patterns.
-Feel in hand is also important. Some seem heavier, some lighter, some have different surfaces.
+Feel in hand is also important. Some seem heavier than others. You can detect size by touch too.
+Each of these features is useful in some situation.
 
 <!--more-->
 
-Some of these things will help you in one situation, some in another. It's good that they exist.
-
 By analogy, you can do something similar with interfaces.
-Font sizes of titles (h1, h2, h3) are well known, trivial example.
-Forms are more tricky.
+Font sizes attached to HTML tags (<h1>, <h2>, <h3>, <p>) are well known, trivial example.
 
-Sign-up and sign-in forms often look similar and appear in similar places.
+Forms are more tricky. Sign-up and sign-in forms often look similar and appear in similar places.
 To create a useful contrasts, we can give them different titles and labels.
 We need to remember that users should see what's going on without careful reading.
 
