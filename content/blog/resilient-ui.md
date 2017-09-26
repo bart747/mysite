@@ -7,9 +7,8 @@ The most interesting things happen once your software is in real use.
 That's when you can really see what's working and what to change.
 
 It brings us to the problem of changing already working thing. In the wild.
-You don't want to improve one thing and by the same action brake something else.
-That's why you need to design your things with ease of modification in mind.
-Don't think you can predict the future. 
+It happens all the time. Don't think you can predict the future. 
+You need to design your things with ease of modification in mind.
 
 <!--more-->
 
@@ -19,7 +18,7 @@ Here are some ideas how to do that:
 
 Modular UIs are easier to edit in the long run.
 When your interface is divided into distinct parts, you can also separate chunks of code by following that divisions.
-Than you can adjust to the real world without tedious redesigns. For instance:
+That way changes will be way less tedious. For instance:
 
 1. You can just swap UI modules in an HTML or template file.
 2. You can edit a module in its own file – no need to dig into complex code that's responsible for many things.
@@ -39,9 +38,9 @@ will give you more than any neophiliac thing.
 It's easy to achieve perceived simplicity and pay for it with real complexity.
 For instance, you can make an intuitive UI while ignoring clarity of its implementation.
 Sooner or later it will cause all kinds of unexpected problems.
-Real simplicity of an interface means neat visuals AND clear implementation.
+Real simplicity of an interface means neat visuals **and** clear implementation.
 To achieve that, you often need to sacrifice some non-crucial features.
-
+And remember about *YAGNI*.
      
 ## Smooth Interactions
     
@@ -55,7 +54,8 @@ People will often use your stuff at train stations, airports or in restaurants. 
     
 People say “a picture is like a thousand words”.
 But a picture will not make a proposition as clear and precise as a well designed sentence or phrase.
-That's why I like typography – it's a tool to achieve clarity.
+Text is also trivial to edit.
+That's why I like typography – it's a tool to achieve clarity adn flexibility.
 
 Don't overthink that weird icon. If it's not obvious, text will be better.
 
