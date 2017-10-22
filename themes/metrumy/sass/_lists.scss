@@ -24,7 +24,7 @@ li ul {
 }
 
 .list-title {
-  color: $black;
+  color: $blue-skye;
   font-weight: bold;
   line-height: 1.25;
   margin-bottom: 0.5em;
@@ -131,7 +131,7 @@ h3.post-list--post-title {
   margin-bottom: scale1(10);
 
   & a {
-    border-bottom: 2px solid $background-color;
+    border-bottom: 2px solid $graphite;
     &:hover, :focus {
       border-bottom: 2px solid $blue-light;
     }
