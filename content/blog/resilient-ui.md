@@ -55,7 +55,7 @@ People will often use your stuff at train stations, airports or in restaurants. 
 People say “a picture is like a thousand words”.
 But a picture will not make a proposition as clear and precise as a well designed sentence or phrase.
 Text is also trivial to edit.
-That's why I like typography – it's a tool to achieve clarity adn flexibility.
+That's why I like typography – it's a tool to achieve clarity and flexibility.
 
 Don't overthink that weird icon. If it's not obvious, text will be better.
 

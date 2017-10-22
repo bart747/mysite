@@ -46,7 +46,7 @@
 }
 
 @function scale1($n) {
-  @return round(sizer($n) * 1.1) + px; 
+  @return round(sizer($n) * 1.15) + px; 
 }
 
 @function scale2($n) {

@@ -16,7 +16,7 @@ By analogy, you can do something similar with interfaces.
 Font sizes attached to HTML tags (<h1>, <h2>, <h3>, <p>) are well known, trivial example.
 
 Forms are more tricky. Sign-up and sign-in forms often look similar and appear in similar places.
-To create a useful contrasts, we can give them different titles and labels.
+To create a useful contrasts we can give them different titles and labels.
 We need to remember that users should see what's going on without careful reading.
 
 *Create an account* will make a better title than *Sign up* when there's also *Sign in* on a page.

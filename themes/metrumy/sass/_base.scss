@@ -8,6 +8,8 @@ html {
   }
 
   line-height: $base-line-height;
+  margin: 0;
+  padding: 0;
 }
 
 *, *:before, *:after {
@@ -54,7 +56,7 @@ section {
 }
 
 .wrapper--media-background {
-  background-color: #212121;
+  background-color: $graphite;
   width: 100%;
   margin: 0;
 }
@@ -146,10 +148,10 @@ footer {
   color: $grey-dark;
   font-size: 1em;
   @include wrapper-mid;
-  margin: scale1(13) auto;
-  padding: 0 1em;
+  margin: scale1(14) auto 0;
+  padding: 0 1em 1em;
   @media (max-width: $screen-sml) {
-    margin: scale2(13) auto;
+    margin: scale2(14) auto;
   }
 }
 
