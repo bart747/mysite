@@ -1,5 +1,4 @@
 p {
-  color: $blue-skye;
   font-size: 1rem;
   text-align: left;
   margin: 0 auto 1rem;
@@ -21,9 +20,12 @@ h1,
 h2,
 h3,
 h4, {
-  color: $blue-skye;
   font-weight: bold;
   margin: 1em 0;
+
+  @media print {
+    color: $grey-dark;
+  }
 }
 
 h1 a,
@@ -31,6 +33,10 @@ h2 a,
 h3 a,
 h4 a {
   color: $blue-skye;
+
+  @media print {
+    color: $grey-dark;
+  }
 }
 
 h1, .h1-like {
@@ -50,7 +56,6 @@ h1, .h1-like {
 h2, .h2-like {
   font-size: scale1(11);
   line-height: 1.25;
-  color: $blue-skye;
   margin-top: scale1(12);
   margin-bottom: scale1(11);
   
