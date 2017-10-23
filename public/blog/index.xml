@@ -39,9 +39,9 @@ Written and presented by Stewart Brand.&lt;/p&gt;
       <description>&lt;p&gt;The most interesting things happen once your software is in real use.
 That&amp;rsquo;s when you can really see what&amp;rsquo;s working and what to change.&lt;/p&gt;
 
-&lt;p&gt;It brings us to the problem of changing already working thing. In the wild.
+&lt;p&gt;It brings us to the problem of editing already working thing. In the wild.
 It happens all the time. Don&amp;rsquo;t think you can predict the future.
-You need to design your things with ease of modification in mind.&lt;/p&gt;
+You need to design your software with ease of modification in mind.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -424,7 +424,7 @@ Each of these features is useful in some situation.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;By analogy, you can do something similar with interfaces.
-Font sizes attached to HTML tags (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;p&gt;) are well known, trivial example.&lt;/p&gt;
+Font sizes attached to HTML tags – h1, h2, h3, p – are well known, trivial example.&lt;/p&gt;
 
 &lt;p&gt;Forms are more tricky. Sign-up and sign-in forms often look similar and appear in similar places.
 To create a useful contrasts we can give them different titles and labels.

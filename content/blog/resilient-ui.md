@@ -6,9 +6,9 @@ date =  "2017-04-05"
 The most interesting things happen once your software is in real use.
 That's when you can really see what's working and what to change.
 
-It brings us to the problem of changing already working thing. In the wild.
+It brings us to the problem of editing already working thing. In the wild.
 It happens all the time. Don't think you can predict the future. 
-You need to design your things with ease of modification in mind.
+You need to design your software with ease of modification in mind.
 
 <!--more-->
 
