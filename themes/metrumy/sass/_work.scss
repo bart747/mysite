@@ -1,9 +1,4 @@
 .work {
-  background-color: $graphite;
-
-  & h1, h2, h3, h4, p, nav, footer, a {
-    color: $blue-skye;
-  }
 }
 
 
@@ -37,7 +32,6 @@
 }
 
 .work--paragraph-big {
-  color: #555;
   font-size: scale1(11);
   line-height: 1.4;
   margin-bottom: scale1(11);
@@ -116,7 +110,6 @@
 }
 
 .work--contact--title {
-  color: $blue-skye;
   font-size: scale1(12);
   font-weight: bold;
   @media (max-width: $screen-sml) {

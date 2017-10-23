@@ -1,21 +1,21 @@
   .hll{ background-color: $background-yellow }
-  .c  { color: $blue-skye; font-style: italic } /* Comment */
+  .c  { color: $grey-skye; font-style: italic } /* Comment */
   .err{ color: $red-dark } /* Error */
   .k  { color: $orange-light } /* Keyword */
   .o { color: $orange-light} /* Operator */
-  .cm { color: $blue-skye; font-style: italic } /* Comment.Multiline */
-  .cp { color: $blue-skye; font-style: italic } /* Comment.Preproc */
-  .c1 { color: $blue-skye; font-style: italic } /* Comment.Single */
-  .cs { color: $blue-skye; font-style: italic } /* Comment.Special */
+  .cm { color: $grey-skye; font-style: italic } /* Comment.Multiline */
+  .cp { color: $grey-skye; font-style: italic } /* Comment.Preproc */
+  .c1 { color: $grey-skye; font-style: italic } /* Comment.Single */
+  .cs { color: $grey-skye; font-style: italic } /* Comment.Special */
   .gd { color: $orange-light; background-color: #ffdddd } /* Generic.Deleted */
   .ge { color: $orange-light; font-style: italic } /* Generic.Emph */
   .gr { color: $red-dark } /* Generic.Error */
-  .gh { color: $blue-skye } /* Generic.Heading */
+  .gh { color: $grey-skye } /* Generic.Heading */
   .gi { color: $orange-light; background-color: #ddffdd } /* Generic.Inserted */
-  .go { color: $blue-skye } /* Generic.Output */
-  .gp { color: $blue-skye } /* Generic.Prompt */
+  .go { color: $grey-skye } /* Generic.Output */
+  .gp { color: $grey-skye } /* Generic.Prompt */
   .gs { font-weight: bold } /* Generic.Strong */
-  .gu { color: $blue-skye } /* Generic.Subheading */
+  .gu { color: $grey-skye } /* Generic.Subheading */
   .gt { color: $red-dark } /* Generic.Traceback */
   .kc { color: $orange-light } /* Keyword.Constant */
   .kd { color: $orange-light } /* Keyword.Declaration */
@@ -39,7 +39,7 @@
   .nx ,.shl-name { color: $purple-light }
   .nv { color: $purple-light} /* Name.Variable */
   .ow { color: $orange-light } /* Operator.Word */
-  .w  { color: $blue-skye } /* Text.Whitespace */
+  .w  { color: $grey-skye } /* Text.Whitespace */
   .mf { color: $orange-light } /* Literal.Number.Float */
   .mh { color: $orange-light } /* Literal.Number.Hex */
   .mi { color: $orange-light } /* Literal.Number.Integer */
@@ -55,7 +55,7 @@
   .sr { color: $orange-light } /* Literal.String.Regex */
   .s1 { color: $orange-light } /* Literal.String.Single */
   .ss { color: $orange-light } /* Literal.String.Symbol */
-  .bp { color: $blue-skye } /* Name.Builtin.Pseudo */
+  .bp { color: $grey-skye } /* Name.Builtin.Pseudo */
   .vc { color: $orange-light } /* Name.Variable.Class */
   .vg { color: $orange-light } /* Name.Variable.Global */
   .vi { color: $orange-light } /* Name.Variable.Instance */
@@ -98,11 +98,11 @@
 }
 
 .code--row--desc {
-  color: $blue-skye;
+  color: $grey-skye;
   font-family: $base-font-family;
   margin-bottom: 0.5em;
   padding-left: 0.5em;
-  border-left: 2px solid $blue-skye;
+  border-left: 2px solid $grey-skye;
   @media (min-width: $screen-sml) {
     margin-left: 1.5em;
   }

@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: $graphite;
-  color: $blue-skye;
+  color: $grey-skye;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: $blue-skye;
+  color: $grey-skye;
   text-decoration: none;
   border-bottom: 1px solid $blue-light;
   transition: border 0.1s ease-in;
