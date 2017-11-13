@@ -2,7 +2,7 @@
 // Since it's about super crucial data I decided to use older JS.
 // It's an exception so everything else is setted up with modern JS in mind.
 
-var places = document.getElementsByClassName('liame');
+var places = document.getElementsByClassName('liame')
 
 var p1 = 'hello'
 var p2 = '.bartosz'
