@@ -1,6 +1,6 @@
-const path = require('path');
-const uglify = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path')
+const Uglify = require('uglifyjs-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './js/main.js',
@@ -12,12 +12,12 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        exclude: /node_modules/, 
+        exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           use: [
-            { loader: 'css-loader', options: { }},
-            { loader: 'postcss-loader', options: { }},
-            { loader: 'sass-loader', options: { }}
+            { loader: 'css-loader', options: { } },
+            { loader: 'postcss-loader', options: { } },
+            { loader: 'sass-loader', options: { } }
           ],
           fallback: 'style-loader'
         })
@@ -25,7 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new uglify(),
-    new ExtractTextPlugin('bundle.css'),
+    new Uglify(),
+    new ExtractTextPlugin('bundle.css')
   ]
-};
+}
