@@ -7,7 +7,7 @@ licenselink = "https://github.com/bart747/metrum/blob/master/LICENSE.md"
 description = "Simple, Clear, boilerplate theme for Hugo"
 homepage = "bart747.github.io"
 tags = ["minimal", "minimalist", "neutral", "simple", "boilerplate", "clear", "starter"]
-features = ["boilerplate", "easy to extend"]
+features = ["easy to extend"]
 min_version = 0.17
 
 [author]

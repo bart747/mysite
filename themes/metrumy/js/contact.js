@@ -4,20 +4,20 @@
 
 var places = document.getElementsByClassName('liame');
 
-var p1 = 'hello',
-    p2 = '.bartosz',
-    p3 = 'liamg';
+var p1 = 'hello'
+var p2 = '.bartosz'
+var p3 = 'liamg'
 
-var addr = p1 + p2 + '@' + rev(p3) + '.com'; 
+var addr = p1 + p2 + '@' + rev(p3) + '.com'
 
-function rev(s) {
-  return s.split('').reverse().join('');
+function rev (s) {
+  return s.split('').reverse().join('')
 }
 
-(function create() {
-  var i = 0,
-      l = places.length;
+(function create () {
+  var i = 0
+  var l = places.length
   for (i = 0; i < l; i++) {
-    places[i].innerHTML = "<a href='mailto:" + addr + "'>" + addr + '</a>';
+    places[i].innerHTML = "<a href='mailto:" + addr + "'>" + addr + '</a>'
   }
-})();
+})()

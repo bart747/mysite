@@ -1,49 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="theme-color" content="#7700ff">
-
-  <meta name="generator" content="Hugo 0.30.2" />
- 
-  <title> Hi, this is how I work. It&#39;s about coding to sell. </title>
-  
-  <link rel="canonical" href="https://bart747.github.io/howiwork/">
-  
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://bart747.github.io/dist/bundle.css">
-
-  <link rel="icon" type="image/png" href="https://bart747.github.io/icon152.png?v=2" sizes="152x152">
-  <link rel="icon" type="image/png" href="https://bart747.github.io/icon320.png?v=2" sizes="320x320">
-  <link rel="icon" type="image/png" href="https://bart747.github.io/icon512.png?v=2" sizes="512v512">
-  <link rel="apple-touch-icon" href="https://bart747.github.io/icon320.png?v=2">
-
-  <link rel="manifest" href="https://bart747.github.io/manifest.json">
-
-  <meta name="google-site-verification" content="vBPgvbkTPtu2MKsCfMMETSBB-crQhj8AZuJ2JUUF2_0" />
-
-</head>
-<body>
-
+{{ partial "head.html" . }}
 
 <div class="work">
 
 <nav id="nav" class="topbar">
     
   <div class="topbar--unit">
-      <a class="topbar--link" href="https://bart747.github.io">
+      <a class="topbar--link" href="{{ .Site.BaseURL }}">
           Blog
       </a>
   </div>
 
   <div class="topbar--unit">
-      <a class="topbar--link topbar--link-current" href="https://bart747.github.io/howiwork">
+      <a class="topbar--link topbar--link-current" href="{{ .Site.BaseURL }}/howiwork">
           How I Work / About + Contact
       </a>
   </div>
@@ -127,39 +95,6 @@
   <div class="work--contact--addr liame"></div>
 </div>
 
-
-<footer>
-
-    <div>
-      <ul class="list--contacts">
-        <li>
-          <div class="list-contacts-tag">email:&nbsp;</div>
-          <div class="liame"></div>
-        </li>
-        <li>
-          <div class="list-contacts-tag">github:&nbsp;</div> <div><a href="https://github.com/bart747">bart747</a></div>
-        </li>
-        <li>
-          <div class="list-contacts-tag">twitter:&nbsp;</div> <div><a href="https://twitter.com/bwhimself">bwhimself</a></div>
-        </li>
-      </ul>
-    </div>
-    <small>
-    &copy;2016-2017 Bartosz Wieczorek.
-    <a href="https://creativecommons.org/licenses/by/3.0/">
-    Some rights reserved</a> &mdash; please attribute and link back.
-    </small>
-
-<div class="footer--top">
-<a href="#nav">top</a>
-</div>
-
-</footer>
-
-<script src="https://bart747.github.io/dist/bundle.js">
-</script>
-
-</body>
-</html>
+{{ partial "footer.html" . }}
 
 </div>

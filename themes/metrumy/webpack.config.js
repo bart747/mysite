@@ -11,11 +11,13 @@ module.exports = {
   module: {
     rules: [
       {
+        /*
         test: /\.js$/,
         enforce: 'pre', // preload
         exclude: /node_modules/, 
         loader: 'jshint-loader',
         options: { esversion: 6 }
+        */
       },
       {
         test: /\.scss$/,
