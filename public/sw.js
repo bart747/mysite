@@ -28,21 +28,21 @@ self.addEventListener('fetch', function (event) {
   console.log('[ServiceWorker] Fetch', event.request.url)
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+      return response || fetch(event.request)
     }).catch(function () {
       // When can't access the network return an offline page from the cache
-      return caches.match(offlinePage);
+      return caches.match(offlinePage)
     })
   )
 })
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
   console.log('[ServiceWorker] Activate')
   event.waitUntil(
-    caches.keys().then(function(keyList) {
-      return Promise.all(keyList.map(function(key) {
+    caches.keys().then(function (keyList) {
+      return Promise.all(keyList.map(function (key) {
         if (key !== cacheName) {
-          console.log('[ServiceWorker] Removing old cache', key);
+          console.log('[ServiceWorker] Removing old cache', key)
           return caches.delete(key)
         }
       }))
