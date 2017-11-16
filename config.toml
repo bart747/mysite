@@ -7,7 +7,7 @@ publishdir = "public"
 builddrafts = false
 canonifyurls = true
 theme = "metrumy"
-pluralizelisttitles = "false"
+pluralizelisttitles = false
 pygmentsuseclasses = true
 
 [permalinks]
