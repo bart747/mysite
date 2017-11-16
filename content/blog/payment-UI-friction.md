@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Payment UIs Can be Used to Reduce Friction"
 date: 2016-03-08
 ---

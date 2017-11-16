@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Maintainable UI: How to Improve Code Editing with SASS"
 date: 2015-11-10
 ---

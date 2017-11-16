@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "A Hint on How to Speed Up Jekyll Regeneration"
 date: 2015-12-27
 ---

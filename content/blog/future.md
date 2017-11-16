@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How Not to Be Afraid of the Future: Web Development and Lindy Effect"
 date: 2016-02-26
 draft: true

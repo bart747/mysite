@@ -1,7 +1,6 @@
 ---
 title: "On Lazy Load Overuse and What You Can Do Instead"
-date: 2016-10-19
-category: 
+date: 2016-10-19 
 ---
 
 Lazy Load is a great idea, so it's overused frequently.

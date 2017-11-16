@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Structuring HTML Form Validation Indicators"
 date: 2016-10-24
 ---

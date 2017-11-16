@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Research vs Making Decisions"
 date: 2015-12-19
 ---

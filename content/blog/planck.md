@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Max Planck on New Ideas and Creative Work"
 date: 2016-09-09
-category: quote-bundle
+categories: quote-bundle
 ---
 
 Here are few famous quotes related to [creative work](https://bart747.github.io/process/), by Max Planck:

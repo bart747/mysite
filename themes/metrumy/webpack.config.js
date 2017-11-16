@@ -15,9 +15,9 @@ module.exports = {
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           use: [
-            { loader: 'css-loader', options: { } },
-            { loader: 'postcss-loader', options: { } },
-            { loader: 'sass-loader', options: { } }
+            { loader: 'css-loader', options: {} },
+            { loader: 'postcss-loader', options: {} },
+            { loader: 'sass-loader', options: {} }
           ],
           fallback: 'style-loader'
         })

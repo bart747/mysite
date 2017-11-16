@@ -4,10 +4,17 @@
   {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 7 }}
   {{ range $paginator.Pages }}
     <div class="article post-list--post">
-      <div class="article--narrow">
-        <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      </div>
-
+      
+      {{ if in .Params.categories "shortnote" }}
+        <div class="article--narrow">
+          <h2 class="post-list--note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </div>
+      {{ else }}
+        <div class="article--narrow">
+          <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </div>
+      {{ end }}
+      
       {{ if in .Params.categories "video" }}
         {{ range .Params.video }}
           <div class="wrapper--media-background">
@@ -22,7 +29,7 @@
       
       <div class="article--narrow">
 
-        {{ if in .Params.categories "nosummary" }}
+        {{ if in .Params.categories "nosummary"}}
           {{ .Content }}
         {{ else }}
           {{ .Summary }}
