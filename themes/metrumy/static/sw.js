@@ -2,7 +2,6 @@
 var cacheName = 'simple-cache'
 var cacheFiles = [
   '/',
-  '/index.html',
   '/howiwork/',
   '/offline/',
   '/resilient-ui/',
@@ -43,9 +42,11 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
   console.log('[ServiceWorker] Fetch', event.request.url)
   event.respondWith(
-    fetch(event.request).catch(function () {
-      // When can't access the network return an offline page from the cache
-      return caches.match(offlinePage)
+    // try network first, than cache, than offline page
+    fetch(event.request).catch(function() {
+      return caches.match(event.request).then(function (response) {
+        return response || caches.match(offlinePage)
+      })
     })
   )
 })
