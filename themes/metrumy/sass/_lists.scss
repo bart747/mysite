@@ -130,7 +130,7 @@ h3.post-list--post-title {
   margin-bottom: scale1(10);
 
   & a {
-    border-bottom: 2px solid $graphite;
+    border-bottom: none;
     &:hover, :focus {
       border-bottom: 2px solid $blue-light;
     }

@@ -19,24 +19,18 @@ p {
 h1,
 h2,
 h3,
-h4, {
+h4 {
+  color: $black;
   font-weight: bold;
-  margin: 1em 0;
-
-  @media print {
-    color: $grey-dark;
-  }
+  margin: 1em 0; 
 }
 
 h1 a,
 h2 a,
 h3 a,
 h4 a {
-  color: $grey-skye;
+  color: $black;
 
-  @media print {
-    color: $grey-dark;
-  }
 }
 
 h1, .h1-like {
@@ -148,7 +142,7 @@ li code {
 }
 
 .secondary {
-  color: $grey;
+  color: $grey-dark;
 }
 
 .article-title {

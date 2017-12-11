@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  background-color: $night;
-  color: $grey-skye;
+  background-color: $background-color;
+  color: $text-color;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: $grey-skye;
+  color: $text-color;
   text-decoration: none;
   border-bottom: 1px solid $blue-light;
   transition: border 0.1s ease-in;
