@@ -66,7 +66,7 @@ The only difference is the last class name in the div element:
 
 
 Now, try to find which classes will be used: 
-{{< highlight scss >}}
+{{< highlight css >}}
 /* icons */
 .validate .icon-error,
 .validate .icon-success {
