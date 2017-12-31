@@ -7,9 +7,9 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
-  margin-bottom: scale1(8);
+  margin-bottom: scale1(6);
   @media (max-width: $screen-sml) {
-    margin-bottom: scale2(8);
+    margin-bottom: scale2(6);
   }
 }
 
