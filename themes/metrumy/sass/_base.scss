@@ -239,4 +239,65 @@ a.nav--logo:hover #svg-logo--path {
   margin: 1em;
 }
 
+.top-animation {
+  text-align: center;
+  margin: 0 auto;
+}
 
+#spaceman {
+  position: relative;
+  animation-duration: 1.25s;
+  animation-name: float;
+  animation-iteration-count: 5;
+  animation-timing-function: cubic-bezier(0.5, 0.2, 0.5, 1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+#sc1 {
+  animation-duration: 0.6s;
+  animation-name: bubble-blink;
+  animation-iteration-count: 9;
+  animation-timing-function: ease-in-out;
+}
+
+#sc2 {
+  animation-duration: 0.7s;
+  animation-name: bubble-blink;
+  animation-iteration-count: 7;
+  animation-timing-function: ease-in-out;
+}
+
+#sc3 {
+  animation-duration: 0.9s;
+  animation-name: bubble-blink;
+  animation-iteration-count: 6;
+  animation-timing-function: ease-in-out;
+}
+
+#sc4 {
+  animation-duration: 0.8s;
+  animation-name: bubble-blink;
+  animation-iteration-count: 7;
+  animation-timing-function: ease-in-out;
+}
+
+#sc5 {
+  animation-duration: 0.6s;
+  animation-name: bubble-blink;
+  animation-iteration-count: 10;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes float {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes bubble-blink {
+  50% {
+    opacity: 0;
+  }
+}
