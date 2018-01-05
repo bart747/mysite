@@ -3,7 +3,6 @@ title: "David Lynch on Catching Ideas"
 date: "2018-01-04"
 categories: ["video"]
 video: ["https://player.vimeo.com/video/182093266"]
-draft: true
 ---
 
 <small>2.5 minutes</small>
