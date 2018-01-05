@@ -1,8 +1,15 @@
+{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 7 }}
 
+{{ if not .Paginator.HasPrev }}  
+    {{ partial "topanimation.html" . }}
+{{else}}
+  {{ partial "topgraphic.html" . }}
+{{end}}
 
 <section class="post-list">
-  {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 7 }}
+
   {{ range $paginator.Pages }}
+
     <div class="article post-list--post">
       
       {{ if in .Params.categories "shortnote" }}

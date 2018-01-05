@@ -150,12 +150,12 @@ li code {
   font-weight: bold;
   line-height: 1;
   letter-spacing: -0.01em;
-  margin-top: scale1(14);
+  margin-top: scale1(12);
   margin-bottom: scale1(14);
 
   @media (max-width: $screen-sml) {
     font-size: scale2(13);
-    margin-top: scale2(13);
+    margin-top: scale2(12);
     margin-bottom: scale2(13);
   }  
 }
@@ -165,8 +165,8 @@ li code {
   font-weight: bold;
   line-height: 1;
   letter-spacing: -0.01em;
-  margin-top: scale1(12);
-  margin-bottom: scale1(11);   
+  margin-top: scale1(11);
+  margin-bottom: scale1(10);   
 }
 
 small,

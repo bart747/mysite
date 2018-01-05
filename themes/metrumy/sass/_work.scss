@@ -9,13 +9,13 @@
 .work--masthead--content {
   font-size: 1rem;
   max-width: 820px;
-  margin-top: scale1(14);
+  margin-top: 0;
   margin-bottom: scale1(15);
   padding: 0 1rem;
 
   @media (max-width: $screen-sml) {
     padding: 0 1rem;
-    margin-top: scale2(14);
+    margin-top: 0;
     margin-bottom: scale2(15);
   }
 }
