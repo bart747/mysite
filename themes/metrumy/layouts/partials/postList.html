@@ -39,22 +39,23 @@
       <div class="article--narrow">
 
         {{ if in .Params.categories "nosummary"}}
-          {{ .Content }}
+          {{ .Content }} 
         {{ else }}
           {{ .Summary }}
         {{ end }}
 
         {{ if .Truncated }}
-        <div class="post-list--post--continue">
-          <a href="{{ .RelPermalink }}">
-            Continue
-            <svg fill="#333" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"/>
-              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-            </svg>  
-          </a>
-        </div>
+          <div class="post-list--post--continue">
+            <a href="{{ .RelPermalink }}">
+              Continue
+              <svg fill="#333" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+              </svg>  
+            </a>
+          </div>
         {{ end }}
+
         <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
       </div>
     </div>
