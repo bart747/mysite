@@ -1,5 +1,7 @@
 .topbar {
-  @include wrapper-big;  
+  @include wrapper-big; 
+  display: flex;
+  align-items: baseline; 
   font-size: scale1(9);
   margin: 0 auto;
   padding: 1em 1em 0.75em;
@@ -20,7 +22,7 @@
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  margin: 0 auto 0.5em;
+  margin: 0 0 0.5em 1em;
   text-transform: uppercase;
 
   &:first-of-type {
@@ -30,6 +32,11 @@
   @media (max-width: $screen-sml) {
     font-size: scale2(9);
   }  
+}
+
+.topbar--unit--logo {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .topbar--link-current {

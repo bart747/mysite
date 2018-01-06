@@ -201,38 +201,9 @@ button,
   color: $orange;
 }
 
-.nav--logo {
-  display: block;
-  background-color: transparent;
-  border-radius: 0 0 50% 0;
-  color: #fff;
-  height: 45px;
-  width: 45px;
-  font-size: 16px;
-  line-height: 1;
-  margin: 0 auto;
-  text-align: center;
-  z-index: 9999;
+.navlogo {
+  
 }
-
-#svg-logo--path,
-#svg-logo--path2,
-#svg-logo--path3 {
-  fill: $grey !important;
-}
-
-
-
-a.nav--logo,
-a.nav--logo:active,
-a.nav--logo:hover {
-  border: none;
-}  
-
-a.nav--logo:hover #svg-logo--path {
-  fill: $purple-light !important;
-  transition: fill 0.2s ease-in;
-} 
 
 .footer--top {
   text-align: center;
