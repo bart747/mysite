@@ -30,11 +30,11 @@ body {
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 1px solid $blue-light;
+  border-bottom: 1px solid $grey;
   transition: border 0.1s ease-in;
 
   &:active, &:hover {
-    border-bottom: 2px solid $blue-light;
+    background-color: $lime;
   }
 
   @media print {
@@ -201,10 +201,6 @@ button,
   color: $orange;
 }
 
-.navlogo {
-  
-}
-
 .footer--top {
   text-align: center;
   margin: 1em;
@@ -234,9 +230,6 @@ button,
   animation-name: flame;
   animation-iteration-count: 7;
   animation-timing-function: ease-in-out;
-}
-
-#flame2 {
 }
 
 @keyframes float {

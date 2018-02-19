@@ -35,7 +35,7 @@ h4 a {
 
 h1, .h1-like {
   font-size: scale1(13);
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   margin-top: scale1(13);
   margin-bottom: scale1(12);
@@ -50,12 +50,12 @@ h1, .h1-like {
 h2, .h2-like {
   font-size: scale1(11);
   line-height: 1.25;
-  margin-top: scale1(12);
+  margin-top: scale1(11);
   margin-bottom: scale1(11);
   
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
-    margin-top: scale2(12);
+    margin-top: scale2(11);
     margin-bottom: scale2(11);
   }
 }
@@ -63,12 +63,12 @@ h2, .h2-like {
 h3, .h3-like {
   font-size: scale1(10);
   line-height: 1.25;
-  margin-top: scale1(11);
+  margin-top: scale1(10);
   margin-bottom: scale1(10);
   
   @media (max-width: $screen-sml) {
     font-size: scale2(10);
-    margin-top: scale2(11);
+    margin-top: scale2(10);
     margin-bottom: scale2(10);
   }
 }
@@ -76,12 +76,12 @@ h3, .h3-like {
 h4, .h4-like {
   font-size: scale1(10);;
   line-height: 1.5;
-  margin-top: scale1(11);
+  margin-top: scale1(10);
   margin-bottom: scale1(10);
   
   @media (max-width: $screen-sml) {
     font-size: scale2(10);
-    margin-top: scale2(11);
+    margin-top: scale2(10);
     margin-bottom: scale2(10);
   }
 }
@@ -148,7 +148,7 @@ li code {
 .article-title {
   font-size: scale1(13);
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   margin-top: scale1(12);
   margin-bottom: scale1(14);

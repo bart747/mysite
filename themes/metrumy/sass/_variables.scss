@@ -1,5 +1,5 @@
 $base-font-family:      "Merriweather", serif;
-$monospace:             monospace;
+$monospace:             "Dejavu Sans Mono", monospace;
 $base-line-height:      1.7;
 
 // colors
@@ -12,6 +12,7 @@ $red-dark:            #aa2222;
 $green:               #22aa00;
 $green-dark:          #004010;
 $green-light:         #33dd55;
+$lime:                #fdff80;
 $blue:                #2233dd;
 $blue-dark:             darken($blue, 10%);
 $blue-light:          #44aaee;
@@ -25,11 +26,11 @@ $grey-skye:           #a9baba;
 
 $graphite:            #262428;
 $yellow:              #ffee66;
-$yellow-light:        #ffeedd;
+$yellow-light:        #ffffaa;
 $background-yellow:   #ffee99;
 $orange:              #ff6622;
 $orange-brown:        #cc5500;
-$orange-light:        #ccbb66;
+$orange-light:        #ffeedd;
 $orange-deep:         #dd4433;
 $night:               #222233;
 $sand:                #887755;

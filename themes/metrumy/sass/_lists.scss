@@ -131,8 +131,10 @@ h3.post-list--post-title {
 
   & a {
     border-bottom: none;
+    border-bottom: 1px solid transparent;
     &:hover, :focus {
-      border-bottom: 2px solid $blue-light;
+      border-bottom: 1px solid $grey;
+      background-color: $lime;
     }
   }
 
