@@ -87,17 +87,17 @@
 
 .work--contact {
   @include wrapper-mid;
-  border-left: 0.33rem solid $blue-light;
+  border-left: 0.33rem solid $orange;
   font-size: scale1(12);
   line-height: 1.1;
   margin-top: scale1(12);
-  margin-bottom: scale1(14);
+  margin-bottom: scale1(16);
   padding: 0 1rem 0 0.66rem;
 
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
-    margin-top: scale2(12);
-    margin-bottom: scale2(14);
+    margin-top: scale2(13);
+    margin-bottom: scale2(15);
   }
 }
 
@@ -111,7 +111,6 @@
 }
 
 .work--contact--addr a {
-  color: $orange;
   font-size: scale1(11);
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
