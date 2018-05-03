@@ -1,33 +1,22 @@
 {
-  "name": "mysite",
+  "name": "metrumy",
   "version": "1.0.0",
-  "description": "",
-  "main": "./static/js/main.js",
+  "description": "site asset management scripts",
+  "main": "./js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Bartosz Wieczorek",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "css-loader": "^0.28.4",
-    "cssnano": "^3.10.0",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "jshint-loader": "^0.8.4",
-    "node-sass": "^4.5.3",
-    "postcss-import": "^10.0.0",
-    "postcss-loader": "^2.0.6",
-    "postcss-scss": "^1.0.2",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "sugarss": "^1.0.0",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
-    "webpack": "^3.0.0",
-    "eslint": "^4.11.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
   }
 }

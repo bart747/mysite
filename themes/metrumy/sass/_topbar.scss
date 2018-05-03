@@ -23,7 +23,6 @@
   line-height: 1.5;
   letter-spacing: 0.075em;
   margin: 0 0 0.5em 1em;
-  text-transform: uppercase;
 
   &:first-of-type {
     margin-right: 1em;
@@ -40,5 +39,5 @@
 }
 
 .topbar--link-current {
-  background-color: $lime;
+  color: $orange;
 }

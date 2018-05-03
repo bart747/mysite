@@ -8,7 +8,7 @@
 
   <meta name="theme-color" content="#7700ff">
 
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.40.2" />
  
   <title> Structuring HTML Form Validation Indicators </title>
   
@@ -210,17 +210,17 @@ It support&rsquo;s many different ways of indicating errors.</p>
 
 <p>I&rsquo;m showing code snippets first, than explaining them.</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-input validate&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-input validate&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span><span class="p">&gt;</span>
     Your Email
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-error&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-success&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-error&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-success&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span>
          <span class="na">id</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span>
          <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span>
-  <span class="p"></span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+  <span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 
 <p>Here&rsquo;s an example of JS loop that can check input values and much more:
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">inputContainers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">elt</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -228,7 +228,8 @@ It support&rsquo;s many different ways of indicating errors.</p>
     <span class="p">...</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">input</span> <span class="p">...)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
     <span class="p">...</span>
-  <span class="p">});</span></code></pre></div></p>
+  <span class="p">});</span>
+</code></pre></div></p>
 
 <p>Because it goes through containers (DIVs), not inputs themselves,
 we have easy access to everything inside them.
@@ -240,17 +241,17 @@ than attache a proper method of validation.</p>
 <h2 id="input-with-an-error-indicator">Input with an error indicator</h2>
 
 <p>The only difference is the last class name in the div element:
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-input validate input-error&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-input validate input-error&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span><span class="p">&gt;</span>
     Your Email
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-error&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-success&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-error&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-success&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span>
          <span class="na">id</span><span class="o">=</span><span class="s">&#34;admin-email&#34;</span>
          <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span>
-  <span class="p"></span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div></p>
+  <span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div></p>
 
 <p>Now, try to find which classes will be used:
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* icons */</span>

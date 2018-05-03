@@ -1,31 +1,32 @@
-const path = require('path')
-const Uglify = require('uglifyjs-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const extractSass = new ExtractTextPlugin({
+    filename: 'bundle.css',
+    disable: process.env.NODE_ENV === 'development'
+});
 
 module.exports = {
-  entry: './js/main.js',
-  output: {
-    path: path.resolve(__dirname, './static/dist'),
-    filename: 'bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            { loader: 'css-loader', options: {} },
-            { loader: 'postcss-loader', options: {} },
-            { loader: 'sass-loader', options: {} }
-          ],
-          fallback: 'style-loader'
-        })
-      }
+    entry: './js/main.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'static/dist')
+    },
+    module: {
+        rules: [{
+            test: /\.scss$/,
+            use: extractSass.extract({ 
+                use: [{
+                    loader: 'css-loader',
+                    options: { minimize: true } // translates CSS into CommonJS
+                }, {
+                    loader: 'sass-loader' // compiles Sass to CSS
+                }],
+                fallback: 'style-loader' // (in dev mode) creates style nodes from JS strings
+            })
+        }]
+    },
+    plugins: [
+        extractSass
     ]
-  },
-  plugins: [
-    new Uglify(),
-    new ExtractTextPlugin('bundle.css')
-  ]
-}
+};
