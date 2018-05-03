@@ -1,12 +1,11 @@
-require('../sass/main.scss')
-require('./contact.js')
+require("../sass/main.scss");
+require("./contact.js");
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register('/sw.js')
-      .then(console.log('Service Worker Registered'))
-  })
+      .register("/sw.js")
+      //.then(console.log("Service Worker Registered"))
+    ;
+  });
 }
-
-console.log("rock'n'roll!")
