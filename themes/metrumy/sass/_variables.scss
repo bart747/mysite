@@ -2,6 +2,23 @@ $base-font-family:      "Merriweather", serif;
 $monospace:             "Dejavu Sans Mono", monospace;
 $base-line-height:      1.7;
 
+// font sizes in pixels; 'm' ending means 'mobile' (smasrtphone specific) 
+$s: scale(9);
+$m: scale(10);
+$l: scale(11);
+$xl: scale(12);
+$xxl: scale(13);
+$xxxl: scale(14);
+
+$sm: scaleM(9);
+$mm: scaleM(10);
+$lm: scaleM(11);
+$xlm: scaleM(12);
+$xxlm: scaleM(13);
+$xxxlm: scaleM(14);
+
+
+
 // colors
 $text-color:          #383838;
 $background-color:    #faf7f5;

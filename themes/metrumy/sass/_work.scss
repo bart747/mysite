@@ -5,36 +5,34 @@
 .work--masthead--content {
   font-size: 1rem;
   max-width: 820px;
-  margin-top: scale1(15);
-  margin-bottom: scale1(16);
+  margin-top: 4em;
+  margin-bottom: 5em;
   padding: 0 1rem;
 
   @media (max-width: $screen-sml) {
     padding: 0 1rem;
     margin-top: 0;
-    margin-bottom: scale2(15);
   }
 }
 
 .work--title {
-  font-size: scale1(13);
+  font-size: $xxl;
   line-height: 1.2;
-  margin-bottom: scale1(7);
+  margin-bottom: 0.125em;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(13);
-    margin-bottom: scale2(6);
+    font-size: $xxlm;
+    margin-bottom: 0.25em;
   }
 }
 
 .work--paragraph-big {
-  font-size: scale1(11);
+  font-size: $l;
   line-height: 1.4;
-  margin-bottom: scale1(11);
+  margin-bottom: 1em;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-bottom: scale2(11);
+    font-size: $lm;
   }
 }
 
@@ -50,37 +48,26 @@
 
 .work--miniarticle {
   margin-top: 0;
-  margin-bottom: scale1(14);
-
-  @media (max-width: $screen-sml) {
-    margin-top: 0;
-    margin-bottom: scale2(13);
-  }
+  margin-bottom: 4em;
 }
 
 .work--miniarticle--title {
-  font-size: scale1(11);
+  font-size: $l;
   line-height: 1;
   margin-top: 0;
-  margin-bottom: scale1(11);
+  margin-bottom: 1em;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-top: 0;
-    margin-bottom: scale2(11);
+    font-size: $lm;
   }
 }
 
 .work--miniarticle p {
-  font-size: scale1(10);
+  font-size: $m;
   margin: 0;
-
-  @media (max-width: $screen-mid + 1px) {
-    font-size: scale2(10);
-  }
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
+    font-size: $mm;
 
   }
 }
@@ -88,32 +75,32 @@
 .work--contact {
   @include wrapper-mid;
   border-left: 0.33rem solid $orange;
-  font-size: scale1(12);
+  font-size: $xl;
   line-height: 1.1;
-  margin-top: scale1(12);
-  margin-bottom: scale1(16);
+  margin-top: 1em;
+  margin-bottom: 2.5em;
   padding: 0 1rem 0 0.66rem;
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-top: scale2(12);
-    margin-bottom: scale2(15);
+    font-size: $m;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
   }
 }
 
 .work--contact--title {
-  font-size: scale1(11);
+  font-size: $l;
   font-weight: bold;
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
+    font-size: $lm;
   }
   margin: 0;
 }
 
 .work--contact--addr a {
-  font-size: scale1(11);
+  font-size: $l;
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
+    font-size: $lm;
   }
 }
 
@@ -128,10 +115,6 @@
 .work--myname {
   @include wrapper-mid;
   padding: 0 1rem;
-  margin-top: scale1(12);
-
-  @media (max-width: $screen-sml) {
-    margin-top: scale2(13);
-  }
+  margin-top: 1em;
 }
 

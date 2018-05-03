@@ -1,10 +1,10 @@
 html {
   box-sizing: border-box;
   font-family: $base-font-family;
-  font-size: scale1(10);
+  font-size: $m;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
+    font-size: $mm;
   }
 
   line-height: $base-line-height;

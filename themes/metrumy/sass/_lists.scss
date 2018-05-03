@@ -7,20 +7,13 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
-  margin-bottom: scale1(6);
-  @media (max-width: $screen-sml) {
-    margin-bottom: scale2(6);
-  }
+  margin-bottom: 0.5em;
 }
 
 li ol,
 li ul {
-  margin-top: scale1(7);
-  margin-bottom: scale1(7);
-  @media (max-width: $screen-sml) {
-    margin-top: scale2(7);
-    margin-bottom: scale2(7);
-  }
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .list-title {
@@ -55,9 +48,9 @@ li ul {
 }
 
 .post-list {
-  margin: scale1(13) 0 scale1(10);
+  margin: $xxl 0 $m;
   @media (max-width: $screen-sml) {
-     margin: scale2(13) 0 scale2(10);
+     margin: $xxlm 0 $mm;
   }
 }
 
@@ -72,46 +65,46 @@ li ul {
 
 .post-list h1 {
   font-weight: bold;
-  font-size: scale1(12);
+  font-size: $xl;
   font-weight: bold;
   line-height: 1.25;
   color: $black;
   margin-top: 0.66em;
   margin-bottom: 0.66em;
   @media (max-width: $screen-sml) {
-    font-size: scale2(12);
+    font-size: $xlm;
   }
 }
 
 .post-list h2 {
-  font-size: scale1(10);
+  font-size: $m;
   font-weight: bold;
   line-height: 1.25;
-  margin-top: scale1(10);
-  margin-bottom: scale1(10);
+  margin-top: $m;
+  margin-bottom: $m;
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
-    margin-top: scale2(10);
-    margin-bottom: scale2(10);
+    font-size: $mm;
+    margin-top: $mm;
+    margin-bottom: $mm;
   }
 }
 
 .post-list h3 {
-  font-size: scale2(10);
+  font-size: $m;
   font-weight: normal;
   line-height: 1.5;
   margin-top: 1em;
   margin-bottom: 1em;
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
+    font-size: $mm;
   }
 }
 
 .post-list--post {  
-  margin: 0 auto scale1(13);
+  margin: 0 auto $xxl;
   @media (max-width: $screen-sml) {
-    margin-bottom: scale2(13);
+    margin-bottom: $xxlm;
   }
   &:last-of-type {
     margin-bottom: 1em;
@@ -122,21 +115,21 @@ li ul {
 h2.post-list--post-title,
 h3.post-list--post-title {
   font-weight: bold;
-  font-size: scale1(11);
+  font-size: $l;
   font-weight: bold;
   line-height: 1.25;
   color: $black;
-  margin-top: scale1(10);
-  margin-bottom: scale1(10);
+  margin-top: $m;
+  margin-bottom: $m;
 
   & a {
     border-bottom: none;
   }
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-top: scale2(10);
-    margin-bottom: scale2(10);
+    font-size: $lm;
+    margin-top: $mm;
+    margin-bottom: $mm;
   }
 }
 

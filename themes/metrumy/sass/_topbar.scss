@@ -2,14 +2,13 @@
   @include wrapper-big; 
   display: flex;
   align-items: baseline; 
-  font-size: scale1(9);
+  font-size: $s;
   margin: 0 auto;
   padding: 1em 1em 0.75em;
   text-align: left;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(9);
-
+    font-size: $sm;
     padding: 1rem;
     text-align: left;
   }
@@ -21,7 +20,7 @@
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  margin: 0 0 0.5em 0;
+  margin: 0;
 
   & :first-of-type {
     margin-right: 1em;

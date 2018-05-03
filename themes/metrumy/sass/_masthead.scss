@@ -6,14 +6,13 @@
 
 .masthead-mini {
   background-color: transparent;
-  font-size: scale1(9);
+  font-size: $s;
   margin: 0 auto;
-  padding: scale1(8);
+  padding: 1em;
   text-align: center;
   @media (max-width: $screen-sml) {
-    font-size: scale2(9);
-    margin-bottom: scale2(13);
-    padding: scale2(8);
+    font-size: $sm;
+    margin-bottom: 2em;
     text-align: left;
   }
 }
@@ -36,14 +35,14 @@
 
 .masthead-mini--title {
   color: $background-color;
-  font-size: scale1(9);
+  font-size: $s;
   font-weight: normal;
   line-height: 1;
   letter-spacing: 0.075em;
   margin: 0 auto;
   text-transform: uppercase;
   @media (max-width: $screen-sml) {
-    font-size: scale2(9);
+    font-size: $sm;
   }
 }
 

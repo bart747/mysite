@@ -5,14 +5,14 @@ p {
 }
 
 .p--big {
-  font-size: scale1(11);
-  margin-top: scale1(12);
-  margin-bottom: scale1(12);
+  font-size: $l;
+  margin-top: $xl;
+  margin-bottom: $xl;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-top: scale2(11);
-    margin-bottom: scale2(11);
+    font-size: $lm;
+    margin-top: $lm;
+    margin-bottom: $lm;
   }  
 }
 
@@ -34,55 +34,55 @@ h4 a {
 }
 
 h1, .h1-like {
-  font-size: scale1(13);
+  font-size: $xxl;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  margin-top: scale1(13);
-  margin-bottom: scale1(12);
+  margin-top: $xxl;
+  margin-bottom: $xl;
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(13);
-    margin-top: scale2(13);
-    margin-bottom: scale2(12);
+    font-size: $xxlm;
+    margin-top: $xxlm;
+    margin-bottom: $xlm;
   }
 }
 
 h2, .h2-like {
-  font-size: scale1(11);
+  font-size: $l;
   line-height: 1.25;
-  margin-top: scale1(12);
-  margin-bottom: scale1(10);
+  margin-top: $xl;
+  margin-bottom: $s;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(11);
-    margin-top: scale2(12);
-    margin-bottom: scale2(10);
+    font-size: $lm;
+    margin-top: $xlm;
+    margin-bottom: $sm;
   }
 }
 
 h3, .h3-like {
-  font-size: scale1(10);
+  font-size: $s;
   line-height: 1.25;
-  margin-top: scale1(12);
-  margin-bottom: scale1(10);
+  margin-top: $xl;
+  margin-bottom: $s;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
-    margin-top: scale2(12);
-    margin-bottom: scale2(10);
+    font-size: $sm;
+    margin-top: $xlm;
+    margin-bottom: $sm;
   }
 }
 
 h4, .h4-like {
-  font-size: scale1(10);;
+  font-size: $s;;
   line-height: 1.5;
-  margin-top: scale1(12);
-  margin-bottom: scale1(10);
+  margin-top: $xl;
+  margin-bottom: $s;
   
   @media (max-width: $screen-sml) {
-    font-size: scale2(10);
-    margin-top: scale2(12);
-    margin-bottom: scale2(10);
+    font-size: $sm;
+    margin-top: $xlm;
+    margin-bottom: $sm;
   }
 }
 
@@ -133,11 +133,11 @@ li code {
 }
 
 .date {
-  font-size: scale1(9);
-  margin: scale1(10) 0;
+  font-size: $s;
+  margin: $s 0;
   @media (max-width: $screen-sml) {
-    font-size: scale2(9);
-    margin: scale2(10) 0;
+    font-size: $sm;
+    margin: $sm 0;
   }
 }
 
@@ -146,34 +146,38 @@ li code {
 }
 
 .article-title {
-  font-size: scale1(13);
+  font-size: $xxl;
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  margin-top: scale1(12);
-  margin-bottom: scale1(14);
+  margin-top: 1em;
+  margin-bottom: 1em;
 
   @media (max-width: $screen-sml) {
-    font-size: scale2(13);
-    margin-top: scale2(12);
-    margin-bottom: scale2(13);
+    font-size: $xxlm;
   }  
 }
 
 .article-title--video {
-  font-size: scale1(12);
+  font-size: $l;
   font-weight: bold;
   line-height: 1;
   letter-spacing: -0.01em;
-  margin-top: scale1(11);
-  margin-bottom: scale1(10);   
+  margin-top: $l;
+  margin-bottom: $s;
+
+  @media (max-width: $screen-sml) {
+    font-size: $lm;
+    margin-top: $lm;
+    margin-bottom: $sm;
+  }   
 }
 
 small,
 .small-txt {
-  font-size: scale1(9);
+  font-size: $s;
 
   @media screen and (max-width: $screen-sml) {
-    font-size: scale2(9);
+    font-size: $sm;
   }
 }
