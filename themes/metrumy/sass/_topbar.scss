@@ -18,19 +18,14 @@
 .topbar--unit {
   color: $background-color;
   display: inline-block;
-  font-size: scale1(9);
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  margin: 0 0 0.5em 1em;
+  margin: 0 0 0.5em 0;
 
-  &:first-of-type {
+  & :first-of-type {
     margin-right: 1em;
-  }
-
-  @media (max-width: $screen-sml) {
-    font-size: scale2(9);
-  }  
+  } 
 }
 
 .topbar--unit--logo {

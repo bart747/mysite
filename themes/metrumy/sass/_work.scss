@@ -96,7 +96,7 @@
 
   @media (max-width: $screen-sml) {
     font-size: scale2(11);
-    margin-top: scale2(13);
+    margin-top: scale2(12);
     margin-bottom: scale2(15);
   }
 }
@@ -128,5 +128,10 @@
 .work--myname {
   @include wrapper-mid;
   padding: 0 1rem;
+  margin-top: scale1(12);
+
+  @media (max-width: $screen-sml) {
+    margin-top: scale2(13);
+  }
 }
 
