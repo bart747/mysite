@@ -1,5 +1,6 @@
 
 // fibonacci
+/*
 @function fib($n) {
   $a: 0; 
   $b: 1;
@@ -13,7 +14,7 @@
   @return $a;
 }
 
-/*
+
 @function fib($n) {
   @if $n < 2 { 
     @return $n;  
@@ -21,9 +22,7 @@
     @return fib($n - 1) + fib($n - 2);
   }
 }
-*/
 
-/*
 @function fib($n) {
   $a: 0; 
   $b: 1;
@@ -50,7 +49,7 @@
 }
 
 @function scaleM($n) {
-  @return round(sizer($n) * 0.9) + px; 
+  @return round(sizer($n) * 0.86) + px; 
 }
 
 @mixin grid-50-50 {

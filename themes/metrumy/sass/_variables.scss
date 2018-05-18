@@ -1,21 +1,23 @@
 $base-font-family:      "Merriweather", serif;
 $monospace:             "Dejavu Sans Mono", monospace;
-$base-line-height:      1.7;
+$base-line-height:      1.6;
 
-// font sizes in pixels; 'm' ending means 'mobile' (smasrtphone specific) 
+//
+// font sizes in pixels; 'm' ending means 'mobile' (smartphone specific) 
+//
 $s: scale(9);
 $m: scale(10);
 $l: scale(11);
 $xl: scale(12);
 $xxl: scale(13);
-$xxxl: scale(14);
+$hero: scale(15);
 
+// mobile (smaller) versions
 $sm: scaleM(9);
 $mm: scaleM(10);
 $lm: scaleM(11);
 $xlm: scaleM(12);
 $xxlm: scaleM(13);
-$xxxlm: scaleM(14);
 
 
 
@@ -47,9 +49,9 @@ $yellow-light:        #ffffaa;
 $background-yellow:   #ffee99;
 $orange:              #ff6622;
 $orange-brown:        #cc5500;
-$orange-light:        #ffeedd;
+$orange-light:        #ffddaa;
 $orange-deep:         #dd4433;
-$night:               #222233;
+$night:               #222255;
 $sand:                #887755;
 
 // sceen sizes

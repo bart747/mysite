@@ -1,4 +1,6 @@
-.topbar {
+.topbar {}
+
+.topbar--content {
   @include wrapper-big; 
   display: flex;
   align-items: baseline; 
