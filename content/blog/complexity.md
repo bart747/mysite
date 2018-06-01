@@ -1,32 +1,33 @@
 ---
-title: "You Ain't Know Shit About Complexity"
+title: "We're so Bad at Judging Complexity, Yet We Like to Predict"
 date: 2018-06-01
 draft: true
 ---
 
 Living in a bubble,  the one that's unavoidable, makes us misjudge what are
 the most complex things we have to face.
-We think that, for instance, some technical (software/hardware) problems are
+We think that some technical (software/hardware) problems are
 the most convoluted ones.
 Actually, everyday things like traffic or sales are way more complex.
 
 <!--more-->
 
-If you solve software problems you might think that you have to deal with bigger complexity
-than a salesman or a taxi driver. That's wrong. You just have to think more analytical about it.
-Your level of awareness is higher, but you're not dealing with more convoluted surroundings.
+If you deal with software problems, you have to be more analytical about complexity than sales people or taxi drivers. But you're not in more convoluted environment. It's just a difference in awareness.
 
 A salesman knows that he can select and call ten
-different prospects and hear “no” nine times in a row. He will keep trying. He will
+different prospects and get “no” from nine of them. He will keep trying. He will
 adjust the course (build new heuristics) every time he notice a pattern.
 However, he will never figure
 out a theory that universally explains what makes people buy, so that he
 can predict decisions, or call only those who will almost for sure say “yes”.
 And this is OK – he will do well anyway.
 People like him don't bother to do much calculation or predictions.
-They just iterate, tinker, observe and judge, accepting that they will
+They just progressively iterate, tinker, observe and judge, accepting that they will
 never know everything.
 
-We never know all aspects of a given real life problem, and somehow we figure out the way.
-It's never perfect, but it's good enough to keep going.
+Just because your environment is complicated doesn't mean that you need to
+understand all its aspects to get by.
 It's about iteration and couple of good heuristics – not predictiveness.
+On the other hand, learning something commonly known as
+complex doesn't mean that your abilities to predict the future are now greater.
+In the big picture it's just a bird shit.
