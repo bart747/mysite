@@ -1,5 +1,5 @@
 ---
-title: "We're so Bad at Judging Complexity, Yet We Like to Predict"
+title: "We're so Bad at Judging Complexity, yet We Like to Predict"
 date: 2018-06-01
 ---
 
