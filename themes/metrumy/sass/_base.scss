@@ -163,6 +163,15 @@ footer {
   }
 }
 
+.blog--aside {
+  background-image: linear-gradient(darken($background-color, 10%), $background-color);
+  margin-top: 2em;
+  padding: 0 1em;
+  @media (max-width: $screen-big + 1px) {
+   // display: none;
+  }
+}
+
 button,
 .btn {
   font-size: 1em;
@@ -218,24 +227,24 @@ button,
 
 #spaceman {
   position: relative;
-  animation-duration: 1.25s;
+  animation-duration: 1.5s;
   animation-name: float;
-  animation-iteration-count: 5;
+  animation-iteration-count: 3;
   animation-timing-function: cubic-bezier(0.5, 0.2, 0.5, 1);
   text-align: center;
 }
 
 #flame1 {
   position: relative;
-  animation-duration: 0.9s;
+  animation-duration: 0.5s;
   animation-name: flame;
-  animation-iteration-count: 7;
+  animation-iteration-count: 8;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes float {
-  50% {
-    transform: translateY(-5px);
+  45% {
+    transform: translateY(-3px);
   }
 }
 

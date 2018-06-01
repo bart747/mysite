@@ -48,10 +48,7 @@ li ul {
 }
 
 .post-list {
-  margin: $xxl 0 $m;
-  @media (max-width: $screen-sml) {
-     margin: $xxlm 0 $mm;
-  }
+  margin: 2em 0 1em;
 }
 
 .post-list > li {
@@ -102,9 +99,9 @@ li ul {
 }
 
 .post-list--post {  
-  margin: 0 auto $xxl;
+  margin: 0 auto 3em;
   @media (max-width: $screen-sml) {
-    margin-bottom: $xxlm;
+    margin-bottom: 3em;
   }
   &:last-of-type {
     margin-bottom: 1em;

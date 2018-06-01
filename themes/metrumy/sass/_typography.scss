@@ -61,15 +61,15 @@ h2, .h2-like {
 }
 
 h3, .h3-like {
-  font-size: $s;
+  font-size: $m;
   line-height: 1.25;
   margin-top: $xl;
-  margin-bottom: $s;
+  margin-bottom: $m;
   
   @media (max-width: $screen-sml) {
-    font-size: $sm;
+    font-size: $mm;
     margin-top: $xlm;
-    margin-bottom: $sm;
+    margin-bottom: $mm;
   }
 }
 

@@ -54,3 +54,14 @@
   }
   
 }
+
+@media (min-width: 1120px) {
+
+  .blog-grid {
+    display: flex;
+    justify-content: center;
+    @include columns;
+    margin-bottom: 3em;
+  }
+  
+}
