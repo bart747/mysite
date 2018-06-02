@@ -218,11 +218,14 @@ button,
 
 .top-animation {
   text-align: center;
-  margin: auto;
+  margin: 1em auto 0;
   @media (max-width: $screen-sml) {
     margin: 1em auto;
   }
+}
 
+.top-animation {
+  text-decoration: none;
 }
 
 #spaceman {
