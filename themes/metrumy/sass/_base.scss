@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  
   @media print {
     color: $grey-dark;
   }
@@ -65,7 +66,6 @@ section {
 }
 
 .wrapper--media-background {
-  background-color: #000;
   width: 100%;
   margin: 0;
 }
@@ -84,7 +84,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 nav {
@@ -164,12 +164,23 @@ footer {
 }
 
 .blog--aside {
-  background-image: linear-gradient(darken($background-color, 10%), $background-color);
-  margin-top: 2em;
+  font-size: $s;
   padding: 0 1em;
-  @media (max-width: $screen-big + 1px) {
-   // display: none;
+  @media (max-width: $screen-big) {
+    display: none;
   }
+}
+
+.blog--aside--content {
+  position: fixed;
+}
+
+.blog--aside--content h3 {
+  font-size: $s;
+}
+
+.blog--aside--content a {
+ 
 }
 
 button,

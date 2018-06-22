@@ -16,6 +16,14 @@ li ul {
   margin-bottom: 0.5em;
 }
 
+.list--small {
+  list-style: none;
+}
+
+.list--small li {
+  margin-left: 0;
+}
+
 .list-title {
   font-weight: bold;
   line-height: 1.25;
