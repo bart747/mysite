@@ -210,6 +210,10 @@ button,
   }
 }
 
+.display-none {
+  display: none;
+}
+
 .blue {
   color: $blue;
 }
@@ -266,4 +270,8 @@ button,
   50% {
     opacity: 0.3;
   }
+}
+
+.archive {
+  margin: 3em 0;
 }

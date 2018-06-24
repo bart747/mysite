@@ -1,4 +1,4 @@
-{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 7 }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 12 }}
 
 {{ if not .Paginator.HasPrev }}  
     {{ partial "topanimation.html" . }}

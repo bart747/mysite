@@ -1,0 +1,90 @@
+{{ partial "topanimation.html" . }}
+
+<div class="blog-grid">    
+  <main class="col-75">
+
+    <section class="post-list">
+      <div class="article--narrow">
+        Latest:
+      </div>
+
+    {{ range first 5 (where .Data.Pages "Section" "blog") }}
+
+      <div class="article post-list--post">
+        
+        {{ if in .Params.categories "shortnote" }}
+
+          <div class="article--narrow">
+            <h2 class="post-list--note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+
+        {{ else if in .Params.categories "video" }}
+
+          <div class="wrapper--media-background">
+            {{ range .Params.video }}  
+              <div class="wrapper--media"> 
+                <div class="video">
+                  <iframe
+                    src="{{ . }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+          <div class="article--narrow">
+            <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+
+        {{ else }}
+
+          <div class="article--narrow">
+            <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+
+        {{ end }}
+
+      
+      <div class="article--narrow">
+
+        {{ if in .Params.categories "nosummary"}}
+          {{ .Content }} 
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+
+        {{ if .Truncated }}
+          <div class="post-list--post--continue">
+            <a href="{{ .RelPermalink }}">
+              Continue
+              <svg fill="#333" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+              </svg>  
+            </a>
+          </div>
+        {{ end }}
+
+        <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+      </div>
+    </div>
+    {{ end }}
+
+    </section>
+
+    <section class="archive article--narrow">
+      <h3>Archive:</h3>
+      <ul id="archive" class="list--archive">
+        {{ range after 5 (where .Data.Pages "Section" "blog") }}
+        <li class="post-list--post-title--archive"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    
+  </main>
+
+  <aside class="col-25 blog--aside">
+    <div class="blog--aside--content">
+    {{ partial "sidepicks.html" . }}
+    </div>
+  </aside>
+</div>

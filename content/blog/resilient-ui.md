@@ -1,13 +1,13 @@
-+++
-title = "5 Notes on How to Design a Resilient UI"
-date =  "2017-04-05"
-+++
+---
+title: "5 Notes on How to Design a Resilient UI"
+date: 2017-04-05
+---
 
 The most interesting things happen once your software is in real use.
 That's when you can really see what's working and what to change.
 
 It brings us to the problem of editing already working thing. In the wild.
-It happens all the time. Don't think you can predict the future. 
+It happens all the time. Don't think you can predict the future.
 You need to design your software with ease of modification in mind.
 
 <!--more-->
@@ -23,7 +23,6 @@ That way changes will be way less tedious. For instance:
 1. You can just swap UI modules in an HTML or template file.
 2. You can edit a module in its own file – no need to dig into complex code that's responsible for many things.
 
-
 ## Embrace Foundations
 
 If I need to pick between working on something essential or adding bells and whistles, I pick essentials.
@@ -31,7 +30,6 @@ It's just hard to be really good at all of them, so why even focus on *nice to h
 
 Working extra on things like clarity (intuitiveness, readability) and speed
 will give you more than any neophiliac thing.
-   
 
 ## Simplicity is Tricky
 
@@ -41,9 +39,9 @@ Sooner or later it will cause all kinds of unexpected problems.
 Real simplicity of an interface means neat visuals **and** clear implementation.
 To achieve that, you often need to sacrifice some non-crucial features.
 And remember about *YAGNI*.
-     
+
 ## Smooth Interactions
-    
+
 There's an overwhelming variety of internet browsing devices on the market.
 We need to think about what will make the product work smoothly on a sub-average hardware and half-decent wi-fi.
 People will often use your stuff at train stations, airports or in restaurants. And they will use more than one app/website at the same time. How many browser tabs do you have open right now? 
@@ -51,11 +49,10 @@ People will often use your stuff at train stations, airports or in restaurants. 
 (There's a good article in this matter: [Optimizing for Fan Noise](http://prog21.dadgum.com/61.html))
 
 ## Words Win
-    
+
 People say “a picture is like a thousand words”.
 But a picture will not make a proposition as clear and precise as a well designed sentence or phrase.
 Text is also trivial to edit.
 That's why I like typography – it's a tool to achieve clarity and flexibility.
 
 Don't overthink that weird icon. If it's not obvious, text will be better.
-

@@ -1,5 +1,6 @@
 require("../sass/main.scss");
 require("./contact.js");
+require("./archives.js");
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
