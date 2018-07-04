@@ -10,8 +10,8 @@ quickly to get to the middle part and the picture wasn't there yet?
 <!--more-->
 
 When using a plugin, you can use a threshold/offset option to fire the thing earlier.
-But people can scroll fast. 
-If someone visits a site for, lets say,
+But people can scroll fast.
+If someone visits a site for, let's say,
 the third time and knows that the part she wants is somewhere close to the bottom,
 she will scroll down really, really fast.
 
@@ -56,15 +56,15 @@ function loadBottomImgs(count) {
 {{< /highlight >}}
 
 There are 10 available iterations.
-Each one waits 200ms. 
-Than the script checks the image completion.
+Each one waits 200ms.
+Then the script checks the image completion.
 
 If the last top image is ready, the script loads the bottom images and we're done. 
 
 If not, we have another iteration.
 
-If after all iterations the last top image is still not complete,
-the script will load the bottom group without waiting for anything. 
+In case that after all iterations the last top image is still not complete,
+the script will load the bottom group without waiting for anything.
 
 The iteration limit is useful when a connection is slow and a user starts to scroll down the page almost immediately.
 In that kind of situation speed of above the fold content is no longer a priority.

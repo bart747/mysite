@@ -10,10 +10,10 @@ How to show an error indicator during live validation? How to manage a few diffe
 
 Here's a code example that makes these problems simpler.
 It makes adding CSS classes cleaner.
-It allows you to make flexible JavaScript loops that can go through many different inputs easily and check them.
-It support's many different ways of indicating errors. 
+It allows you to make flexible JavaScript loops that can go through many inputs easily and check them.
+And there's flexibility when it comes to indicating errors.
 
-I'm showing code snippets first, than explaining them.
+I'm showing code snippets first, then explaining them.
 
 {{< highlight html >}}
 <div class="container-input validate">
@@ -41,10 +41,10 @@ Here's an example of JS loop that can check input values and much more:
 
 Because it goes through containers (DIVs), not inputs themselves,
 we have easy access to everything inside them.
-It can be, for instance, a label, an icon or a text below a field. 
+It can be, for instance, a label, an icon or a text below a field.
 
 In each iteration it can check what kind of input it's dealing with, and
-than attache a proper method of validation.
+then attache a proper method of validation.
 
 
 ## Input with an error indicator
@@ -105,14 +105,8 @@ Indicators are not displayed by default.
 Only when the container has an *error* or a *success* class a browser will show some of them.
 
 Manipulating CSS class names in only one DIV makes input validation easier.
-The script has to tweak only one element to mark an error. 
+The script has to tweak only one element to mark an error.
 
 ## Short Conclusion
 Good data structures make your work simpler.
 When a structure is right, a procedure that uses it can be more straight forward.
-
-
-
-
-
-

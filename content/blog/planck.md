@@ -11,7 +11,7 @@ Here are few famous quotes related to [creative work](https://bart747.github.io/
 > A new scientific truth does not triumph by convincing
 its opponents and making them see the light,
 but rather because its opponents eventually die,
-and a new generation grows up that is familiar with it. 
+and a new generation grows up that is familiar with it.
 
 <!--more-->
 \
@@ -19,7 +19,7 @@ and a new generation grows up that is familiar with it.
 > Anybody who has been seriously engaged in scientific work
 of any kind realizes that over the entrance to the gates of the temple of
 science are written the words: *Ye must have faith*.
-It is a quality which the scientist cannot dispense with. 
+It is a quality which the scientist cannot dispense with.
 
 \
 

@@ -13,7 +13,7 @@ Here are some examples of SASS based solutions that you can use to make UI more 
 
 ## Variables
 
-With SASS variables you can control your basic UI properties from one, organised file.
+With SASS variables you can control your basic UI properties from one, organized file.
 The obvious ones are font families, media queries, colors and sizes.
 
 Here's quick example:
@@ -145,7 +145,7 @@ $assets-dir: 'assets';
 
 ## Files
 
-Lets assume that you spotted some problem with an article layout.
+Let's assume that you spotted some problem with an article layout.
 If your <code>.scss</code> files are big and complex, you'll need to do some little research before editing.
 If you have a lot of well organized small ones you know where to go:
 
@@ -173,12 +173,12 @@ It's good to have a <code>helpers.scss</code> file. It's a place to store classe
 - .muted
 - @mixin center
 
-Little n' handy stuff.
+Little and handy stuff.
 
 
 ## Conventions and Rules
 
-Rules and conventions are better than total configurability.
+Rules and conventions are better than total customization.
 Set main building blocks of your future product and stick to them.
 It's better for your brain than playing with endless options.
 

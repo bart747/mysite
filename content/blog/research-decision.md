@@ -20,7 +20,7 @@ Than it's no longer just a picture in your head [no longer just a picture in you
 It's clickable.
 You can see actual performance.
 
-Than, if you **know where you're going**, you know how to correct the course.
+Then, if you **know where you're going**, you know how to correct the course.
 You make a decision about the next move and stop looking for crystal balls.
 
 BTW, have you heard about [The Foolscap Method](https://www.youtube.com/watch?v=S8sqQ_p6aR8)?

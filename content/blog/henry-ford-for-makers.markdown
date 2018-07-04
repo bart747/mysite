@@ -4,8 +4,8 @@ date: 2015-11-10
 category: quote-bundle
 ---
 
-These are short excerpts from Henry Ford's “My Life and Work”. I picked 
-the ones that will be helpful especially to makers&mdash;designers, developers, etc.
+These are short excerpts from Henry Ford's “My Life and Work”. I picked
+the ones that will be helpful especially to makers — designers, developers, etc.
 
 
 

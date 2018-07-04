@@ -73,7 +73,7 @@ with a nice theme:
 
 - error highlighting (ie: spellcheck),
 - character limit line,
-- current line highlight (not so bad but still worst than GUI apps).
+- current line highlight (not so bad but still worse than GUI apps).
 
 Sometimes they work more like distractions than like handy hits.
 Consider using some of them in <code>.gvimrc</code> instead of <code>.vimrc</code>.
@@ -121,9 +121,3 @@ set complete+=kspell
 {{< /highlight >}}
 
 Press CTRL-N or CTRL-P in insert-mode to complete current word.
-
-
-					
-						
-
-

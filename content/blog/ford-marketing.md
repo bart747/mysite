@@ -21,9 +21,9 @@ The public thought nothing of a car unless it made speed—unless it beat other 
 
 ## Lawsuit
 
-> The powerful combination of manufacturers who called themselves the "licensed manufacturers"
+> The powerful combination of manufacturers who called themselves the “licensed manufacturers”
 because they operated under licenses from the patentee,
-brought suit against us as soon as we began to be a factor in motor production. 
+brought suit against us as soon as we began to be a factor in motor production.
 <br>[&#8230;]
 
 > The idea was spread that if the suit finally went against me, every man who owned a Ford car would be prosecuted.
@@ -35,7 +35,5 @@ We sold more than eighteen thousand cars—nearly double the output of the previ
 I think about fifty buyers asked for bonds—perhaps it was less than that.
 
 > As a matter of fact, probably nothing so well advertised the Ford car and the
-Ford Motor Company as did this suit. 
+Ford Motor Company as did this suit.
 It appeared that we were the under dog and we had the public's sympathy.
-
-

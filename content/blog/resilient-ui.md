@@ -21,12 +21,12 @@ When your interface is divided into distinct parts, you can also separate chunks
 That way changes will be way less tedious. For instance:
 
 1. You can just swap UI modules in an HTML or template file.
-2. You can edit a module in its own file – no need to dig into complex code that's responsible for many things.
+2. You can edit a module in its own file — no need to dig into complex code that's responsible for many things.
 
 ## Embrace Foundations
 
 If I need to pick between working on something essential or adding bells and whistles, I pick essentials.
-It's just hard to be really good at all of them, so why even focus on *nice to haves*? What usually piss people off is fundamentals refusing to work as they should – not lack of *bahama yellow* in a color palette.
+It's just hard to be really good at all of them, so why even focus on *nice to haves*? What usually piss people off is fundamentals refusing to work as they should — not lack of *bahama yellow* in a color palette.
 
 Working extra on things like clarity (intuitiveness, readability) and speed
 will give you more than any neophiliac thing.
@@ -44,7 +44,7 @@ And remember about *YAGNI*.
 
 There's an overwhelming variety of internet browsing devices on the market.
 We need to think about what will make the product work smoothly on a sub-average hardware and half-decent wi-fi.
-People will often use your stuff at train stations, airports or in restaurants. And they will use more than one app/website at the same time. How many browser tabs do you have open right now? 
+People will often use your stuff at train stations, airports or in restaurants. And they will use more than one app/website at the same time. How many browser tabs do you have open right now?
 
 (There's a good article in this matter: [Optimizing for Fan Noise](http://prog21.dadgum.com/61.html))
 
@@ -53,6 +53,6 @@ People will often use your stuff at train stations, airports or in restaurants. 
 People say “a picture is like a thousand words”.
 But a picture will not make a proposition as clear and precise as a well designed sentence or phrase.
 Text is also trivial to edit.
-That's why I like typography – it's a tool to achieve clarity and flexibility.
+That's why I like typography — it's a tool to achieve clarity and flexibility.
 
 Don't overthink that weird icon. If it's not obvious, text will be better.

@@ -5,7 +5,7 @@ date: 2016-08-19
 
 Contrast is an essential concept when it comes to UI usability. It solves more problems than you think. 
 
-Lets take coins as an example.
+Let's take coins as an example.
 When it comes to look: at first glance you see differences in size, color (types of metals) and visual patterns.
 Feel in hand is also important. Some seem heavier than others. You can detect size by touch too.
 Each of these features is useful in some situation.
