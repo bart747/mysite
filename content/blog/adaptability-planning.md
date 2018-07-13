@@ -2,10 +2,9 @@
 title = "On Fragility of Plans and Adaptability: How Buildings Learn"
 date =  "2017-04-25"
 categories = [ "nosummary", "video" ]
-video = ["https://www.youtube.com/embed/AvEqfg2sIH0"]
+video = "https://www.youtube.com/embed/AvEqfg2sIH0"
+videotime = "30min"
 +++
-
-<small>30 min</small>
 
 + time is the main architect
 + design with adaptability in mind

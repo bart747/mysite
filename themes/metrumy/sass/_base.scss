@@ -30,18 +30,16 @@ body {
 
 a {
   color: $text-color;
-  text-decoration: none;
-  border-bottom: 1px solid $grey;
-  border-radius: 4px 4px 0 0;
+  text-decoration: underline;
+  text-decoration-color: $orange-light;
   transition: background-color 0.1s ease-in;
 
   &:active, &:hover {
-    color: $orange;
+    color: $orange-deep;
   }
 
   @media print {
     color: $grey-dark;
-    border-bottom: 1px solid;
   }
 }
 
@@ -65,6 +63,11 @@ section {
   }
 }
 
+.post-list .wrapper--media {
+  padding-top: 0;
+  padding-bottom: 0.25rem;
+}
+
 .wrapper--media-background {
   width: 100%;
   margin: 0;
@@ -74,7 +77,6 @@ section {
   background-color: #000;
   width: 100%;
   margin: 0;
-  margin-top: -2em;
   padding: 0;
 }
 

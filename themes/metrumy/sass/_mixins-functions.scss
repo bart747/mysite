@@ -1,41 +1,5 @@
 
-// fibonacci
-/*
-@function fib($n) {
-  $a: 0; 
-  $b: 1;
-  $temp: 0;
-  @while $n > 0 {
-    $temp: $a;
-    $a:    $b;
-    $b:    $temp + $b;
-    $n:    $n - 1;
-  }
-  @return $a;
-}
-
-
-@function fib($n) {
-  @if $n < 2 { 
-    @return $n;  
-  } @else {
-    @return fib($n - 1) + fib($n - 2);
-  }
-}
-
-@function fib($n) {
-  $a: 0; 
-  $b: 1;
-  @for $i from 1 through $n {
-    $temp: $a;
-    $a:    $b;
-    $b:    $temp + $b;
-  }
-  @return $a;
-}
-*/
-
-@function sizer($n) {
+@function increaseSize($n) {
   $v: 1;
   @while $n > 0 {
     $v:    $v * 1.33;
@@ -45,11 +9,11 @@
 }
 
 @function scale($n) {
-  @return round(sizer($n)) + px; 
+  @return round(increaseSize($n) * 1.05) + px; 
 }
 
 @function scaleM($n) {
-  @return round(sizer($n) * 0.86) + px; 
+  @return round(increaseSize($n) * 0.9) + px; 
 }
 
 @mixin grid-50-50 {
@@ -61,7 +25,7 @@
 }
 
 @mixin wrapper-mid {
-  max-width: 640px; 
+  max-width: 680px; 
   margin-left: auto;
   margin-right: auto;
 }

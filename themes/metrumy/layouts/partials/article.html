@@ -1,26 +1,28 @@
 <section class="article">
 
-  {{ if in .Params.categories "video" }}
-    {{ range .Params.video }}
+  {{ if in .Params.categories "video" }} 
       <div class="wrapper--media-background-top">
         <div class="wrapper--media"> 
           <div class="video">
-            <iframe src="{{ . }}" frameborder="0" allowfullscreen></iframe>
+            <iframe src="{{ .Params.video }}" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    {{ end }}
   {{ end }}
 
   <div class="article--narrow">
     {{ if in .Params.categories "video" }}
       <h1 class="article-title article-title--video">{{ .Title }}</h1>
+      <div class="date secondary">
+        {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
+      </div>
       {{ else }}
+      <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
       <h1 class="article-title">{{ .Title }}</h1>
-    {{ end }}    
-    
+    {{ end }} 
+
     {{ .Content }} 
-    <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+    
   </div>
 
 </section>

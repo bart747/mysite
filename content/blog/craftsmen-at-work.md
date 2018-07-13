@@ -2,7 +2,8 @@
 title = "Looking at Craftsmen"
 date =  "2016-09-20"
 categories = [ "nosummary", "video" ]
-video = [ "https://www.youtube.com/embed/5tusreUDXUM" ]
+video = "https://www.youtube.com/embed/5tusreUDXUM"
+videotime = "9.5min"
 +++
 
 I enjoy looking at craftsmen at work.

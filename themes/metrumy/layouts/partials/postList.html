@@ -18,21 +18,23 @@
       {{ if in .Params.categories "shortnote" }}
 
         <div class="article--narrow">
+          <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
           <h2 class="post-list--note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         </div>
 
       {{ else if in .Params.categories "video" }}
 
+        <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
         <div class="wrapper--media-background">
-          {{ range .Params.video }}  
+
             <div class="wrapper--media"> 
               <div class="video">
                 <iframe
-                  src="{{ . }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                  src="{{ .Params.video }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
                 </iframe>
               </div>
             </div>
-          {{ end }}
+
         </div>
         <div class="article--narrow">
           <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -41,6 +43,7 @@
       {{ else }}
 
         <div class="article--narrow">
+          <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
           <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         </div>
 
@@ -68,7 +71,6 @@
           </div>
         {{ end }}
 
-        <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
       </div>
     </div>
   {{ end }}

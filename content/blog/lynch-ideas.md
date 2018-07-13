@@ -2,10 +2,9 @@
 title: "David Lynch on Catching Ideas"
 date: "2018-01-04"
 categories: ["video"]
-video: ["https://player.vimeo.com/video/182093266"]
+video: "https://player.vimeo.com/video/182093266"
+videotime: "2.5min"
 ---
-
-<small>2.5 minutes</small>
 
 - You can be surprised by what kind of places will let you catch ideas
 - “There's no original ideas, it's just the ideas that you caught”

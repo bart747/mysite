@@ -7,7 +7,7 @@ ol {
 ul li,
 ol li {
   margin-left: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 li ol,
@@ -138,6 +138,7 @@ h3.post-list--post-title {
 
   & a {
     border-bottom: none;
+    text-decoration: none;
   }
 
   @media (max-width: $screen-sml) {

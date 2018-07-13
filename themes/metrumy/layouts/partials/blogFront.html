@@ -8,7 +8,7 @@
         Latest:
       </div>
 
-    {{ range first 5 (where .Data.Pages "Section" "blog") }}
+    {{ range first 7 (where .Data.Pages "Section" "blog") }}
 
       <div class="article post-list--post">
         
@@ -21,23 +21,28 @@
         {{ else if in .Params.categories "video" }}
 
           <div class="wrapper--media-background">
-            {{ range .Params.video }}  
+              <div class="article--narrow">
+                <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}</div>
+              </div>
+             
               <div class="wrapper--media"> 
                 <div class="video">
                   <iframe
-                    src="{{ . }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                    src="{{ .Params.video }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
                   </iframe>
                 </div>
               </div>
-            {{ end }}
+           
           </div>
           <div class="article--narrow">
+
             <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           </div>
 
         {{ else }}
 
           <div class="article--narrow">
+            <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
             <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           </div>
 
@@ -64,7 +69,6 @@
           </div>
         {{ end }}
 
-        <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
       </div>
     </div>
     {{ end }}
@@ -74,7 +78,7 @@
     <section class="archive article--narrow">
       <h3>Archive:</h3>
       <ul id="archive" class="list--archive">
-        {{ range after 5 (where .Data.Pages "Section" "blog") }}
+        {{ range after 7 (where .Data.Pages "Section" "blog") }}
         <li class="post-list--post-title--archive"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
