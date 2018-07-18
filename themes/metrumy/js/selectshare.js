@@ -9,7 +9,7 @@ articles.forEach(el => {
 
 let infoBox = doc.createElement("div");
 infoBox.setAttribute("id", "infobox");
-infoBox.style= `
+infoBox.style = `
   background-color: #eeecdd;
   border-radius: 4px 0 0 0;
   color: #321;
@@ -21,6 +21,16 @@ infoBox.style= `
   bottom: 0;
   right: 0;
 `; 
+let infoBoxTag = doc.createElement("div");
+infoBoxTag.textContent = "copy & share:";
+infoBoxTag.style = `
+  font-style: italic;
+  color: #555;
+`;
+infoBox.appendChild(infoBoxTag);
+let infoBoxContent = doc.createElement("div");
+infoBox.appendChild(infoBoxContent);
+
 
 function reset() {
   let el = doc.getElementById("infobox");
@@ -36,15 +46,14 @@ function composeInfoBoxContent() {
   reset();
 
   if (len > 8  && len <= 200) { 
-    infoBox.textContent = "“" + selection + "”" + "\n" + document.URL;
+    infoBoxContent.textContent = `“${selection}...” ${document.URL}`;;
     doc.body.appendChild(infoBox);
   }
   else if (len > 200) { 
     let short = selection.substr(0, 200);
-    infoBox.textContent = "“" + short + "..." + "”" + "\n" + document.URL;
+    infoBoxContent.textContent = `“${short}...” ${document.URL}`;
     doc.body.appendChild(infoBox);
   }
 }
 
 removeClickArea.addEventListener("mouseup", reset(), false);
-
