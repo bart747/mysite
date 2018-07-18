@@ -1,7 +1,6 @@
 const doc = document;
 
 let articles = [].slice.call(doc.getElementsByClassName("selectable-article"));
-let removeClickArea = doc.getElementById("allwrapper");
 
 articles.forEach(el => {
   el.addEventListener("mouseup", composeInfoBoxContent, false);
@@ -27,10 +26,24 @@ infoBoxTag.style = `
   font-style: italic;
   color: #555;
 `;
+let infoBoxClose = doc.createElement("div");
+infoBoxClose.textContent = "+";
+infoBoxClose.setAttribute("id", "infoBoxClose");
+infoBoxClose.style = `
+  color: #555;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 0.25em;
+  border-radius: 4px;
+  position: absolute;
+  top: 2px;
+  right: 5px; 
+  transform: rotate(45deg);
+`;
 infoBox.appendChild(infoBoxTag);
+infoBox.appendChild(infoBoxClose);
 let infoBoxContent = doc.createElement("div");
 infoBox.appendChild(infoBoxContent);
-
 
 function reset() {
   let el = doc.getElementById("infobox");
@@ -46,7 +59,7 @@ function composeInfoBoxContent() {
   reset();
 
   if (len > 8  && len <= 200) { 
-    infoBoxContent.textContent = `“${selection}...” ${document.URL}`;;
+    infoBoxContent.textContent = `“${selection}...” ${document.URL}`;
     doc.body.appendChild(infoBox);
   }
   else if (len > 200) { 
@@ -54,6 +67,7 @@ function composeInfoBoxContent() {
     infoBoxContent.textContent = `“${short}...” ${document.URL}`;
     doc.body.appendChild(infoBox);
   }
+  setTimeout(()=> {
+    infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
+  }, 100);
 }
-
-removeClickArea.addEventListener("mouseup", reset(), false);
