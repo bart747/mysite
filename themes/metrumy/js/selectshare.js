@@ -59,14 +59,15 @@ function composeInfoBoxContent() {
   reset();
 
   if (len > 8  && len <= 200) { 
-    infoBoxContent.textContent = `“${selection}...” ${document.URL}`;
+    infoBoxContent.textContent = `“${selection}” ${document.URL}`;
     doc.body.appendChild(infoBox);
-  }
+  } 
   else if (len > 200) { 
     let short = selection.substr(0, 200);
     infoBoxContent.textContent = `“${short}...” ${document.URL}`;
     doc.body.appendChild(infoBox);
   }
+
   setTimeout(()=> {
     infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
   }, 100);
