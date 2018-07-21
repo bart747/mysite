@@ -68,7 +68,6 @@ function composeInfoBoxContent() {
     doc.body.appendChild(infoBox);
   }
 
-  setTimeout(()=> {
-    infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
-  }, 100);
+  infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
+
 }

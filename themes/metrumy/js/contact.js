@@ -8,7 +8,7 @@ var p1 = "hello";
 var p2 = ".bartosz";
 var p3 = "liamg";
 
-var addr = `${p1}${p2}@${rev(p3)}.com`;
+var addr = p1 + p2 + "@" + rev(p3) + ".com";
 
 function rev(s) {
   return s.split("").reverse().join("");
