@@ -69,5 +69,4 @@ function composeInfoBoxContent() {
   }
 
   infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
-
 }

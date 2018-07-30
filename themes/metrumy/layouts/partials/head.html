@@ -8,10 +8,30 @@
 
   <meta name="theme-color" content="#ff6622">
 
+  <!-- HTML Meta Tags -->
+  <title>{{ .Title }}</title>
+  <meta name="description" content="">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{{ .Title }}">
+  <meta itemprop="description" content="{{ .Summary }}">
+  <meta itemprop="image" content="">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://bart747.github.io">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Summary }}">
+  <!--<meta property="og:image" content="">-->
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Summary }}">
+  <!--<meta name="twitter:image" content="">-->
+
   {{ .Hugo.Generator }}
- 
-  <title> {{ .Title }} </title>
-  
+
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
 
