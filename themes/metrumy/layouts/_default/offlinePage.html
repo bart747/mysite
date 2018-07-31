@@ -1,4 +1,28 @@
-{{ partial "head.html" . }}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#ff6622">
+
+  <title>{{ .Title }}</title>
+
+  {{ .Hugo.Generator }}
+
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/dist/bundle.css?{{ now.Unix }}">
+
+  <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+<div id="allwrapper">
 
 {{ partial "topbar.html" . }}
 
