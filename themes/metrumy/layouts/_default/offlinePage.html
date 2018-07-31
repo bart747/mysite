@@ -1,0 +1,53 @@
+{{ partial "head.html" . }}
+
+{{ partial "topbar.html" . }}
+
+
+<div class="article article--narrow">
+    <h1 class="article-title">{{ .Title }}</h1>
+    
+    {{ .Content }}
+    
+</div>
+
+<footer>
+
+    <div>
+      <ul class="list--contacts">
+        <li>
+          <div class="list-contacts-tag">email:&nbsp;</div>
+          <div id="liame"></div>
+        </li>
+        <li>
+          <div class="list-contacts-tag">github:&nbsp;</div> <div><a href="https://github.com/bart747">bart747</a></div>
+        </li>
+        <li>
+          <div class="list-contacts-tag">twitter:&nbsp;</div> <div><a href="https://twitter.com/bwhimself">bwhimself</a></div>
+        </li>
+      </ul>
+    </div>
+    <small>
+    &copy;2016-2018 Bartosz Wieczorek.
+    <a href="https://creativecommons.org/licenses/by/3.0/">
+    Some rights reserved</a> &mdash; please attribute and link back.
+    </small>
+
+<div class="footer--top">
+<a href="#top">top</a>
+</div>
+
+</footer>
+
+<script>
+var place = document.getElementById("liame");
+
+var p1 = "hello.bartosz";;
+var p2 = "gmail";
+
+var addr = p1 + "@" + p2 + ".com";
+place.innerHTML = "<a href=mailto:" + addr + ">" + addr + "</a>";
+</script>
+
+</div>
+</body>
+</html>

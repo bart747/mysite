@@ -18,7 +18,7 @@ function rev(s) {
   var i = 0;
   var l = places.length;
   for (i = 0; i < l; i += 1) {
-    places[i].innerHTML = `<a href=mailto:${addr}>${addr}</a>`;
+    places[i].innerHTML = "<a href=mailto:" + addr + ">" + addr + "</a>";
   }
 }());
 
