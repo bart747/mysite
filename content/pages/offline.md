@@ -3,7 +3,9 @@ layout: offlinePage
 title: "Dang! It looks like you're offline."
 ---
 
-Here's some saved content you might enjoy:
+Please try again as soon as your connection is OK again.
+
+Here's some cached content you might enjoy:
 
 - [5 Notes on How to Design a Resilient UI](/resilient-ui/)
 - [Research vs Making Decisions](/research-decision/)
