@@ -25,11 +25,12 @@ From an [interview at InformIT](http://www.informit.com/articles/article.aspx?p=
 
 Web of Stories:
 
-<div class="video">
-  <iframe
-    src="https://www.youtube.com/embed/75Ju0eM5T2c" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-  </iframe>
+<div class="image-in-article-wrapper">
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/75Ju0eM5T2c" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+    </iframe>
+  </div>
 </div>
-
 
 
