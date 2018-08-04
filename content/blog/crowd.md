@@ -1,7 +1,6 @@
 ---
 title: "Old Programming Wisdom Beats Crowdsourced Advice"
-date: 2018-08-03
-draft: true
+date: 2018-08-04
 ---
 
 Programmers as a crowd, like any crowd, are dumb. People find some wierd kind of safety in following popular opinion. They see it as something of high value — worth sacrificing trust in their own instincts.
@@ -57,3 +56,7 @@ It's not a kind of content you see often. There are many programs written in con
 > The World Wide Web was precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management.
 
 >— [Ted Nelson](http://xanadu.com.au/ted/XU/XuPageKeio.html)
+
+<br>
+
+That's it. Time for a walk.
