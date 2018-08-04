@@ -4,26 +4,30 @@ date: 2018-08-03
 draft: true
 ---
 
-There's so many hypes and trends in “how you should do programming” discourse.
-In the past we had “new best practices” that turned out ot be disappointment.
-We also had ideas that worked well only with some problems, but many people
-started promoting them as “the new universal way”. Programmers as a crowd, like any crowd, are fucking dumb.
+Programmers as a crowd, like any crowd, are dumb. People find some wierd kind of safety in following popular opinion. They see it as something of high value — worth sacrificing trust in their own instincts.
 This is why I like to look for advice by turning to individuals who achieved something worth admiring and 
-show signs of being independent thinkers.
+show signs of independent thinking.
 
 <!--more-->
 
-Couple times I made a mistake of clicking on a link that led to Quora thread on some software problem. I knew what to expect but they figured out how to irritate me anyway. It's interesting how StackOverflow somehow avoids turning into this kind of clusterfuck. You still have to be suspicious and don't treat that voting system too seriously, but it's useful. I'm used to think that something that helps in groupthink, like forums and comment threads, has to be a waste of time. StackOverflow surprised me. But it's an exception.
+My default attitude towards something that helps in groupthink, like forums and comment threads, is perceiving it as a waste of time. However, StackOverflow surprised me. I also remember finding some useful discussions on Reddit. But these are exceptions. **Personal** blogs and vlogs, or essay collections like
+[paulgraham.com](http://www.paulgraham.com), are still my favorite mediums.
 
-Here's a couple of quotes of people that did something right and we can learn from:
+Being **good at avoiding groupthink**, which includes so called “industry standards,” is on point.
+An avarage set of methods of top 50% of professionals is a way different thing than what you get by analyzing how top 10% operates.
+When someone starts advising you with, “today, most people,” don't expect a productive discussion.
 
-## Donald Knuth
+Below is a couple of quotes of people who did something right and we can learn from.
+It's not a kind of content you see often. There are many programs written in contradiction to these ideas.
+(Note: it's not a top-list.)
 
-From an [interview at InformIT](http://www.informit.com/articles/article.aspx?p=1193856)):
+<br>
 
-> I must confess to a strong bias against the fashion for reusable code. To me, "re-editable code" is much, much better than an untouchable black box or toolkit. I could go on and on about this. If you’re totally convinced that reusable code is wonderful, I probably won’t be able to sway you anyway, but you’ll never convince me that reusable code isn’t mostly a menace.
+>Somehow the idea of reusability got attached to object-oriented programming in the 1980s, and no amount of evidence to the contrary seems to be able to shake it free. But although some object-oriented software is reusable, what makes it reusable is its bottom-upness, not its object-orientedness. Consider libraries: they're reusable because they're language, whether they're written in an object-oriented style or not.
 
-Web of Stories:
+> — Paul Graham, [*The Hundred-Year Language*](http://www.paulgraham.com/hundred.html).
+
+<br>
 
 <div class="image-in-article-wrapper">
   <div class="video">
@@ -32,5 +36,24 @@ Web of Stories:
     </iframe>
   </div>
 </div>
+— Donald Knuth, *Web of Stories*.
 
+<br>
 
+>Abstraction trades an increase in real complexity for a decrease in perceived complexity. That isn't always a win.
+
+> — [John Carmack](https://twitter.com/id_aa_carmack/status/835164026984243201)
+
+<br>
+
+> The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+
+> If you have referentially transparent code, if you have pure functions — all the data comes in its input arguments and everything goes out and leave no state behind — it’s incredibly reusable.
+
+>— Joe Armstrong, *Coders at Work*.
+
+<br>
+
+> The World Wide Web was precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management.
+
+>— [Ted Nelson](http://xanadu.com.au/ted/XU/XuPageKeio.html)
