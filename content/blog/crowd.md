@@ -13,7 +13,7 @@ My default attitude towards something that helps in groupthink, like forums and 
 [paulgraham.com](http://www.paulgraham.com), are still my favorite mediums.
 
 Being **good at avoiding groupthink**, which includes so called “industry standards,” is on point.
-An avarage set of methods of top 50% of professionals is a way different thing than what you get by analyzing how top 10% operates.
+An average set of methods of the top 50% of professionals is a way different thing than what you get by analyzing how the top 10% operates.
 When someone starts advising you with, “today, most people,” don't expect a productive discussion.
 
 Below is a couple of quotes of people who did something right and we can learn from.
