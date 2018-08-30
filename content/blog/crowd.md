@@ -3,8 +3,8 @@ title: "Old Programming Wisdom Beats Crowdsourced Advice"
 date: 2018-08-04
 ---
 
-Programmers as a crowd, like any crowd, are dumb. People find some wierd kind of safety in following popular opinion. They see it as something of high value — worth sacrificing trust in their own instincts.
-This is why I like to look for advice by turning to individuals who achieved something worth admiring and 
+Programmers as a crowd, like any crowd, are dumb. People find safety in following popular opinions. They see it as something of high value — worth sacrificing trust in their own instincts.
+This is why I like to look for advice by turning to individuals who achieved something worth admiring and
 show signs of independent thinking.
 
 <!--more-->
