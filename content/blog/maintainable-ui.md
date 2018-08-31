@@ -192,7 +192,7 @@ Having 3–5 font sizes is enough.
 
 Building a gallery based on halves and quarters, or rule of thirds gives enough flexibility.
 
-Your article page doesn't need a three–column version.
+Your article page doesn't need a three-column version.
 
 One media-object layout with extra modifier classes is better than a few completely different ones.
 Mod classes are something like this: <code>.photo-big,

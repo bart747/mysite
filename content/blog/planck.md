@@ -6,8 +6,6 @@ categories: quote-bundle
 
 Here are few famous quotes related to [creative work](https://bart747.github.io/process/), by Max Planck:
 
-
-
 > A new scientific truth does not triumph by convincing
 its opponents and making them see the light,
 but rather because its opponents eventually die,

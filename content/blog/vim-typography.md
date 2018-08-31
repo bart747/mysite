@@ -60,7 +60,7 @@ linespace=4
 <code>line-height</code> in CSS.
 It sets the space between lines, not leading.
 
-The default is 0. I like to use something around 4 or 5&mdash;it depends on
+The default is 0. I like to use something around 4 or 5, it depends on
 the font face.
 
 

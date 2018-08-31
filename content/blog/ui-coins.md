@@ -13,7 +13,7 @@ Each of these features is useful in some situation.
 <!--more-->
 
 By analogy, you can do something similar with interfaces.
-Font sizes attached to HTML tags – h1, h2, h3, p – are well known, trivial example.
+Font sizes attached to HTML tags — h1, h2, h3, p — are obvious example.
 
 Forms are more tricky. Sign-up and sign-in forms often look similar and appear in similar places.
 To create a useful contrasts we can give them different titles and labels.

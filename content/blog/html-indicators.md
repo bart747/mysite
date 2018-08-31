@@ -44,7 +44,7 @@ we have easy access to everything inside them.
 It can be, for instance, a label, an icon or a text below a field.
 
 In each iteration it can check what kind of input it's dealing with, and
-then attache a proper method of validation.
+then attach a proper method of validation.
 
 
 ## Input with an error indicator
