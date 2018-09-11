@@ -115,10 +115,18 @@ li ul {
   }
 }
 
+.post-list a {
+  border-bottom: none;
+  text-decoration: none;
+  & :hover {
+    color: $orange-deep;
+  }
+}
+
 .post-list--post {  
-  margin: 0 auto 3em;
+  margin: 0 auto 2em;
   @media (max-width: $screen-sml) {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
   &:last-of-type {
     margin-bottom: 1em;
@@ -131,10 +139,10 @@ h3.post-list--post-title {
   font-weight: bold;
   font-size: $l;
   font-weight: bold;
-  line-height: 1.25;
+  line-height: 1.33;
   color: $black;
-  margin-top: $m;
-  margin-bottom: $m;
+  margin-top: 0;
+  margin-bottom: 0;
 
   & a {
     border-bottom: none;
@@ -143,8 +151,27 @@ h3.post-list--post-title {
 
   @media (max-width: $screen-sml) {
     font-size: $lm;
-    margin-top: $mm;
-    margin-bottom: $mm;
+  }
+}
+
+.post-list--post-subtitle,
+h3.post-list--post-subtitle {
+  color: $grey-dark;
+  font-weight: bold;
+  font-size: $m;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: $m;
+
+  & a {
+    border-bottom: none;
+    text-decoration: none;
+  }
+
+  @media (max-width: $screen-sml) {
+    font-size: $mm;
   }
 }
 

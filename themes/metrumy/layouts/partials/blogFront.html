@@ -4,70 +4,57 @@
   <main class="col-75">
 
     <section class="post-list">
-      <div class="article--narrow">
-        Latest:
-      </div>
 
-    {{ range first 7 (where .Data.Pages "Section" "blog") }}
+    {{ range first 10 (where .Data.Pages "Section" "blog") }}
 
       <div class="article post-list--post">
         
         {{ if in .Params.categories "shortnote" }}
 
-          <div class="article--narrow">
+          <div class="article--narrow article--shortnote">
+            <div class="date secondary date--list"> {{ .Date.Format "Jan 2, 2006" }} </div>
             <h2 class="post-list--note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ .Content }}
           </div>
 
         {{ else if in .Params.categories "video" }}
 
           <div class="wrapper--media-background">
-              <div class="article--narrow">
-                <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}</div>
+            <div class="article--narrow">
+              <div class="date secondary date--video"> {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}</div>
+            </div>
+            
+            <div class="wrapper--media"> 
+              <div class="video">
+                <iframe
+                  src="{{ .Params.video }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                </iframe>
               </div>
-             
-              <div class="wrapper--media"> 
-                <div class="video">
-                  <iframe
-                    src="{{ .Params.video }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
+            </div>
            
           </div>
           <div class="article--narrow">
-
             <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if .Params.subtitle }}
+              <h3 class="post-list--post-subtitle">{{ .Params.subtitle }}</h3>
+            {{ end }}
           </div>
 
         {{ else }}
 
           <div class="article--narrow">
-            <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+          
+            <div class="date secondary date--list"> {{ .Date.Format "Jan 2, 2006" }} </div>
             <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if .Params.subtitle }}
+              <h3 class="post-list--post-subtitle">{{ .Params.subtitle }}</h3>
+            {{ end }}
+
           </div>
 
         {{ end }}
 
-      
       <div class="article--narrow">
-
-        {{ if in .Params.categories "nosummary"}}
-          {{ .Content }} 
-        {{ else }}
-          {{ .Summary }}
-        {{ end }}
-
-        {{ if .Truncated }}
-          <div class="post-list--post--continue">
-            <a href="{{ .RelPermalink }}">
-              Continue
-              <svg fill="#333" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-              </svg>  
-            </a>
-          </div>
-        {{ end }}
 
       </div>
     </div>
@@ -78,7 +65,7 @@
     <section class="archive article--narrow">
       <h3>Archive:</h3>
       <ul id="archive" class="list--archive">
-        {{ range after 7 (where .Data.Pages "Section" "blog") }}
+        {{ range after 10 (where .Data.Pages "Section" "blog") }}
         <li class="post-list--post-title--archive"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>

@@ -1,7 +1,7 @@
 ---
 title: "Play is Essential"
 date: 2017-11-16
-categories: nosummary 
+categories: "shortnote"
 ---
 
 You need experimentation with freedom. Play to figure things out and get unstuck.

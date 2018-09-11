@@ -130,6 +130,12 @@ li code {
 .article--narrow {
   @include wrapper-mid;
   padding: 0 1em;
+} 
+
+.article--shortnote {
+  background-color: $yellow-light;
+  font-family: $monospace;
+  padding: 1em;
 }
 
 .date {
@@ -139,6 +145,14 @@ li code {
     font-size: $sm;
     margin: $sm 0;
   }
+}
+
+.date--list {
+  margin-bottom: 0;
+}
+
+.date--video {
+  margin-bottom: 0.5em;
 }
 
 .secondary {

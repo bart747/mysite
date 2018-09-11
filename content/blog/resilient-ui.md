@@ -1,5 +1,6 @@
 ---
 title: "5 Notes on How to Design a Resilient UI"
+subtitle: "It's easy to achieve perceived simplicity and pay for it with real complexity"
 date: 2017-04-05
 ---
 

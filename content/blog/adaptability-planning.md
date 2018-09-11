@@ -4,6 +4,7 @@ date =  "2017-04-25"
 categories = [ "nosummary", "video" ]
 video = "https://www.youtube.com/embed/AvEqfg2sIH0"
 videotime = "30min"
+subtitle= "Time is the main architect"
 +++
 
 **Architecture is surprisingly similar to software design.**

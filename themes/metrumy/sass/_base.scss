@@ -31,7 +31,7 @@ body {
 a {
   color: $text-color;
   text-decoration: underline;
-  text-decoration-color: $orange-light;
+  text-decoration-color: $sand;
   transition: background-color 0.1s ease-in;
 
   &:active, &:hover {
@@ -66,6 +66,7 @@ section {
 .post-list .wrapper--media {
   padding-top: 0;
   padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .wrapper--media-background {
