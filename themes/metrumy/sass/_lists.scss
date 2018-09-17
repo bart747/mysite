@@ -154,6 +154,15 @@ h3.post-list--post-title {
   }
 }
 
+h2.post-list--post-title--video,
+h3.post-list--post-title--video,
+.post-list--post-title--video {
+  font-size: $m;
+  @media (max-width: $screen-sml) {
+    font-size: $mm;
+  }
+}
+
 .post-list--post-subtitle,
 h3.post-list--post-subtitle {
   color: $grey-dark;
