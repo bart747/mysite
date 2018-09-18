@@ -11,15 +11,15 @@ var p3 = "liamg";
 var addr = p1 + p2 + "@" + rev(p3) + ".com";
 
 function rev(s) {
-  return s.split("").reverse().join("");
+    return s.split("").reverse().join("");
 }
 
 (function create () {
-  var i = 0;
-  var l = places.length;
-  for (i = 0; i < l; i += 1) {
-    places[i].innerHTML = "<a href=mailto:" + addr + ">" + addr + "</a>";
-  }
+    var i = 0;
+    var l = places.length;
+    for (i = 0; i < l; i += 1) {
+        places[i].innerHTML = "<a href=mailto:" + addr + ">" + addr + "</a>";
+    }
 }());
 
 
