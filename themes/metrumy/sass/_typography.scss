@@ -35,7 +35,7 @@ h4 a {
 
 h1, .h1-like {
   font-size: $xxl;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.01em;
   margin-top: $xxl;
   margin-bottom: $xl;
@@ -160,16 +160,8 @@ li code {
 }
 
 .article-title {
-  font-size: $xxl;
-  font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
   margin-top: 1em;
   margin-bottom: 1em;
-
-  @media (max-width: $screen-sml) {
-    font-size: $xxlm;
-  }  
 }
 
 .article-title--video {
