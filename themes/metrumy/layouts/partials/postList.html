@@ -1,10 +1,5 @@
 {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 12 }}
-
-{{ if not .Paginator.HasPrev }}  
-    {{ partial "topanimation.html" . }}
-{{else}}
-  {{ partial "topgraphic.html" . }}
-{{end}}
+{{ partial "logo.html" . }}
 
 <div class="blog-grid">
 <main class="col-75">
