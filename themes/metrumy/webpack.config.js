@@ -7,26 +7,34 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-    mode: "production",
-    entry: "./js/main.js",
     output: {
-        filename: "bundle.js",
+        filename: "main.js",
         path: path.resolve(__dirname, "static/dist"),
     },
     module: {
-        rules: [{
-            test: /\.scss$/,
-            use: extractSass.extract({
-                use: [{
-                    loader: "css-loader",
-                    options: { minimize: true }, // translates CSS into CommonJS
-                }, {
-                    loader: "sass-loader", // compiles Sass to CSS
-                }],
-                fallback: "style-loader", // (in dev mode) creates style nodes from JS strings
-            }),
-        }],
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {     
+                test: /\.scss$/,
+                use: extractSass.extract({
+                    use: [{
+                        loader: "css-loader",
+                        options: { minimize: true }, // translates CSS into CommonJS
+                    }, {
+                        loader: "sass-loader", // compiles Sass to CSS
+                    }],
+                    fallback: "style-loader", // (in dev mode) creates style nodes from JS strings
+                }),
+            }
+        ],
     },
+    
     plugins: [
         extractSass,
     ],

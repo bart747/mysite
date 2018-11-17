@@ -9,7 +9,7 @@
 }
 
 @function scale($n) {
-  @return round(increaseSize($n) * 1.05) + px; 
+  @return round(increaseSize($n) * 1.1) + px; 
 }
 
 @function scaleM($n) {

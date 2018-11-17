@@ -1,84 +1,89 @@
 {{ partial "logo.html" . }}
 
-<div class="blog-grid">    
-  <main class="col-75">
-
-    <section class="post-list">
+<section class="post-list">
 
     {{ range first 10 (where .Data.Pages "Section" "blog") }}
 
-      <div class="article post-list--post">
-        
+    <div class="article post-list--post">
+
         {{ if in .Params.categories "shortnote" }}
 
-          <div class="article--narrow article--shortnote">
-            <div class="date secondary date--list"> {{ .Date.Format "Jan 2, 2006" }} </div>
-            <h2 class="post-list--note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div class="article--narrow article--shortnote">
+            <div class="date secondary date--list">
+                {{ .Date.Format "Jan 2, 2006" }}
+            </div>
+            <h2 class="post-list--note-title">
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </h2>
             {{ .Content }}
-          </div>
+        </div>
 
         {{ else if in .Params.categories "video" }}
-          <div class="wrapper--dark">
-          
-          <div class="wrapper--media-background">
-            <div class="article--narrow">
-              <div class="date secondary date--video"> {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}</div>
+        <div class="wrapper--dark">
+
+            <div class="wrapper--media-background">
+                <div class="article--narrow">
+                    <div class="date secondary date--video">
+                        {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
+                    </div>
+                </div>
+
+                <div class="wrapper--media">
+                    <div class="video">
+                        <iframe src="{{ .Params.video }}"
+                            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
             </div>
-            
-            <div class="wrapper--media"> 
-              <div class="video">
-                <iframe
-                  src="{{ .Params.video }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                </iframe>
-              </div>
-            </div>           
-          </div>
 
-          <div class="article--narrow">
-            <h2 class="post-list--post-title post-list--post-title--video"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ if .Params.subtitle }}
-              <h3 class="post-list--post-subtitle post-list--post-subtitle--video">{{ .Params.subtitle }}</h3>
-            {{ end }}
-          </div>
+            <div class="article--narrow">
+                <h2 class="post-list--post-title post-list--post-title--video">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                {{ if .Params.subtitle }}
+                <h3 class="post-list--post-subtitle post-list--post-subtitle--video">
+                    {{ .Params.subtitle }}
+                </h3>
+                {{ end }}
+            </div>
 
-          </div>
+        </div>
 
         {{ else }}
 
-          <div class="article--narrow">
-          
-            <div class="date secondary date--list"> {{ .Date.Format "Jan 2, 2006" }} </div>
-            <h2 class="post-list--post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div class="article--narrow">
+
+            <div class="date secondary date--list">
+                {{ .Date.Format "Jan 2, 2006" }}
+            </div>
+            <h2 class="post-list--post-title">
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </h2>
             {{ if .Params.subtitle }}
-              <h3 class="post-list--post-subtitle">{{ .Params.subtitle }}</h3>
+                <h3 class="post-list--post-subtitle">
+                    {{ .Params.subtitle }}
+                </h3>
             {{ end }}
 
-          </div>
-
+        </div>
         {{ end }}
-
-      <div class="article--narrow">
-
-      </div>
     </div>
     {{ end }}
 
-    </section>
+</section>
 
-    <section class="archive article--narrow">
-      <h3>Archive:</h3>
-      <ul id="archive" class="list--archive">
+<section class="archive article--narrow">
+    <h3>Archive:</h3>
+    <ul id="archive" class="list--archive">
         {{ range after 10 (where .Data.Pages "Section" "blog") }}
-          <li class="post-list--post-title--archive"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li class="post-list--post-title--archive">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
         {{ end }}
-      </ul>
-    </section>
-    
-  </main>
-
-  <aside class="col-25 blog--aside">
-    <div class="blog--aside--content">
-    {{ partial "sidepicks.html" . }}
-    </div>
-  </aside>
-</div>
+    </ul>
+</section>
