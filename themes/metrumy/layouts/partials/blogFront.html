@@ -4,12 +4,12 @@
 
     {{ range first 10 (where .Data.Pages "Section" "blog") }}
 
-    <div class="article post-list--post">
+    <div class="post-list--post">
 
         {{ if in .Params.categories "shortnote" }}
 
         <div class="article--narrow article--shortnote">
-            <div class="date secondary date--list">
+            <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}
             </div>
             <h2 class="post-list--note-title">
@@ -21,11 +21,10 @@
         </div>
 
         {{ else if in .Params.categories "video" }}
-        <div class="wrapper--dark">
 
             <div class="wrapper--media-background">
                 <div class="article--narrow">
-                    <div class="date secondary date--video">
+                    <div class="date post-list--date--video secondary">
                         {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
                     </div>
                 </div>
@@ -50,13 +49,11 @@
                 {{ end }}
             </div>
 
-        </div>
-
         {{ else }}
 
         <div class="article--narrow">
 
-            <div class="date secondary date--list">
+            <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}
             </div>
             <h2 class="post-list--post-title">
@@ -77,9 +74,9 @@
 
 </section>
 
-<section class="archive article--narrow">
+<section class="post-list--archive article--narrow">
     <h3>Archive:</h3>
-    <ul id="archive" class="list--archive">
+    <ul id="archive" class="post-list--archive--list">
         {{ range after 10 (where .Data.Pages "Section" "blog") }}
             <li class="post-list--post-title--archive">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>

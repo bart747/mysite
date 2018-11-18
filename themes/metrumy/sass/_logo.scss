@@ -1,0 +1,20 @@
+.logo {
+  background-color: #000;
+  color: $background-color;
+  font-size: $s;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+  text-align: center;  
+  margin: 0;
+  padding: 0.5em 0.75em;
+  height: 2.5em;
+  width: 14em;
+}
+
+.logo:hover {
+  background-color: $orange-deep;
+}
+
+a.logo--link {
+  text-decoration: none;
+}

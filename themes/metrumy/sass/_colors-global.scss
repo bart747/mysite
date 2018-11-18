@@ -1,30 +1,7 @@
-$base-font-family:      "IBM Plex Sans", serif;
-$monospace:             "Dejavu Sans Mono", monospace;
-$base-line-height:      1.5;
-
-//
-// font sizes in pixels; 'm' ending means 'mobile' (smartphone specific) 
-//
-$s: scale(9);
-$m: scale(10);
-$l: scale(11);
-$xl: scale(12);
-$xxl: scale(13);
-$hero: scale(15);
-
-// mobile (smaller) versions
-$sm: scaleM(9);
-$mm: scaleM(10);
-$lm: scaleM(11);
-$xlm: scaleM(12);
-$xxlm: scaleM(13);
-
-$radius: 4px; 
-
-
-// colors
 $text-color:          #383838;
 $background-color:    #faf7f5;
+$code-color:          #305ea7;
+
 $black:               #222;
 $white:               #fff;
 $red:                 #ee1144;
@@ -43,7 +20,6 @@ $grey:                #787878;
 $grey-light:            lighten($grey, 40%);
 $grey-dark:             darken($grey, 10%);
 $grey-skye:           #a9baba;
-
 $graphite:            #262428;
 $yellow:              #ffee66;
 $yellow-light:        #ffffaa;
@@ -54,8 +30,3 @@ $orange-light:        #ff7733;
 $orange-deep:         #dd4422;
 $night:               #222255;
 $sand:                #998877;
-
-// sceen sizes
-$screen-big:            1024px;
-$screen-mid:            768px;
-$screen-sml:            568px;

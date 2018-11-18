@@ -51,9 +51,9 @@ function loadBottomImgs(count) {
     bottomImgs.forEach( el => {
       el.src = el.getAttribute("data-imgload");
     });
-  }
+}
 
-  loadBottomImgs(10);
+loadBottomImgs(10);
 {{< /highlight >}}
 
 There are 10 available iterations.

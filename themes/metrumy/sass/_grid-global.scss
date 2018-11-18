@@ -1,3 +1,13 @@
+@mixin grid-50-50 {
+  @media (min-width: $screen-mid) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+  }
+}
+
+
+// flexbox grid
 @mixin columns {
   .col {
     flex: 1 1 auto;
@@ -45,7 +55,7 @@
   @include columns;
 }
 
-@media screen and (min-width: $screen-mid +1px) {
+@media screen and (min-width: $screen-mid + 1px) {
 
   .grid {
     display: flex;

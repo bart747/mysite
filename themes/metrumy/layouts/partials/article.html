@@ -1,43 +1,43 @@
 <section class="article selectable-article">
 
-  {{ if in .Params.categories "video" }} 
-      <div class="wrapper--media-background-top">
-        <div class="wrapper--media"> 
-          <div class="video">
-            <iframe src="{{ .Params.video }}" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-  {{ end }}
-
-  <div class="article--narrow">
     {{ if in .Params.categories "video" }}
-      <h1 class="article-title article-title--video">{{ .Title }}</h1>
-      <div class="date secondary">
-        {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
-      </div>
-      {{ else }}
-      <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
-      <h1 class="article-title">{{ .Title }}</h1>
-    {{ end }} 
+    <div class="wrapper--media-background-top">
+        <div class="wrapper--media">
+            <div class="video">
+                <iframe src="{{ .Params.video }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    {{ end }}
 
-    {{ .Content }} 
-    
-  </div>
+    <div class="article--narrow">
+        {{ if in .Params.categories "video" }}
+        <h1 class="article-title article-title--video">{{ .Title }}</h1>
+        <div class="date secondary">
+            {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
+        </div>
+        {{ else }}
+        <div class="date secondary"> {{ .Date.Format "Jan 2, 2006" }} </div>
+        <h1 class="article-title">{{ .Title }}</h1>
+        {{ end }}
+
+        {{ .Content }}
+
+    </div>
 
 </section>
 
 <section class="subnav">
-  <div class="subnav--line">
-    {{ if .PrevInSection }}
-      <div class="subnav--tag">prev: </div>
-      <div><a class="previous" href="{{.PrevInSection.Permalink}}"> {{.PrevInSection.Title}}</a></div>
-    {{ end }}
-  </div>
-  <div class="subnav--line">
-    {{ if .NextInSection }}
-      <div class="subnav--tag">next: </div>
-      <div><a class="next" href="{{.NextInSection.Permalink}}"> {{.NextInSection.Title}}</a></div>
-    {{ end }}
-  </div>
+    <div class="subnav--row">
+        {{ if .PrevInSection }}
+        <div class="subnav--tag">prev: </div>
+        <div><a class="previous" href="{{.PrevInSection.Permalink}}"> {{.PrevInSection.Title}}</a></div>
+        {{ end }}
+    </div>
+    <div class="subnav--row">
+        {{ if .NextInSection }}
+        <div class="subnav--tag">next: </div>
+        <div><a class="next" href="{{.NextInSection.Permalink}}"> {{.NextInSection.Title}}</a></div>
+        {{ end }}
+    </div>
 </section>

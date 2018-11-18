@@ -1,0 +1,126 @@
+pre {
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+pre,
+code {
+  @include monospace-block;
+}
+
+p code,
+li code {
+  color: $green;
+  font-size: 0.8em;
+  font-family: $monospace;
+  padding: 0 0.25em;
+}
+
+// syntax highlighter
+.highlight {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.hll { background-color: $background-yellow }
+.c  { color: $grey; font-style: italic } /* Comment */
+.err { color: $code-color } /* Error */
+.k { color: $code-color } /* Keyword */
+.o { color: $code-color} /* Operator */
+.cm { color: $grey; font-style: italic } /* Comment.Multiline */
+.cp { color: $grey; font-style: italic } /* Comment.Preproc */
+.c1 { color: $grey; font-style: italic } /* Comment.Single */
+.cs { color: $grey; font-style: italic } /* Comment.Special */
+.gd { color: $code-color; background-color: #ffdddd } /* Generic.Deleted */
+.ge { color: $code-color; font-style: italic } /* Generic.Emph */
+.gr { color: $red-dark } /* Generic.Error */
+.gh { color: $grey } /* Generic.Heading */
+.gi { color: $code-color; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: $grey } /* Generic.Output */
+.gp { color: $grey } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: $grey } /* Generic.Subheading */
+.gt { color: $red-dark } /* Generic.Traceback */
+.kc { color: $code-color } /* Keyword.Constant */
+.kd { color: $code-color } /* Keyword.Declaration */
+.kn { color: $code-color } /* Keyword.Namespace */
+.kp { color: $code-color } /* Keyword.Pseudo */
+.kr { color: $code-color } /* Keyword.Reserved */
+.kt { color: $code-color } /* Keyword.Type */
+.m  { color: $code-color } /* Literal.Number */
+.s  { color: $code-color } /* Literal.String */
+.na { color: $code-color } /* Name.Attribute */
+.nb { color: $code-color } /* Name.Builtin */
+.nc { color: $code-color} /* Name.Class */
+.no { color: $code-color} /* Name.Constant */
+.nd { color: $code-color} /* Name.Decorator */
+.ni { color: $code-color} /* Name.Entity */
+.ne { color: $code-color} /* Name.Exception */
+.nf { color: $code-color} /* Name.Function */
+.nl { color: $code-color} /* Name.Label */
+.nn { color: $code-color} /* Name.Namespace */
+.nt { color: $code-color } /* Name.Tag */
+.nx ,.shl-name { color: $code-color }
+.nv { color: $code-color} /* Name.Variable */
+.ow { color: $code-color } /* Operator.Word */
+.w  { color: $grey } /* Text.Whitespace */
+.mf { color: $code-color } /* Literal.Number.Float */
+.mh { color: $code-color } /* Literal.Number.Hex */
+.mi { color: $code-color } /* Literal.Number.Integer */
+.mo { color: $code-color } /* Literal.Number.Oct */
+.sb { color: $code-color } /* Literal.String.Backtick */
+.sc { color: $code-color } /* Literal.String.Char */
+.sd { color: $code-color } /* Literal.String.Doc */
+.s2 { color: $code-color} /* Literal.String.Double */
+.se { color: $code-color } /* Literal.String.Escape */
+.sh { color: $code-color } /* Literal.String.Heredoc */
+.si { color: $code-color } /* Literal.String.Interpol */
+.sx { color: $code-color } /* Literal.String.Other */
+.sr { color: $code-color } /* Literal.String.Regex */
+.s1 { color: $code-color } /* Literal.String.Single */
+.ss { color: $code-color } /* Literal.String.Symbol */
+.bp { color: $grey } /* Name.Builtin.Pseudo */
+.vc { color: $code-color } /* Name.Variable.Class */
+.vg { color: $code-color } /* Name.Variable.Global */
+.vi { color: $code-color } /* Name.Variable.Instance */
+.il { color: $code-color } /* Literal.Number.Integer.Long */
+.p  { color: $grey }
+.language-html .s { color: $code-color}
+.language-scss .err { color: $code-color}
+
+.shl-name { color: $code-color}
+
+.code--row {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $screen-sml) {
+    flex-direction: row;
+  }
+}
+
+@mixin code--row--side {
+  width: 100%;
+}
+
+.code {
+  @include monospace-block;
+  line-height: 1.4;
+}
+
+.code--row--code {
+  font-family: $monospace;
+  @include code--row--side;
+  min-width: 320px;
+  overflow-x: auto;
+}
+
+.code--row--desc {
+  color: $grey;
+  font-family: $base-font-family;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  border-left: 2px solid $grey;
+  @media (min-width: $screen-sml) {
+    margin-left: 1.5em;
+  }
+  @include code--row--side;
+}

@@ -1,3 +1,58 @@
+$base-font-family:      "IBM Plex Sans", serif;
+$monospace:             "Dejavu Sans Mono", monospace;
+$base-line-height:      1.5;
+
+
+// function to increase font sizes according to a scale setup
+// next lement is one third larger than previous
+@function increaseSize($n) {
+  $v: 1;
+  @while $n > 0 {
+    $v:    $v * 1.33;
+    $n:    $n - 1;
+  }
+  @return $v;
+}
+  
+@function scale($n) {
+  @return round(increaseSize($n) * 1.1) + px; 
+}
+  
+@function scaleM($n) {
+  @return round(increaseSize($n) * 0.9) + px; 
+}
+
+// base font sizes in pixels; 
+// 'scaleM' gives smaller values
+// 'M' ending means 'mobile' (smartphone/narrow screen specific)  
+$s:     scale(9);
+$m:     scale(10);
+$l:     scale(11);
+$xl:    scale(12);
+$xxl:   scale(13);
+$hero:  scale(15);
+
+$sm:    scaleM(9);
+$mm:    scaleM(10);
+$lm:    scaleM(11);
+$xlm:   scaleM(12);
+$xxlm:  scaleM(13);
+
+// HTML element is used to set root values – 'rem' 
+html {
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $m;
+  line-height: $base-line-height;
+  
+  @media (max-width: $screen-sml) {
+    font-size: $mm;
+  }
+
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-size: 1rem;
   text-align: left;
@@ -86,6 +141,24 @@ h4, .h4-like {
   }
 }
 
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+ul li,
+ol li {
+  margin-left: 1em;
+  margin-bottom: 0.25em;
+}
+
+li ol,
+li ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 strong {
   font-weight: bold;
 }
@@ -94,28 +167,6 @@ blockquote {
   border-left: 1px dotted $grey;
   margin: 0;
   padding-left: 1em;
-}
-
-pre {
-  overflow-x: auto;
-  margin: 1em 0;
-}
-
-pre,
-code {
-  @include monoblock;
-}
-
-.highlight {
-  margin-bottom: 1em;
-}
-
-p code,
-li code {
-  color: $green;
-  font-size: 0.8em;
-  font-family: $monospace;
-  padding: 0 0.25em;
 }
 
 .center {
@@ -145,14 +196,6 @@ li code {
     font-size: $sm;
     margin: $sm 0;
   }
-}
-
-.date--list {
-  margin-bottom: 0;
-}
-
-.date--video {
-  margin-bottom: 0.5em;
 }
 
 .secondary {

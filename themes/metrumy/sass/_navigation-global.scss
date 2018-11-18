@@ -1,0 +1,77 @@
+a {
+  color: $text-color;
+  text-decoration: underline;
+  text-decoration-color: $sand;
+  transition: background-color 0.1s ease-in;
+
+  &:active, &:hover {
+    color: $orange-deep;
+    text-decoration-color: $text-color;
+  }
+
+  @media print {
+    color: $grey-dark;
+  }
+}
+
+button,
+.btn {
+  font-size: 1em;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background: $blue;
+  box-shadow: 0 2px 3px $grey;
+  border: none;
+  border-radius: 4px;
+  outline: none; 
+  padding: 0.75em 1em;
+  text-align: center;
+  margin: 0;
+  max-width: 12em;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:active { 
+    background: $blue-dark;
+  }
+  &:active {
+    background: darken($blue-dark, 10%);
+    box-shadow: none;
+  }
+}
+
+
+nav {
+    margin: 0;
+    padding: 0.5em 0.5em 0.25em;
+  }
+  
+.subnav {
+  font-size: 1em;
+  @include wrapper-mid;
+  margin: 0 auto 3em;
+  padding: 0 1em; 
+}
+
+.prev,
+.next {
+  margin: 0;
+}
+
+.old,
+.new {
+  margin: 0 1em;
+}
+
+.subnav--row {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.38;
+  margin-bottom: 0.5em;
+}
+
+.subnav--tag {
+  display: inline-block;
+  min-width: 4em;
+}

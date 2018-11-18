@@ -1,19 +1,15 @@
 @charset "utf-8";
 
 @import
-  "mixins-functions",  // must be first
-  "variables",
-  "base",
-  "typography",
-  "grid",
-  "lists",
-  "images",
-  "video",
-  "syntaxhl",
-  "topbar",
-  "masthead",
-  "tooltip",
-  "home",
-  "projects",
-  "work",
-  "patterns";
+  "colors-global",
+  "layouts-wrappers-global",
+  "typography-global",
+  "code-global",
+  "navigation-global",
+  "grid-global",
+  "footer-global",
+  "images-global",
+  "video-global",
+  "logo",
+  "post-list",
+  "tooltip";

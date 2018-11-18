@@ -1,8 +1,0 @@
-<section class="">
-  <ul class="post-list post-list--short">
-    <div class="list-title">Recently on <a href="./">Blog</a>:</div>
-    {{ range (.Paginator 3).Pages }}
-      <li class=""><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
-</section>
