@@ -30,8 +30,8 @@
 
 </footer>
 
-<script src="/dist/main.js?{{ now.Unix }}">
-</script>
+{{ $js := resources.Get "js/main.js" | resources.Fingerprint }}
+<script src="{{ $js.Permalink }}"></script>
 
 </div>
 </body>

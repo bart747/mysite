@@ -2,7 +2,6 @@
 //import ReactDOM from "react-dom";
 
 require("./contact.js");
-require("../sass/main.scss");
  
 /**
 const Index = () => {
