@@ -2,59 +2,17 @@
 
 <section class="post-list">
 
-    {{ range first 10 (where .Data.Pages "Section" "blog") }}
+    {{ range (where .Data.Pages "Section" "blog") }}
 
     <div class="post-list--post">
-
-        {{ if in .Params.categories "shortnote" }}
-
-        <div class="article--narrow article--shortnote">
-            <div class="date post-list--date secondary">
-                {{ .Date.Format "Jan 2, 2006" }}
-            </div>
-            <h2 class="post-list--note-title">
-                <a href="{{ .Permalink }}">
-                    {{ .Title }}
-                </a>
-            </h2>
-            {{ .Content }}
-        </div>
-
-        {{ else if in .Params.categories "video" }}
-
-            <div class="wrapper--media-background">
-                <div class="article--narrow">
-                    <div class="date post-list--date--video secondary">
-                        {{ .Date.Format "Jan 2, 2006" }} | {{ .Params.videotime }}
-                    </div>
-                </div>
-
-                <div class="wrapper--media">
-                    <div class="video">
-                        <iframe src="{{ .Params.video }}"
-                            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article--narrow">
-                <h2 class="post-list--post-title post-list--post-title--video">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h2>
-                {{ if .Params.subtitle }}
-                <h3 class="post-list--post-subtitle post-list--post-subtitle--video">
-                    {{ .Params.subtitle }}
-                </h3>
-                {{ end }}
-            </div>
-
-        {{ else }}
 
         <div class="article--narrow">
 
             <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}
+                {{ if in .Params.categories "video" }}
+                    <i class="marker--video">video</i>
+                {{ end }}
             </div>
             <h2 class="post-list--post-title">
                 <a href="{{ .Permalink }}">
@@ -68,19 +26,7 @@
             {{ end }}
 
         </div>
-        {{ end }}
     </div>
     {{ end }}
 
-</section>
-
-<section class="post-list--archive article--narrow">
-    <h3>Archive:</h3>
-    <ul id="archive" class="post-list--archive--list">
-        {{ range after 10 (where .Data.Pages "Section" "blog") }}
-            <li class="post-list--post-title--archive">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
-        {{ end }}
-    </ul>
 </section>

@@ -9,6 +9,7 @@ canonifyurls = false
 theme = "metrumy"
 pluralizelisttitles = false
 pygmentsuseclasses = true
+enableEmoji = true
 
 [permalinks]
   blog = "/:filename/"
