@@ -1,6 +1,6 @@
 +++
 title = "Henry Ford on What Promoted His Cars The Most"
-subtitle = "Racing and Lawsuit"
+subtitle = "“As a matter of fact, probably nothing so well advertised the Ford car and the Ford Motor Company as did this suit.”"
 date =  "2016-12-15"
 +++
 

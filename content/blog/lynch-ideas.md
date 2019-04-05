@@ -1,10 +1,10 @@
 ---
 title: "David Lynch on Catching Ideas"
+subtitle: "You can be surprised by what kind of places will let you catch ideas."
 date: "2018-01-04"
 categories: ["video"]
 video: "https://player.vimeo.com/video/182093266"
 videotime: "2.5min"
-subtitle: "You can be surprised by what kind of places will let you catch ideas"
 ---
 
 - You can be surprised by what kind of places will let you catch ideas

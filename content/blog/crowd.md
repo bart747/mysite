@@ -1,7 +1,7 @@
 ---
 title: "Old Programming Wisdom Beats Crowdsourced Advice"
-date: 2018-08-04
 subtitle: "Programmers as a crowd, like any crowd, are dumb."
+date: 2018-08-04
 ---
 
 Programmers as a crowd, like any crowd, are dumb. People find safety in following popular opinions. They see it as something of high value — worth sacrificing trust in their own instincts.

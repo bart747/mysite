@@ -1,5 +1,6 @@
 ---
 title: "Vim Typography: Better Readability and Look"
+subtitle: ".vimrc vs .gvimrc."
 date: 2015-12-21
 ---
 

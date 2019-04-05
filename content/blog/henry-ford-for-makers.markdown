@@ -1,5 +1,7 @@
 ---
 title: "Henry Ford for Makers: Quotes on Design"
+subtitle: "“Because nearly everything that we make is much
+more complex than it needs to be.”"
 date: 2015-11-10
 category: quote-bundle
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Payment UIs Can be Used to Reduce Friction"
+subtitle: "It's sometimes good to repeat yourself. Especially when it's about user's money or privacy."
 date: 2016-03-08
 ---
 

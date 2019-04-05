@@ -1,5 +1,6 @@
 ---
 title: "Max Planck on New Ideas and Creative Work"
+subtitle: "The pure rationalist has no place here."
 date: 2016-09-09
 categories: quote-bundle
 ---

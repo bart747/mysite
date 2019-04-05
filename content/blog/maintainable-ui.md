@@ -1,12 +1,12 @@
 ---
 title: "Maintainable UI: How to Improve Code Editing with SASS"
+subtitle: "Avoid endless options."
 date: 2015-11-10
 ---
 
 Changes are unavoidable. And you can’t predict the future.
 You also can’t solve problems in theory only, without prototyping.
 So make your life easier and build things that are easy to edit.
-
 Here are some examples of SASS based solutions that you can use to make UI more maintainable and “themable”.
 
 <!--more-->

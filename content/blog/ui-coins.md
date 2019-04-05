@@ -1,5 +1,6 @@
 ---
 title: "Learning UI Design from Coins (on Contrast)"
+subtitle: "Two different things need to seem different at first sight."
 date: 2016-08-19
 ---
 
