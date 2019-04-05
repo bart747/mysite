@@ -1,18 +1,17 @@
 .logo {
-  background-color: #000;
-  color: $background-color;
+  background-color: transparent;
+  color: $sand;
   font-size: $s;
   font-weight: bold;
   letter-spacing: -0.1px;
-  text-align: center;  
+  text-align: left;  
   margin: 0;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 1em;
   height: 2.5em;
-  width: 14em;
 }
 
 .logo:hover {
-  background-color: $orange-deep;
+  color: $orange-deep;
 }
 
 a.logo--link {
