@@ -14,6 +14,10 @@
   }
 }
 
+.video--post-list {
+	margin-bottom: 0.38em;	
+}
+
 .video iframe {
 	position: absolute;
 	top: 0;
@@ -22,6 +26,8 @@
 	height: 100%;
 }
 
-.marker--video {
+.video--marker {
 	color: $orange-brown;
 }
+
+

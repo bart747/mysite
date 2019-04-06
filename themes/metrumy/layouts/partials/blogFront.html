@@ -10,10 +10,24 @@
 
             <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}
-                {{ if in .Params.categories "video" }}
-                    <i class="marker--video">video</i>
+                {{ if .Params.video }}
+                   <span class="video--marker">video</span>
                 {{ end }}
             </div>
+            
+            <!--
+            {{ if .Params.video }}
+            <div class="video video--post-list">
+                <iframe
+                    src="{{ .Params.video }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            {{ end }}
+            -->
+
             <h2 class="post-list--post-title">
                 <a href="{{ .Permalink }}">
                     {{ .Title }}
