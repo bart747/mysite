@@ -2,6 +2,9 @@
 title: "We're so Bad at Judging Complexity, yet We Like to Predict"
 subtitle: "Iterate, tinker, observe and judge."
 date: 2018-06-01
+similarTitle: "Research vs Making Decisions"
+similarURL: "research-decision"
+
 ---
 
 Living in a bubble, the one that's unavoidable, makes us misjudge what are

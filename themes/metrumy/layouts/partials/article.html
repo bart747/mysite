@@ -28,6 +28,15 @@
 </section>
 
 <section class="subnav">
+    {{ if .Params.similarURL }}
+    <div class="subnav--tag">You also might like:</div>
+    <div>
+        <a class="similar" href="{{ .Site.BaseURL }}{{ .Params.similarURL }}"> {{ .Params.similarTitle }}</a>
+    </div>
+    {{ end }}
+</section>
+
+<section class="subnav">
     <div class="subnav--row">
         {{ if .PrevInSection }}
         <div class="subnav--tag">prev: </div>
