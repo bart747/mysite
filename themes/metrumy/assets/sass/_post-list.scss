@@ -1,5 +1,5 @@
 .post-list {
-  margin: 2em 0 3em;
+  margin: 1em 0 3em;
 
   @media (min-width: $screen-mid) {
     @include wrapper-mid;
@@ -62,7 +62,7 @@
 }
 
 .post-list--post {  
-  margin: 0 auto 1.5em;
+  margin: 0 0 1.5em;
   @media (max-width: $screen-sml) {
     margin-bottom: 2em;
   }
@@ -95,7 +95,7 @@ h3.post-list--post-title {
 h2.post-list--post-title--first {
   font-size: $l;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.18;
   color: $black;
   margin-top: 0;
   margin-bottom: 0;
@@ -106,7 +106,8 @@ h2.post-list--post-title--first {
   }
 
   @media (max-width: $screen-sml) {
-    font-size: $lm;
+    font-size: $mm;
+    line-height: 1.38;
   }
 }
 
@@ -189,6 +190,13 @@ h3.post-list--post-subtitle {
   a { 
     text-decoration: none;
   }
+}
+
+.post-list--list-title {
+  font-size: $s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1rem 1rem;
 }
 
 

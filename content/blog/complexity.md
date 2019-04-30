@@ -4,6 +4,7 @@ subtitle: "Iterate, tinker, observe and judge."
 date: 2018-06-01
 similarTitle: "Research vs Making Decisions"
 similarURL: "research-decision"
+topPick: True
 
 ---
 

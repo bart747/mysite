@@ -1,0 +1,11 @@
+
+.top-pics {
+  @include wrapper-big;
+}
+
+.top-pics--grid {
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+  grid-column-gap: 0;
+  justify-items: start;
+}

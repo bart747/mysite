@@ -1,12 +1,46 @@
 {{ partial "logo.html" . }}
 
+<section class="top-pics">
+
+    <div class="post-list--list-title">Top Pics:</div>
+
+    <div class="top-pics--grid">
+        {{ range (where .Data.Pages "Section" "blog") }}
+            {{ if .Params.topPick }}
+            <div class="post-list--post">
+
+                <div class="article--narrow">
+
+                    <h2 class="post-list--post-title--first">
+                        <a href="{{ .Permalink }}">
+                            {{ .Title }}
+                        </a>
+                    </h2>
+
+                    {{ if .Params.subtitle }}
+                        <h3 class="post-list--post-subtitle">
+                            {{ .Params.subtitle }}
+                        </h3>
+                    {{ end }}
+
+                </div>
+            </div>
+        
+            {{ end }}
+        {{ end }}
+    </div>
+
+</section>
+
 <section class="post-list">
+
+    <div class="post-list--list-title">Blog:</div>
 
     {{ range (where .Data.Pages "Section" "blog") }}
 
     <div class="post-list--post">
 
-        <div class="article--narrow-left">
+        <div class="article--narrow">
 
             <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}
@@ -14,25 +48,13 @@
                    <span class="video--marker">video</span>
                 {{ end }}
             </div>
-            
-            <!--
-            {{ if .Params.video }}
-            <div class="video video--post-list">
-                <iframe
-                    src="{{ .Params.video }}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            {{ end }}
-            -->
 
             <h2 class="post-list--post-title">
                 <a href="{{ .Permalink }}">
                     {{ .Title }}
                 </a>
             </h2>
+            
             {{ if .Params.subtitle }}
                 <h3 class="post-list--post-subtitle">
                     {{ .Params.subtitle }}
