@@ -2,14 +2,14 @@
 
 <section class="top-pics">
 
-    <div class="post-list--list-title">Top Pics:</div>
+    <div class="post-list--list-title">Featured:</div>
 
     <div class="top-pics--grid">
         {{ range (where .Data.Pages "Section" "blog") }}
-            {{ if .Params.topPick}}
+            {{ if .Params.topPick }}
             <div class="post-list--post">
 
-                <div class="article--narrow">
+                <div class="post-list--container">
 
                     <h2 class="post-list--post-title--first">
                         <a href="{{ .Permalink }}">
@@ -40,7 +40,7 @@
 
     <div class="post-list--post">
 
-        <div class="article--narrow">
+        <div class="post-list--container">
 
             <div class="date post-list--date secondary">
                 {{ .Date.Format "Jan 2, 2006" }}

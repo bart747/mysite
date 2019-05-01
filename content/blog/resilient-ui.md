@@ -2,6 +2,8 @@
 title: "5 Notes on How to Design a Resilient UI"
 subtitle: "It's easy to achieve perceived simplicity and pay for it with real complexity."
 date: 2017-04-05
+similarTitle: "Learning UI Design from Coins (on Contrast)"
+similarURL: "ui-coins"
 ---
 
 The most interesting things happen once your software is in real use.

@@ -2,6 +2,8 @@
 title: "Research vs Making Decisions"
 subtitle: "What pushes you away from reality?"
 date: 2015-12-19
+similarTitle: "Old Programming Wisdom Beats Crowdsourced Advice"
+similarURL: "crowd"
 ---
 
 More often than not, research is something that prevents you from making a decision.

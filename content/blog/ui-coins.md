@@ -3,6 +3,8 @@ title: "Learning UI Design from Coins (on Contrast)"
 subtitle: "Two different things need to seem different at first sight."
 date: 2016-08-19
 topPick: true
+similarTitle: "5 Notes on How to Design a Resilient UI"
+similarURL: "resilient-ui"
 ---
 
 Contrast is an essential concept when it comes to UI usability. It solves more problems than you think. 

@@ -2,6 +2,8 @@
 title: "Old Programming Wisdom Beats Crowdsourced Advice"
 subtitle: "Programmers as a crowd, like any crowd, are dumb."
 date: 2018-08-04
+similarTitle: "Henry Ford for Makers: Quotes on Design"
+similarURL: "henry-ford-for-makers"
 ---
 
 Programmers as a crowd, like any crowd, are dumb. People find safety in following popular opinions. They see it as something of high value — worth sacrificing trust in their own instincts.
