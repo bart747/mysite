@@ -15,7 +15,7 @@ $base-line-height:      1.5;
 }
   
 @function scale($n) {
-  @return round(increaseSize($n) * 1.1) + px; 
+  @return round(increaseSize($n) * 1.2) + px; 
 }
   
 @function scaleM($n) {

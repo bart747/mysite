@@ -1,5 +1,6 @@
 {{ partial "logo.html" . }}
 
+<!--
 <section class="top-pics">
 
     <div class="post-list--list-title">Featured:</div>
@@ -31,10 +32,9 @@
     </div>
 
 </section>
+-->
 
 <section class="post-list">
-
-    <div class="post-list--list-title">Blog:</div>
 
     {{ range (where .Data.Pages "Section" "blog") }}
 

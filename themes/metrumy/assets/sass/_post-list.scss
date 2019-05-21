@@ -1,16 +1,9 @@
 .post-list {
-  margin: 1em 0 3em auto;
+  margin: 1em auto 3em auto;
 
   @media (min-width: $screen-mid) {
-    @include wrapper-big;
+    @include wrapper-mid;
   }
-}
-
-.post-list--container {
-  @include wrapper-mid;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: 0;
 }
 
 .post-list > li {
@@ -70,9 +63,11 @@
 
 .post-list--post {  
   margin: 0 0 1.5em;
+  padding: 0 1rem;
   @media (max-width: $screen-sml) {
     margin-bottom: 2em;
   }
+  @include wrapper-mid;
   &:last-of-type {
     margin-bottom: 1em;
   }
@@ -87,6 +82,27 @@ h3.post-list--post-title {
   color: $black;
   margin-top: 0;
   margin-bottom: 0;
+
+  & a {
+    border-bottom: none;
+    text-decoration: none;
+  }
+
+  @media (max-width: $screen-sml) {
+    font-size: $mm;
+  }
+}
+
+.post-list--post-subtitle,
+h3.post-list--post-subtitle {
+  color: $grey-dark;
+  font-weight: bold;
+  font-size: $m;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.38;
+  margin-top: 0;
+  margin-bottom: $m;
 
   & a {
     border-bottom: none;
@@ -126,27 +142,6 @@ h2.post-list--post-title--video,
 h3.post-list--post-title--video,
 .post-list--post-title--video {
   font-size: $m;
-  @media (max-width: $screen-sml) {
-    font-size: $mm;
-  }
-}
-
-.post-list--post-subtitle,
-h3.post-list--post-subtitle {
-  color: $grey-dark;
-  font-weight: bold;
-  font-size: $m;
-  font-weight: normal;
-  font-style: italic;
-  line-height: 1.38;
-  margin-top: 0;
-  margin-bottom: $m;
-
-  & a {
-    border-bottom: none;
-    text-decoration: none;
-  }
-
   @media (max-width: $screen-sml) {
     font-size: $mm;
   }
