@@ -1,5 +1,5 @@
 ---
-layout: offlinePage
+layout: page
 title: "Dang! It looks like you're offline."
 ---
 
