@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Cookie Policy for this Website"
+title: "Cookie Policy for This Website"
 ---
 
 
