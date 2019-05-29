@@ -1,5 +1,5 @@
 baseurl = "https://bart747.github.io"
-title = "UI performance"
+title = "UI performance and resilience"
 languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
