@@ -4,9 +4,9 @@
 name = "Metrumy"
 license = "MIT"
 licenselink = "https://github.com/bart747/metrum/blob/master/LICENSE.md"
-description = "Simple, Clear, boilerplate theme for Hugo"
+description = "Simple, clear, typography first."
 homepage = "bart747.github.io"
-tags = ["minimal", "minimalist", "neutral", "simple", "boilerplate", "clear", "starter"]
+tags = ["minimal", "minimalist", "neutral", "simple", "boilerplate", "clear", "starter", "typography"]
 features = ["easy to extend"]
 min_version = 0.17
 
