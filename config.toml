@@ -10,6 +10,7 @@ theme = "metrumy"
 pluralizelisttitles = false
 pygmentsuseclasses = true
 enableEmoji = true
+summaryLength = 40
 
 [permalinks]
   blog = "/:filename/"
