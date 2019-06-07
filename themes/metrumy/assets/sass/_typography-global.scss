@@ -180,7 +180,9 @@ blockquote {
 
 .article--narrow {
   @include wrapper-mid;
-  padding: 0 1em;
+  padding: 1em;
+  box-shadow: 0 2px 4px #aaa;
+  background-color: #fff;
 } 
 
 .article--narrow-left {
