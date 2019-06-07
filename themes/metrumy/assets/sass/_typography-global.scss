@@ -179,17 +179,19 @@ blockquote {
 }
 
 .article--narrow {
-  @include wrapper-mid;
-  padding: 1em;
-  box-shadow: 0 2px 4px #aaa;
-  background-color: #fff;
+  box-shadow: 0 1px 4px #aaa;
+  background-color: $background-color-light;
+  max-width: 890px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 5em 2em;
+  @media screen and (max-width: $screen-big) {
+    padding: 1em 3em 2em;
+  }
+  @media screen and (max-width: $screen-sml) {
+    padding: 1em;
+  }
 } 
-
-.article--narrow-left {
-  @include wrapper-mid;
-  margin-left: 0; 
-  padding: 0 1em;
-}
 
 .article--shortnote {
   background-color: $yellow-light;
@@ -211,13 +213,13 @@ blockquote {
 }
 
 .article-title {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .article-title--video {
   font-size: $l;
-
+  margin-top: 0.5em;
   @media (max-width: $screen-sml) {
     font-size: $lm;
   }   
