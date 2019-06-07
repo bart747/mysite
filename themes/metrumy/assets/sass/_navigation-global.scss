@@ -18,26 +18,27 @@ button,
 .btn {
   font-size: 1em;
   display: inline-block;
-  color: #fff;
+  color: $black;
   cursor: pointer;
-  background: $blue;
-  box-shadow: 0 2px 3px $grey;
-  border: none;
+  background-color: lighten($sand, 30%);
+  box-shadow: 0 1px 2px $grey;
+  border: 1px solid $sand;
   border-radius: 4px;
+  background-image: linear-gradient(lighten($sand, 35%), lighten($sand, 30%), lighten($sand, 20%));
   outline: none; 
-  padding: 0.75em 1em;
+  padding: 0.5em 1em;
   text-align: center;
   margin: 0;
   max-width: 12em;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease-out;
 
-  &:hover,
-  &:active { 
-    background: $blue-dark;
+  &:hover { 
+    
   }
-  &:active {
-    background: darken($blue-dark, 10%);
-    box-shadow: none;
+
+  &:active { 
+    background-image: none;
+    box-shadow: 0 0 1px 0 $grey;
   }
 }
 
