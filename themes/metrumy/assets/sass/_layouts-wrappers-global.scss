@@ -1,14 +1,12 @@
 $radius: 4px; 
 
-// colors
-$text-color:          #383838;
-$background-color:    #faf7f5;
-$black:               #222;
-$white:               #fff;
-
 $screen-big:          1024px;
 $screen-mid:          768px;
 $screen-sml:          568px;
+
+.absolute { 
+  position: absolute;
+}
 
 @mixin wrapper-mid {
   max-width: 720px; 

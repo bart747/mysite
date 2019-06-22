@@ -1,9 +1,4 @@
-//import React from "react";
-//import ReactDOM from "react-dom";
-
 require("cookieconsent");
-require("./contact.js");
-
 
 window.addEventListener("load", function(){
     window.cookieconsent.initialise({
@@ -22,12 +17,3 @@ window.addEventListener("load", function(){
         }
     });
 });
-
-/**
-const Index = () => {
-    return <div>Hello React!</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById("top"));
-*/
-

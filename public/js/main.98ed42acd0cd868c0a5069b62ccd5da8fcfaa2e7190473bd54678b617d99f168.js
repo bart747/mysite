@@ -193,26 +193,26 @@
 
 /***/ }),
 
-/***/ "./src/contact.ts":
+/***/ "./src/contact.js":
 /*!************************!*\
-  !*** ./src/contact.ts ***!
+  !*** ./src/contact.js ***!
   \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 // Since it's about super crucial data I decided to use older JS.
 // It's an exception so everything else is setted up with modern JS in mind.
-let places = document.getElementsByClassName("liame");
-const p1 = "hello";
-const p2 = ".bartosz";
-const p3 = "liamg";
-const addr = p1 + p2 + "@" + rev(p3) + ".com";
+var places = document.getElementsByClassName("liame");
+var p1 = "hello";
+var p2 = ".bartosz";
+var p3 = "liamg";
+var addr = p1 + p2 + "@" + rev(p3) + ".com";
 function rev(s) {
     return s.split("").reverse().join("");
 }
 (function create() {
-    let i = 0;
-    let l = places.length;
+    var i = 0;
+    var l = places.length;
     for (i = 0; i < l; i += 1) {
         places[i].innerHTML = "<a href=mailto:" + addr + ">" + addr + "</a>";
     }
@@ -265,16 +265,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cookies.js */ "./src/cookies.js");
 /* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_cookies_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contact_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.ts */ "./src/contact.ts");
-/* harmony import */ var _contact_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_contact_ts__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_contact_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
-const Tester = () => {
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "absolute" }, "~");
+const Index = () => {
+    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "Hello React!");
 };
-react_dom__WEBPACK_IMPORTED_MODULE_1__["render"](react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Tester, null), document.getElementById("top"));
+react_dom__WEBPACK_IMPORTED_MODULE_1__["render"](react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Index, null), document.getElementById("top"));
 
 
 /***/ }),
