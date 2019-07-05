@@ -40,8 +40,8 @@
 <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
-{{ $js := resources.Get "js/main.js" | resources.Fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
+{{ $js := resources.Get "js/main.js" }}
+<script src="{{ $js.Permalink }}?v={{now.Unix}}"></script>
 
 </div>
 </body>
