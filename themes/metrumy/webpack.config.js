@@ -9,7 +9,17 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(t|j)sx?$/, use: { loader: "awesome-typescript-loader" } },
+            { test: /\.(t|j)sx?$/,
+                use: {
+                    loader: "awesome-typescript-loader",
+                    options: {
+                        forceIsolatedModules: true,
+                        reportFiles: [
+                            "src/*.{ts,tsx}"
+                        ]
+                    }
+                }
+            },
             // addition - add source-map support
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
