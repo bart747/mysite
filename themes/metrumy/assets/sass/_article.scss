@@ -1,0 +1,22 @@
+.article {
+  margin: 0 auto 1em;
+}
+
+.article--narrow {
+  @include wrapper-mid;
+  padding: 1em;
+} 
+
+.article-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.article-title--video {
+  font-size: $l;
+  margin-top: 0.5em;
+  @media (max-width: $screen-sml) {
+    font-size: $lm;
+  }   
+}
+

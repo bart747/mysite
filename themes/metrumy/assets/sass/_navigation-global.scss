@@ -14,35 +14,6 @@ a {
   }
 }
 
-button,
-.btn {
-  font-size: 1em;
-  display: inline-block;
-  color: $black;
-  cursor: pointer;
-  background-color: lighten($sand, 30%);
-  box-shadow: 0 1px 2px $grey;
-  border: 1px solid $sand;
-  border-radius: 4px;
-  background-image: linear-gradient(lighten($sand, 35%), lighten($sand, 30%), lighten($sand, 20%));
-  outline: none; 
-  padding: 0.5em 1em;
-  text-align: center;
-  margin: 0;
-  max-width: 12em;
-  transition: all 0.1s ease-out;
-
-  &:hover { 
-    
-  }
-
-  &:active { 
-    background-image: none;
-    box-shadow: 0 0 1px 0 $grey;
-  }
-}
-
-
 nav {
     margin: 0;
     padding: 0.5em 0.5em 0.25em;

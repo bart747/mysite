@@ -174,15 +174,6 @@ blockquote {
   margin: 0 auto;
 }
 
-.article {
-  margin: 0 auto 1em;
-}
-
-.article--narrow {
-  @include wrapper-mid;
-  padding: 1em;
-} 
-
 .date {
   font-size: $s;
   margin: $s 0;
@@ -194,19 +185,6 @@ blockquote {
 
 .secondary {
   color: $grey-dark;
-}
-
-.article-title {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.article-title--video {
-  font-size: $l;
-  margin-top: 0.5em;
-  @media (max-width: $screen-sml) {
-    font-size: $lm;
-  }   
 }
 
 small,
