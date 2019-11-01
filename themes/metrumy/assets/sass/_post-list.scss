@@ -24,7 +24,7 @@
   margin-top: 0.66em;
   margin-bottom: 0.66em;
   @media (max-width: $screen-sml) {
-    font-size: $xlm;
+    font-size: $l;
   }
 }
 
@@ -36,9 +36,9 @@
   margin-bottom: $m;
 
   @media (max-width: $screen-sml) {
-    font-size: $mm;
-    margin-top: $mm;
-    margin-bottom: $mm;
+    font-size: $s;
+    margin-top: $s;
+    margin-bottom: $s;
   }
 }
 
@@ -49,7 +49,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
 }
 
@@ -89,7 +89,7 @@ h3.post-list--post-title {
   }
 
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
 }
 
@@ -110,7 +110,7 @@ h3.post-list--post-subtitle {
   }
 
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
 }
 
@@ -133,7 +133,7 @@ h2.post-list--post-title--first {
   }
 
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
     line-height: 1.38;
   }
 }
@@ -143,7 +143,7 @@ h3.post-list--post-title--video,
 .post-list--post-title--video {
   font-size: $m;
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
 }
 
@@ -191,7 +191,7 @@ h3.post-list--post-title--video,
   margin-bottom: 1em;
   padding-left: 0.5em;
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
   a { 
     text-decoration: none;

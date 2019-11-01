@@ -25,18 +25,13 @@ $base-line-height:      1.5;
 // base font sizes in pixels; 
 // 'scaleM' gives smaller values
 // 'M' ending means 'mobile' (smartphone/narrow screen specific)  
-$s:     scale(9);
-$m:     scale(10);
-$l:     scale(11);
-$xl:    scale(12);
-$xxl:   scale(13);
-$hero:  scale(15);
-
-$sm:    scaleM(9);
-$mm:    scaleM(10);
-$lm:    scaleM(11);
-$xlm:   scaleM(12);
-$xxlm:  scaleM(13);
+$xs:    17px;
+$s:     19px;
+$m:     21px;
+$l:     24px;
+$xl:    27px;
+$xxl:   34px;
+$hero:  48px;
 
 // HTML element is used to set root values – 'rem' 
 html {
@@ -46,7 +41,7 @@ html {
   line-height: $base-line-height;
   
   @media (max-width: $screen-sml) {
-    font-size: $mm;
+    font-size: $s;
   }
 
   margin: 0;
@@ -65,9 +60,9 @@ p {
   margin-bottom: $xl;
   
   @media (max-width: $screen-sml) {
-    font-size: $lm;
-    margin-top: $lm;
-    margin-bottom: $lm;
+    font-size: $s;
+    margin-top: $s;
+    margin-bottom: $s;
   }  
 }
 
@@ -89,55 +84,53 @@ h4 a {
 }
 
 h1, .h1-like {
-  font-size: $xxl;
+  font-size: $hero;
   line-height: 1.1;
   letter-spacing: -0.01em;
-  margin-top: $xxl;
-  margin-bottom: $xl;
+  margin-top: 1em;
+  margin-bottom: 1em;
 
   @media (max-width: $screen-sml) {
-    font-size: $xxlm;
-    margin-top: $xxlm;
-    margin-bottom: $xlm;
+    font-size: $xxl;
   }
 }
 
 h2, .h2-like {
-  font-size: $l;
+  font-size: $xl;
   line-height: 1.25;
-  margin-top: $xl;
-  margin-bottom: $s;
+  margin-top: $xxl;
+  margin-bottom: $l;
   
   @media (max-width: $screen-sml) {
-    font-size: $lm;
-    margin-top: $xlm;
-    margin-bottom: $sm;
+    font-size: $l;
+    margin-top: $xl;
+    margin-bottom: $m;
   }
 }
 
 h3, .h3-like {
   font-size: $m;
   line-height: 1.25;
-  margin-top: $xl;
+  margin-top: $l;
   margin-bottom: $m;
   
   @media (max-width: $screen-sml) {
-    font-size: $mm;
-    margin-top: $xlm;
-    margin-bottom: $mm;
+    font-size: $s;
+    margin-top: $m;
+    margin-bottom: $s;
   }
 }
 
 h4, .h4-like {
   font-size: $s;;
   line-height: 1.5;
-  margin-top: $xl;
+  margin-top: $l;
   margin-bottom: $s;
   
   @media (max-width: $screen-sml) {
-    font-size: $sm;
-    margin-top: $xlm;
-    margin-bottom: $sm;
+    font-size: $xs;
+    margin-top: $m;
+    margin-bottom: $xs;
   }
 }
 
@@ -178,8 +171,8 @@ blockquote {
   font-size: $s;
   margin: $s 0;
   @media (max-width: $screen-sml) {
-    font-size: $sm;
-    margin: $sm 0;
+    font-size: $xs;
+    margin: $xs 0;
   }
 }
 
@@ -192,6 +185,6 @@ small,
   font-size: $s;
 
   @media screen and (max-width: $screen-sml) {
-    font-size: $sm;
+    font-size: $xs;
   }
 }
