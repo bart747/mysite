@@ -5,18 +5,19 @@ button,
   color: $black;
   cursor: pointer;
   background-color: lighten($sand, 30%);
-  border: 1px solid $sand;
+  border: solid $text-color;
+  border-width: 0.1em;
   border-radius: 8px;
   background-image: linear-gradient(lighten($sand, 35%), lighten($sand, 30%), lighten($sand, 20%));
   outline: none; 
-  padding: 0.5em 1em;
+  padding: 0.4em 0.9em;
   text-align: center;
   margin: 0;
   max-width: 12em;
   transition: all 0.1s ease-out;
 
   &:hover { 
-    border-radius: 12px;
+    border-color: $orange-deep;
   }
 
   &:active { 
