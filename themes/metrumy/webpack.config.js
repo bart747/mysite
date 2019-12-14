@@ -4,7 +4,7 @@ module.exports = {
     mode: "production",
     entry: "./src/index.tsx",
     output: {
-        filename: "main.js",
+        filename: "main.v2.js",
         path: path.resolve(__dirname, "assets/js"),
     },
     module: {

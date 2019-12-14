@@ -19,3 +19,5 @@ const Tester = () => {
 };
 
 ReactDOM.render(<Tester />, document.getElementById("top"));
+
+console.log("I'm runnin'");
