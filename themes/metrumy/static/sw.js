@@ -15,21 +15,6 @@ self.addEventListener("install", (event) => {
     event.waitUntil(precache());
 });
 
-self.addEventListener("activate", (event) => {
-    console.log("[ServiceWorker] Activate");
-    event.waitUntil(
-        caches.keys().then((keyList) => {
-            return Promise.all(keyList.map((key) => {
-                if (key !== myCache) {
-                console.log("[ServiceWorker] Removing old cache", key)
-                    return caches.delete(key);
-                }
-            }));
-        })
-    );
-    return self.clients.claim();
-});
-
 self.addEventListener("fetch", (event) => {
     console.log('[ServiceWorker] Serving the asset');
     event.respondWith(fromCache(event.request));
