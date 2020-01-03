@@ -44,8 +44,8 @@
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 -->
 
-<script src="{{ .Site.BaseURL }}react.16.12.0.production.min.js" crossorigin></script>
-<script src="{{ .Site.BaseURL }}react-dom.16.12.0.production.min.js" crossorigin></script>
+<script src="/react.16.12.0.production.min.js" crossorigin></script>
+<script src="/react-dom.16.12.0.production.min.js" crossorigin></script>
 
 {{ $js := resources.Get "js/main.v2.js" }}
 <script src="{{ $js.Permalink }}?v={{now.Unix}}"></script>
