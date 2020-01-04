@@ -1,5 +1,32 @@
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("/fonts/IBMPlexSans-Regular-Latin1.woff2") format("woff2"), url("../IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("/fonts/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: bold;
+  font-weight: 700;
+  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("/fonts/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("/fonts/IBMPlexMono-Regular-Latin1.woff2") format("woff2"), url("../IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Regular.woff") format("woff");
+}
+
+
 $base-font-family:      "IBM Plex Sans", serif;
-$monospace:             "Dejavu Sans Mono", monospace;
+$monospace:             monospace;
 $base-line-height:      1.5;
 
 

@@ -1,5 +1,5 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+// import * as React from "react";
+// import * as ReactDOM from "react-dom";
 
 import "./cookies.js";
 import "./contact.ts";
@@ -13,11 +13,11 @@ if ('serviceWorker' in navigator) {
 } else {
     console.log('Service workers are not supported.');
 }
-
+/**
 const Tester = () => {
     return <div className={"absolute"}>~</div>;
 };
 
 ReactDOM.render(<Tester />, document.getElementById("top"));
-
+*/
 console.log("I'm runnin'");
