@@ -3,21 +3,13 @@
         "browser": true,
         "es6": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/essential"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+    "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
         "sourceType": "module"
     },
-    "plugins": [
-        "vue"
-    ],
     "rules": {
         "indent": [
             "error",
@@ -34,6 +26,7 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-console": 0
     }
 }

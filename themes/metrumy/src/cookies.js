@@ -1,4 +1,4 @@
-require("cookieconsent");
+import "cookieconsent";
 
 window.addEventListener("load", function(){
     window.cookieconsent.initialise({

@@ -1,35 +1,28 @@
 const path = require("path");
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     mode: "production",
-    entry: "./src/index.tsx",
+    entry: "./src/index.js",
     output: {
-        filename: "main.v2.js",
+        filename: "main-bundle.v3.js",
         path: path.resolve(__dirname, "assets/js"),
+    },
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
     },
     module: {
         rules: [
-            { test: /\.(t|j)sx?$/,
-                use: {
-                    loader: "awesome-typescript-loader",
-                    options: {
-                        forceIsolatedModules: true,
-                        reportFiles: [
-                            "src/*.{ts,tsx}"
-                        ]
-                    }
-                }
-            },
-            // addition - add source-map support
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+          // ... other rules
+          {
+            test: /\.vue$/,
+            loader: 'vue-loader'
+          }
         ]
     },
-    /** 
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM",
-    },
-    */
-    // addition - add source-map support
-    devtool: "source-map"
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 };

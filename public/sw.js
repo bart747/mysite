@@ -2,7 +2,7 @@ const myCache = "sw-cache-v6";
 const cacheFiles = [
     "./manifest.json",
     "./sass/main.min.css",
-    "./js/main.v2.js",
+    "./js/main.v3.js",
     
     // recent (non-draft) and popular posts for quick load:
     "./crowd/",
