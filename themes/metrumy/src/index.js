@@ -16,3 +16,5 @@ if ("serviceWorker" in navigator) {
 
 console.log("I'm runnin'");
 
+const testElement = document.getElementById("jstest");
+testElement.innerHTML += "*";

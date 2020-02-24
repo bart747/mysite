@@ -2,9 +2,9 @@
 import Vue from "vue";
 
 var vuetest = new Vue ({
-    el: '#app',
+    el: "#jstest",
     data: {
-      message: 'Hello Vue!!!'
+      message: "*"
     }
 })
 export default vuetest;
