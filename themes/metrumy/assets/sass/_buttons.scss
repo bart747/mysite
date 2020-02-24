@@ -5,7 +5,7 @@ button,
   color: $black;
   cursor: pointer;
   background-color: lighten($sand, 30%);
-  border: solid $text-color;
+  border: solid $background-color;
   border-width: 0.1em;
   border-radius: 8px;
   background-image: linear-gradient(lighten($sand, 35%), lighten($sand, 30%), lighten($sand, 20%));
