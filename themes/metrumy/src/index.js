@@ -2,8 +2,9 @@ import "./cookies.js";
 import "./contact.js";
 import "./vuetest.vue";
 
+/*
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js").then(function (registration) {
+    navigator.serviceWorker.register("/sw2.js").then(function (registration) {
         console.log("Service worker registration succeeded:", registration);
     }, function (error) {
         console.log("Service worker registration failed:", error);
@@ -11,7 +12,7 @@ if ("serviceWorker" in navigator) {
 } else {
     console.log("Service workers are not supported.");
 }
-
+*/
 
 console.log("I'm runnin'");
 

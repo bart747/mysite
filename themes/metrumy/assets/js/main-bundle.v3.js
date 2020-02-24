@@ -208,7 +208,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var cook
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cookies.js */ \"./src/cookies.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _vuetest_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vuetest.vue */ \"./src/vuetest.vue\");\n\n\n\n\nif (\"serviceWorker\" in navigator) {\n    navigator.serviceWorker.register(\"/sw.js\").then(function (registration) {\n        console.log(\"Service worker registration succeeded:\", registration);\n    }, function (error) {\n        console.log(\"Service worker registration failed:\", error);\n    });\n} else {\n    console.log(\"Service workers are not supported.\");\n}\n\n\nconsole.log(\"I'm runnin'\");\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cookies.js */ \"./src/cookies.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _vuetest_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vuetest.vue */ \"./src/vuetest.vue\");\n\n\n\n\n/*\nif (\"serviceWorker\" in navigator) {\n    navigator.serviceWorker.register(\"/sw2.js\").then(function (registration) {\n        console.log(\"Service worker registration succeeded:\", registration);\n    }, function (error) {\n        console.log(\"Service worker registration failed:\", error);\n    });\n} else {\n    console.log(\"Service workers are not supported.\");\n}\n*/\n\nconsole.log(\"I'm runnin'\");\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -216,11 +216,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _coo
 /*!*************************!*\
   !*** ./src/vuetest.vue ***!
   \*************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vuetest.vue?vue&type=script&lang=js& */ \"./src/vuetest.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\nvar render, staticRenderFns\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n  _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/vuetest.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./src/vuetest.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vuetest.vue?vue&type=script&lang=js& */ \"./src/vuetest.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\nvar render, staticRenderFns\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n  _vuetest_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/vuetest.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./src/vuetest.vue?");
 
 /***/ }),
 
@@ -228,7 +228,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vue
 /*!**************************************************!*\
   !*** ./src/vuetest.vue?vue&type=script&lang=js& ***!
   \**************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
