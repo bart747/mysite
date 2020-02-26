@@ -42,13 +42,11 @@
 
 </footer>
 
+</div>
 
 {{ $js := resources.Get "js/main-bundle.v3.js" }}
 <script src="{{ $js.Permalink }}?v={{now.Unix}}"></script>
 
-
-
-</div>
 </body>
 
 </html>
