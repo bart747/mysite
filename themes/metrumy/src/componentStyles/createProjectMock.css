@@ -1,0 +1,36 @@
+.cpm--form {
+  max-width: 340px;
+}
+
+.cpm--form__dark {
+  background-color: #afaa99;
+  padding: 1em;
+}
+
+.cpm--input {
+  font-size: 1em;
+  padding: 0.75em;  
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: gray;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.cpm-textarea {
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: gray;
+  font-size: 1em;
+  min-height: 6em;
+}
+
+input[type="file"]#file-upload { 
+    display: none;
+}
+
+.cpm--file-upload {
+  display: inline-block;
+}

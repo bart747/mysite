@@ -1,5 +1,5 @@
 button,
-.btn {
+.button {
   font-size: 1em;
   display: inline-block;
   color: $black;
@@ -17,11 +17,16 @@ button,
   transition: all 0.1s ease-out;
 
   &:hover { 
-    border-color: $orange-deep;
+    border-color: $blue-light;
   }
 
   &:active { 
     background-image: none;
     box-shadow: 0 0 1px 0 $grey;
   }
+}
+
+.button--cta {
+  @extend button;
+  background-image: linear-gradient(lighten($blue, 35%), lighten($blue, 30%), lighten($blue, 20%));
 }

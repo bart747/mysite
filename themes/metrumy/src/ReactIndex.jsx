@@ -4,12 +4,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // component imports
-import CreateProject from './createProjectMock.jsx'
+import CreateProjectForm from './createProjectMock.jsx'
 
 const container = (
   <section className='article--narrow'>
     <h1>React Container</h1>
-    <CreateProject userName='Joe Smithsky' />
+    <CreateProjectForm userName='Joe Smithsky' />
   </section>
 )
 
