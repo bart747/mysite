@@ -5,10 +5,10 @@ button,
   color: $black;
   cursor: pointer;
   background-color: lighten($sand, 30%);
-  border: solid $background-color;
+  border: solid lighten($sand, 30%);
   border-width: 0.1em;
   border-radius: 8px;
-  background-image: linear-gradient(lighten($sand, 35%), lighten($sand, 30%), lighten($sand, 20%));
+  box-shadow: 0 1px 3px $grey-dark;
   outline: none; 
   padding: 0.4em 0.9em;
   text-align: center;
@@ -17,16 +17,16 @@ button,
   transition: all 0.1s ease-out;
 
   &:hover { 
-    border-color: $blue-light;
+    border-color: $blue;
   }
 
   &:active { 
-    background-image: none;
-    box-shadow: 0 0 1px 0 $grey;
+    box-shadow: none;
   }
 }
 
 .button--cta {
   @extend button;
-  background-image: linear-gradient(lighten($blue, 35%), lighten($blue, 30%), lighten($blue, 20%));
+  background-color: $blue-light;
+  border: solid $blue-light;
 }

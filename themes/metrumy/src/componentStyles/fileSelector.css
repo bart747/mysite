@@ -1,3 +1,7 @@
+#cpm hr {
+  padding: 0.5em;
+}
+
 .cpm--form {
   max-width: 340px;
 }
@@ -9,7 +13,7 @@
 
 .cpm--input {
   font-size: 1em;
-  padding: 0.75em;  
+  padding: 17px;  
   border-radius: 3px;
   border-width: 1px;
   border-color: gray;
@@ -28,9 +32,22 @@
 }
 
 input[type="file"]#file-upload { 
-    display: none;
+  display: none;
 }
 
-.cpm--file-upload {
-  display: inline-block;
+.cpm--file-list {
+  list-style: georgian;
+}
+
+#cpm--file-list {
+  list-style: none;
+  padding: none;
+}
+
+#cpm--file-list li {
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+  padding: 0;
 }

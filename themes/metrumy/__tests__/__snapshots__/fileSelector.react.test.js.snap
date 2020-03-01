@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Uppload files form  1`] = `
+<section
+  id="cpm"
+>
+  <h2>
+    File Selector:
+  </h2>
+  <form
+    action="/my-unexisting-form-handling-page"
+    className="cpm--form"
+    method="post"
+  >
+    <fieldset>
+      <h3
+        className="list-title"
+      >
+         Selected Files: 
+      </h3>
+      <ul
+        id="cpm--file-list"
+      >
+        <li>
+          no files
+        </li>
+      </ul>
+      <label
+        className="cpm--label button"
+        htmlFor="file-upload"
+      >
+        Select PDF files:
+      </label>
+      <input
+        accept=".pdf"
+        id="file-upload"
+        multiple={true}
+        onChange={[Function]}
+        type="file"
+      />
+    </fieldset>
+    <hr />
+    <button
+      className="button--cta cpm--button--cta"
+      type="submit"
+      value="Send Request"
+    >
+      Send Now
+    </button>
+  </form>
+</section>
+`;
