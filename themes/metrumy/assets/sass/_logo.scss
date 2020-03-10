@@ -1,19 +1,19 @@
 .logo {
   background-color: transparent;
+  line-height: 1;
   margin: 0;
-  padding: 0.5em 1em;
-  height: 2.5em;
-  text-align: center;  
+  padding: 1rem;
+  text-align: left;  
 }
 
 a.logo--link {
+  animation: 0.5s linear colorize;
   color: $orange-deep;
-  font-size: $s;
-  font-family: $monospace;
+  font-size: $xs;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
   &:hover {
     color: $orange-light;
   }
-}
+} 

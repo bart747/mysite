@@ -2,11 +2,10 @@ a {
   color: $text-color;
   text-decoration: underline;
   text-decoration-color: $sand;
-  transition: background-color 0.1s ease-in;
+  transition: 0.1s ease-in;
 
   &:active, &:hover {
     color: $orange-deep;
-    text-decoration-color: $text-color;
   }
 
   @media print {
@@ -16,7 +15,7 @@ a {
 
 nav {
     margin: 0;
-    padding: 0.5em 0.5em 0.25em;
+    padding: 0;
   }
   
 .subnav {
