@@ -37,18 +37,3 @@
     </div>
     {{ end }}
 </section>
-
-<section class="subnav">
-    <div class="subnav--row">
-        {{ if .PrevInSection }}
-        <div class="subnav--tag">prev: </div>
-        <div><a class="previous" href="{{.PrevInSection.Permalink}}"> {{.PrevInSection.Title}}</a></div>
-        {{ end }}
-    </div>
-    <div class="subnav--row">
-        {{ if .NextInSection }}
-        <div class="subnav--tag">next: </div>
-        <div><a class="next" href="{{.NextInSection.Permalink}}"> {{.NextInSection.Title}}</a></div>
-        {{ end }}
-    </div>
-</section>
