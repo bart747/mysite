@@ -1,6 +1,7 @@
 +++
 title = "Working on Ambitious Projects: Jonathan Blow on Game Design"
-date =  "2016-12-12"
+subtitle= "Mental side of a quest."
+date = "2016-12-12"
 categories = [ "nosummary", "video" ]
 video = "https://www.youtube.com/embed/d0m0jIzJfiQ"
 videotime = "67min"
