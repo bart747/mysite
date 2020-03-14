@@ -21,12 +21,12 @@
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
-  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("/fonts/IBMPlexMono-Regular-Latin1.woff2") format("woff2"), url("../IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Regular.woff") format("woff");
+  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("/fonts/IBMPlexMono-Regular-Latin1.woff2") format("woff2");
 }
 
 
 $base-font-family:      "IBM Plex Sans", serif;
-$monospace:             monospace;
+$monospace:             "IBM Plex Mono", monospace;
 $base-line-height:      1.5;
 
 
@@ -50,8 +50,6 @@ $base-line-height:      1.5;
 }
 
 // base font sizes in pixels; 
-// 'scaleM' gives smaller values
-// 'M' ending means 'mobile' (smartphone/narrow screen specific)  
 $xs:    17px;
 $s:     19px;
 $m:     21px;

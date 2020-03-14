@@ -4,6 +4,10 @@
   @media (min-width: $screen-mid) {
     @include wrapper-mid;
   }
+
+  @media (max-width: $screen-mid) {
+    margin-left: 0;
+  }
 }
 
 .post-list > li {

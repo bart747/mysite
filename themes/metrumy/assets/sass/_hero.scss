@@ -1,8 +1,13 @@
 .hero {
+  background-color: $text-color;
+  background: url('/img/nightskybkd.jpeg');
   font-size: $xs;
   line-height: 1.2;
-  position: relative;
-  padding: 1.2em 0;
+  padding: 7rem 0;
+}
+
+.hero__container {
+  margin: 1rem 0;
 }
 
 .hero__grid-container {
@@ -10,10 +15,12 @@
   grid-template-columns: 40% 55%;
   grid-column-gap: 5%;
   max-width: 500px;
+  padding: 0;
+  
 }
 
 .hero__name {
-  font-weight: bold;
+  font-weight: normal;
   margin: 0 0 1.2em;
   padding: 0 1rem;
 }
@@ -28,12 +35,23 @@
 }
 
 .hero__title {
-  color: $grey;
+  color: white;
   font-size: inherit;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.2;
   margin: 1.2em 0 0;
   padding: 0 1rem;
+}
+
+.hero__title--huge {
+  font-size: $hero;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 1rem 1rem;
+  line-height: 1;
+  letter-spacing: -0.1em;
 }
 
 .hero__title--colorized { // <span> element might be required
@@ -43,7 +61,7 @@
 }
 
 .hero__navigation {
-  font-weight: bold;
+  font-weight: normal;
   list-style: none ;
   margin: 0;
   padding: 0 1rem 0;
@@ -58,7 +76,7 @@
 }
 
 .hero__navigation a {
-  color: $orange-deep;
+  color: white;
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: #777;

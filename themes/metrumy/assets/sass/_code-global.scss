@@ -1,3 +1,17 @@
+@mixin monospace-container {
+  font-size: 16px;
+  font-family: $monospace;
+  line-height: 1.5;
+
+  @media screen and (max-width: $screen-mid) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $screen-sml) {
+    font-size: 13px;
+  }
+}
+
 pre {
   overflow-x: auto;
   margin: 1em 0;
@@ -5,7 +19,7 @@ pre {
 
 pre,
 code {
-  @include monospace-block;
+  @include monospace-container;
 }
 
 p code,
@@ -102,7 +116,7 @@ li code {
 }
 
 .code {
-  @include monospace-block;
+  @include monospace-container;
   line-height: 1.4;
 }
 

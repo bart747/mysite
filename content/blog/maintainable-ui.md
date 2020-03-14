@@ -1,6 +1,7 @@
 ---
 title: "Maintainable UI: How to Improve Code Editing with SASS"
 subtitle: "Avoid endless options."
+categories: ["code"]
 date: 2015-11-10
 ---
 

@@ -2,6 +2,7 @@
 title: "On Lazy Load Overuse and What You Can Do Instead"
 subtitle: "Lazy Load is a great idea, so it's overused frequently."
 date: 2016-10-19 
+categories: ["code"]
 ---
 
 Lazy Load is a great idea, so it's overused frequently.

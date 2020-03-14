@@ -1,6 +1,7 @@
 ---
 title: "Structuring HTML Form Validation Indicators"
 subtitle: "Good data structures make your work simpler."
+categories: ["code"]
 date: 2016-10-24
 ---
 
