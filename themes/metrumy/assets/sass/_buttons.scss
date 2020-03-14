@@ -4,34 +4,33 @@ button,
   display: inline-block;
   color: $black;
   cursor: pointer;
-  background-color: lighten($sand, 25%);
-  background: linear-gradient(lighten($sand, 35%), lighten($sand, 25%));
-  border: none;
+  background-color: transparent;
+  border: solid $grey-dark;
+  border-width: 2px 2px 4px;
   border-radius: 4px;
   font-family: inherit;
   line-height: $base-line-height;
   outline: none; 
-  padding: 0.6em 1em 0.4em;
+  padding: 0.5em 1em 0.2em;
   text-align: center;
+  transition: all 0.1s ease-out;
   margin: 0;
   max-width: 12em;
-  transition: all 0.1s ease-out;
+
 
   &:hover { 
-    box-shadow: 0 0 4px $orange;
+    color: $orange;
   }
 
   &:active { 
-    background: lighten($sand, 25%);
+    border-width: 2px 2px 2px;
+    margin: 2px 0 0 ;
   }
 }
 
 .button--cta {
   @extend button;
-  background-color: $blue-light;
-  background: linear-gradient(lighten($blue, 15%), $blue);
-  color: white;
-  &:active { 
-    background: $blue;
-  }
+  background: $blue-sky;
+  border-color: $blue;
+
 }
