@@ -31,9 +31,9 @@
 
 <section class="subnav">
     {{ if .Params.similarURL }}
-    <div class="subnav--tag">You also might like:</div>
+    <div class="subnav--tag">You might like:</div>
     <div>
-        <a class="similar" href="{{ .Site.BaseURL }}/{{ .Params.similarURL }}"> {{ .Params.similarTitle }}</a>
+        <h2 class="post-list--post-title"><a class="similar" href="{{ .Site.BaseURL }}/{{ .Params.similarURL }}"> {{ .Params.similarTitle }}</a></h2>
     </div>
     {{ end }}
 </section>
