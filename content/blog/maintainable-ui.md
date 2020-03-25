@@ -1,6 +1,8 @@
 ---
 title: "Maintainable UI: How to Improve Code Editing with SASS"
 subtitle: "Avoid endless options."
+similarTitle: "5 Notes on How to Design a Resilient UI"
+similarURL: "resilient-ui"
 categories: ["code"]
 date: 2015-11-10
 ---

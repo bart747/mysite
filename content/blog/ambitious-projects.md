@@ -1,6 +1,8 @@
 +++
 title = "Working on Ambitious Projects: Jonathan Blow on Game Design"
 subtitle= "Mental side of a quest."
+similarTitle= "David Lynch on Catching Ideas"
+similarURL= "lynch-ideas"
 date = "2016-12-12"
 categories = [ "nosummary", "video" ]
 video = "https://www.youtube.com/embed/d0m0jIzJfiQ"

@@ -1,6 +1,8 @@
 ---
 title: "Vim Typography: Better Readability and Look"
 subtitle: ".vimrc vs .gvimrc."
+similarTitle: "Maintainable UI: How to Improve Code Editing with SASS"
+similarURL: "maintainable-ui"
 categories: ["code"]
 date: 2015-12-21
 ---
