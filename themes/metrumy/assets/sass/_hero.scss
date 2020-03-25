@@ -1,7 +1,7 @@
 .hero {
   background-color: $white;
   line-height: 1.2;
-  padding: 5rem 0 5rem;
+  padding: 5rem 0 4rem;
   margin: 0 auto;
   text-align: center;
   //max-width: 1200px;
@@ -35,6 +35,7 @@
 }
 
 .hero__title {
+  color: $black;
   font-size: inherit;
   font-weight: normal;
   line-height: 1.2;
@@ -43,6 +44,7 @@
 }
 
 .hero__title--huge {
+  color: $black;
   font-weight: bold;
   margin: 0 1rem 1rem;
 }
@@ -69,7 +71,7 @@
 }
 
 .hero__navigation a {
-  color: $orange;
+  color: $black;
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: #777;
