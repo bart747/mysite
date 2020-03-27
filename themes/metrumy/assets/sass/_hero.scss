@@ -1,5 +1,6 @@
 .hero {
-  background-color: $white;
+  background-color: $sand-light;
+  color: $blue-dark;
   line-height: 1.2;
   padding: 5rem 0 4rem;
   margin: 0 auto;
@@ -34,8 +35,14 @@
   }
 }
 
+.hero__title--huge {
+  color: inherit;
+  font-weight: bold;
+  margin: 0 1rem 1rem;
+}
+
 .hero__title {
-  color: $black;
+  color: inherit;
   font-size: inherit;
   font-weight: normal;
   line-height: 1.2;
@@ -43,15 +50,8 @@
   padding: 0 1rem;
 }
 
-.hero__title--huge {
-  color: $black;
-  font-weight: bold;
-  margin: 0 1rem 1rem;
-}
-
 .hero__title--colorized { // <span> element might be required
-  color: $lime; 
-  background-color: #999;
+  color: $red; 
   padding: 0.25em 0.25em 0.1em;
 }
 
