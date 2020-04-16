@@ -2,7 +2,7 @@
   background-color: $sand-light;
   color: $blue-dark;
   line-height: 1.2;
-  padding: 5rem 0 4rem;
+  padding: 4rem 0 4rem;
   margin: 0 auto;
   text-align: center;
   //max-width: 1200px;
@@ -36,17 +36,16 @@
 }
 
 .hero__title--huge {
+  font-size: 54px;
   color: inherit;
   font-weight: bold;
   margin: 0 1rem 1rem;
 }
 
 .hero__title {
-  color: inherit;
-  font-size: inherit;
-  font-weight: normal;
+  font-size: $l;
+  font-weight: bold;
   line-height: 1.2;
-  margin: 1.2em 0 0;
   padding: 0 1rem;
 }
 
