@@ -56,7 +56,7 @@
   .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: start;
     align-content: baseline;
     @include columns;
   }
