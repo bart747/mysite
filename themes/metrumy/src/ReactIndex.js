@@ -4,7 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // component imports
-import FileSelector from './FileSelector.jsx'
+import FileSelector from './FileSelector.js'
 
 const container = (
   <section className='article--narrow'>

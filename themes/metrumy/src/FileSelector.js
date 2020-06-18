@@ -8,7 +8,7 @@ function addFileNames (getFilesFunc, setNamesFunc) {
     fileNamesTemp.push(files[i].name)
   }
   setNamesFunc(fileNamesTemp)
-}
+};
 
 function FileSelector (props) {
   const messages = {
