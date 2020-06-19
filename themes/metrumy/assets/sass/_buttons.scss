@@ -6,7 +6,7 @@ button,
   cursor: pointer;
   background-color: transparent;
   background: linear-gradient(transparent, #dedede);
-  border: solid $orange-deep;
+  border: solid $black;
   border-width: 1px 1px 2px;
   border-radius: 4px 4px 6px 4px;
   font-family: inherit;
@@ -33,5 +33,12 @@ button,
   @extend button;
   background: $blue-sky;
   border-color: $blue;
+}
 
+.button--orange {
+  border-color: $orange-deep;
+}
+
+.button--blue {
+  border-color: $blue;
 }
