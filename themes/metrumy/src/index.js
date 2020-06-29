@@ -1,6 +1,7 @@
 import './cookies.js'
 import './contact.js'
-import './ReactIndex.js'
+import './scrollEvents.js'
+// import './ReactIndex.js'
 
 /*
 if ('serviceWorker' in navigator) {
