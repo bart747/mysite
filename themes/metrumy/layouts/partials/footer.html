@@ -1,5 +1,4 @@
 <footer>
-
     <div>
         <ul class="list--contacts">
             <li>
@@ -23,10 +22,9 @@
         </a>
         &mdash; please attribute and link back.
     </div>
-
     <div class="footer--link-top">
         <a href="#top">
-            <button>
+            <button class="button--blue">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
                     <path fill="none" d="M0 0h24v24H0V0z"/>
                     <path fill="#ff6622" d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"/>
@@ -35,14 +33,15 @@
             </button>
         </a>
     </div>
-
+    <div id="app">
+      
+    </div>
+    
 </footer>
-
-</div>
-
-{{ $js := resources.Get "js/main-bundle.v3.js" }}
-<script src="{{ $js.Permalink }}?v={{now.Unix}}"></script>
-
+</div><!-- end of id="allwrapper" -->
+{{ $js := resources.Get "js/main-bundle.js" }}
+{{ $secureJS := $js | resources.Fingerprint }}
+{{ $jsMap := resources.Get "js/main-bundle.js.map" }}
+<script src="{{ $secureJS.Permalink }}" data-srcmap="{{ $jsMap.Permalink}}"></script>
 </body>
-
 </html>

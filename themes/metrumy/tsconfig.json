@@ -3,7 +3,6 @@
 		"outDir": "./assets/js/",
 		"sourceMap": true,
 		"noImplicitAny": true,
-		"target": "es6",
-		"jsx": "react"
+		"target": "es6"
 	}
 }

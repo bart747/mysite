@@ -1,21 +1,24 @@
 const path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   mode: 'production',
   devtool: 'source-map',
   resolve: {
-    // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: ['.ts', '.tsx']
+    extensions: ['.ts'],
+    alias: {
+      vue$: 'vue/dist/vue.esm.js'
+    }
   },
   entry: './src/index.js',
   output: {
-    filename: 'main-bundle.v3.js',
+    filename: 'main-bundle.js',
     path: path.resolve(__dirname, 'assets/js')
   },
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
         use: [
           {
@@ -24,14 +27,16 @@ module.exports = {
         ]
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react']
-          }
+          options: {}
         }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       },
       {
         test: /\.css$/,
@@ -39,8 +44,8 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  }
+  plugins: [
+    new VueLoaderPlugin()
+  ],
+  externals: {}
 }

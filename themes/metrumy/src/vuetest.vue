@@ -1,11 +1,11 @@
 <script>
-import Vue from "vue";
+import Vue from 'vue'
 
-var vuetest = new Vue ({
-    el: "#jstest",
-    data: {
-      message: "*"
-    }
+var vuetest = new Vue({
+  el: '#jstest',
+  data: {
+    message: '*'
+  }
 })
-export default vuetest;
+export default vuetest
 </script>

@@ -1,8 +1,7 @@
 import './cookies.js'
 import './contact.js'
-import './scrollEvents.js'
-// import './ReactIndex.js'
-
+import Vue from 'vue'
+import App from './Hello.vue'
 /*
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw2.js').then(function (registration) {
@@ -15,4 +14,19 @@ if ('serviceWorker' in navigator) {
 }
 */
 
-console.log("I'm runnin'")
+window.addEventListener('error', () => {
+  if (ErrorEvent.message) {
+    console.log('Yikes, early errror: ' + ErrorEvent.message)
+  }
+})
+
+window.setTimeout(
+  window.removeEventListener('error', console.log("Ready and runnin'")),
+  1000
+)
+
+new Vue({ // eslint-disable-line no-new
+  el: '#app',
+  template: '<App/>',
+  components: { App }
+})

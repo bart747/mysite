@@ -1,13 +1,13 @@
-const doc = document;
+const doc = document
 
-let articles = [].slice.call(doc.getElementsByClassName("selectable-article"));
+const articles = [].slice.call(doc.getElementsByClassName('selectable-article'))
 
 articles.forEach(el => {
-    el.addEventListener("mouseup", composeInfoBoxContent, false);
-});
+  el.addEventListener('mouseup', composeInfoBoxContent, false)
+})
 
-let infoBox = doc.createElement("div");
-infoBox.setAttribute("id", "infobox");
+const infoBox = doc.createElement('div')
+infoBox.setAttribute('id', 'infobox')
 infoBox.style = `
     background-color: #eeecdd;
     border-radius: 4px 0 0 0;
@@ -19,16 +19,16 @@ infoBox.style = `
     padding: 0.5em 1em;
     bottom: 0;
     right: 0;
-`; 
-let infoBoxTag = doc.createElement("div");
-infoBoxTag.textContent = "copy & share:";
+`
+const infoBoxTag = doc.createElement('div')
+infoBoxTag.textContent = 'copy & share:'
 infoBoxTag.style = `
     font-style: italic;
     color: #555;
-`;
-let infoBoxClose = doc.createElement("div");
-infoBoxClose.textContent = "+";
-infoBoxClose.setAttribute("id", "infoBoxClose");
+`
+const infoBoxClose = doc.createElement('div')
+infoBoxClose.textContent = '+'
+infoBoxClose.setAttribute('id', 'infoBoxClose')
 infoBoxClose.style = `
     color: #555;
     cursor: pointer;
@@ -39,34 +39,33 @@ infoBoxClose.style = `
     top: 2px;
     right: 5px; 
     transform: rotate(45deg);
-`;
-infoBox.appendChild(infoBoxTag);
-infoBox.appendChild(infoBoxClose);
-let infoBoxContent = doc.createElement("div");
-infoBox.appendChild(infoBoxContent);
+`
+infoBox.appendChild(infoBoxTag)
+infoBox.appendChild(infoBoxClose)
+const infoBoxContent = doc.createElement('div')
+infoBox.appendChild(infoBoxContent)
 
-function reset() {
-    let el = doc.getElementById("infobox");
-    if (el) {
-        el.remove();
-    }
+function reset () {
+  const el = doc.getElementById('infobox')
+  if (el) {
+    el.remove()
+  }
 }
 
-function composeInfoBoxContent() {
-    let selection = window.getSelection().toString();
-    let len = selection.length;
+function composeInfoBoxContent () {
+  const selection = window.getSelection().toString()
+  const len = selection.length
 
-    reset();
+  reset()
 
-    if (len > 8  && len <= 200) { 
-        infoBoxContent.textContent = `“${selection}” ${document.URL}`;
-        doc.body.appendChild(infoBox);
-    } 
-    else if (len > 200) { 
-        let short = selection.substr(0, 200);
-        infoBoxContent.textContent = `“${short}...” ${document.URL}`;
-        doc.body.appendChild(infoBox);
-    }
+  if (len > 8 && len <= 200) {
+    infoBoxContent.textContent = `“${selection}” ${document.URL}`
+    doc.body.appendChild(infoBox)
+  } else if (len > 200) {
+    const short = selection.substr(0, 200)
+    infoBoxContent.textContent = `“${short}...” ${document.URL}`
+    doc.body.appendChild(infoBox)
+  }
 
-    infoBoxClose.addEventListener("click", ()=>{return reset();}, true);
+  infoBoxClose.addEventListener('click', () => { return reset() }, true)
 }
