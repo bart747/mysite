@@ -1,7 +1,8 @@
 import './cookies.js'
 import './contact.js'
-import Vue from 'vue'
-import App from './Hello.vue'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App.jsx'
 /*
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw2.js').then(function (registration) {
@@ -16,7 +17,7 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('error', () => {
   if (ErrorEvent.message) {
-    console.log('Yikes, early errror: ' + ErrorEvent.message)
+    console.log('Early errror: ' + ErrorEvent.message)
   }
 })
 
@@ -25,8 +26,4 @@ window.setTimeout(
   1000
 )
 
-new Vue({ // eslint-disable-line no-new
-  el: '#app',
-  template: '<App/>',
-  components: { App }
-})
+ReactDOM.render(<App />, document.getElementById('react-test') )

@@ -31,7 +31,7 @@
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path fill="#cc5500" d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z" />
                 </svg>
-                top &nbsp;
+                <span>top &nbsp;</span>
             </button>
         </a>
     </div>
@@ -46,12 +46,17 @@
 
 <!-- Load React. -->
 <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-{{ $js := resources.Get "js/main-bundle.v3.js" }}
-<script src="{{ $js.Permalink }}?v={{now.Unix}}"></script>
-
+<script
+    src="https://unpkg.com/react@17/umd/react.development.js"
+    crossorigin
+></script>
+<script
+    src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    crossorigin
+></script>
+{{ $js := resources.Get "js/main-bundle.js" }}
+{{ $secureJS := $js | resources.Fingerprint }}
+{{ $jsMap := resources.Get "js/main-bundle.js.map" }}
+<script src="{{ $secureJS.Permalink }}" data-srcmap="{{ $jsMap.Permalink}}"></script>
 </body>
-
 </html>

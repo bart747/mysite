@@ -1,15 +1,8 @@
 const path = require('path')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   mode: 'production',
   devtool: 'source-map',
-  resolve: {
-    extensions: ['.ts'],
-    alias: {
-      vue$: 'vue/dist/vue.esm.js'
-    }
-  },
   entry: './src/index.js',
   output: {
     filename: 'main-bundle.js',
@@ -27,16 +20,10 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {}
-        }
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'babel-loader',
+        options: { presets: ['@babel/env', '@babel/preset-react']}
       },
       {
         test: /\.css$/,
@@ -44,8 +31,4 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new VueLoaderPlugin()
-  ],
-  externals: {}
 }

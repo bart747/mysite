@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="theme-color" content="#ff6622">
 
     <title>{{ .Title }}</title>
@@ -15,15 +14,14 @@
     <link rel="preload" href="/fonts/IBMPlexSans-Bold-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="/fonts/IBMPlexSans-Italic-Latin1.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 
-    {{ .Hugo.Generator }}
-
+    {{ hugo.Generator }}
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .RSSLink }}
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
+    {{ with .OutputFormats.Get "rss" }}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />
+        ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
 
     <!-- Stylesheets -->
-
     {{ $sass := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $sass.Permalink }}?v={{now.Unix}}">
 
