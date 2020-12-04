@@ -39,9 +39,22 @@
     </div>
 </footer>
 </div><!-- end of id="allwrapper" -->
-{{ $js := resources.Get "js/main-bundle.js" }}
-{{ $secureJS := $js | resources.Fingerprint }}
-{{ $jsMap := resources.Get "js/main-bundle.js.map" }}
-<script src="{{ $secureJS.Permalink }}" data-srcmap="{{ $jsMap.Permalink}}"></script>
+
+<!-- fundamental JS piece; should be on every page  -->
+{{ $baseJS := resources.Get "js/base.js" }}
+{{ $secureBaseJS := $baseJS | resources.Fingerprint }}
+{{ $baseJSMap:= resources.Get "js/base.js.map" }}
+<script src="{{ $secureBaseJS.Permalink }}"
+        data-srcmap="{{ $baseJSMap.Permalink}}">
+</script>
+
+<!-- Use ony when React required -->
+{{ $appJS := resources.Get "js/app.js" }}
+{{ $secureAppJS := $appJS | resources.Fingerprint }}
+{{ $appJSMap := resources.Get "js/app.js.map" }}
+<script src="{{ $secureAppJS.Permalink }}"
+        data-srcmap="{{ $appJSMap.Permalink}}"
+        async>
+</script>
 </body>
 </html>

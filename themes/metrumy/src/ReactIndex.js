@@ -6,11 +6,13 @@ import ReactDOM from 'react-dom'
 // component imports
 import FileSelector from './FileSelector.js'
 
-const container = (
+const containero = (
   <section className='article--narrow'>
     <FileSelector />
   </section>
 )
 
 const domContainer = document.querySelector('#react-root')
-ReactDOM.render(container, domContainer)
+if (domContainer) {
+  ReactDOM.render(containero, domContainer)
+}

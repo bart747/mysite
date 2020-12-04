@@ -3,9 +3,12 @@ const path = require('path')
 module.exports = {
   mode: 'production',
   devtool: 'source-map',
-  entry: './src/index.js',
+  entry: {
+    base: './src/index.js',
+    app: './src/ReactIndex.js'
+  },
   output: {
-    filename: 'main-bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'assets/js')
   },
   module: {
